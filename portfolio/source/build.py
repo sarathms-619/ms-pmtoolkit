@@ -480,6 +480,12 @@ rep("Program Manager for a 50+ person design and UX consultancy — spearheading
 rep("Directly managing CXO, VP, and Director-level client relationships. Mentoring junior PMs",
     "Directly managed CXO, VP, and Director-level client relationships. Mentored junior PMs", label="nb tense 2")
 
+# Compact round chat button on phones (icon only), so it stops covering page content.
+rep("""  <span class="twin-trigger-dot"></span>
+  <div class="twin-trigger-text">""", """  <span class="twin-trigger-dot"></span>
+  <svg class="twin-trigger-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.2 3.6c-.5.4-1.3.1-1.3-.6V16.9A2.5 2.5 0 0 1 4 14.6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.5 9.5h7M8.5 12.5h4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+  <div class="twin-trigger-text">""", label="trigger icon")
+
 # ─────────────────────────────────────────────────────────── 9. ASK AI LANDING
 a = s.index('<div class="twin-greeting">')
 b = s.index('<div class="twin-input-area">', a)
@@ -544,8 +550,42 @@ TWIN_CSS = """
 .twin-tab.active { color: #fff; background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.14); }
 .twin-tab:focus-visible, .twin-nudge:focus-visible { outline: 2px solid #7FA2FF; outline-offset: 2px; }
 .twin-panel-hint { font-size: 12.5px; color: rgba(255,255,255,0.4); margin: 0 0 8px 2px; font-family: var(--sans); }
+.twin-trigger-icon { display: none; color: #fff; }
 .twin-landing .twin-nudge { white-space: normal; text-align: left; line-height: 1.35; }
 @media (max-width: 480px) { .twin-tab { letter-spacing: .5px; padding: 6px 7px; font-size: 10.5px; } }
+
+/* ═══ Mobile readability and touch targets (phones only) ═══ */
+@media (max-width: 768px) {
+  .snapshot-label, .snapshot-open-chevron, .essay-read-time, .essay-cta, .essay-arrow, .work-tag,
+  .clients-header div, .twin-trigger-hint, .twin-header-status, .twin-avail, .tl-lesson-label, .tag,
+  .tl-stat-label, .tl-cat-essay-live, .tl-tag, .case-tag, .case-status, .case-users, .tier2-tag,
+  .lab-type, .nav-contact, .snapshot-tag, .work-link, .case-link, .case-col-label, .tk-track-label,
+  .tk-type-cat, .tk-fmt, .tk-path i { font-size: 11.5px !important; }
+  .twin-tab { font-size: 11px !important; }
+
+  .thinking-see-all, .reader-back, .footer-links a, .tier2-link, .lab-link, .tk-section-head a, .case-link, .work-link {
+    display: inline-flex; align-items: center; min-height: 44px;
+  }
+  .lab-link { min-width: 44px; justify-content: center; }
+  .footer-links { gap: 4px 18px; }
+  .nav-contact, .nav-cta { min-height: 40px; display: inline-flex; align-items: center; }
+  .mtab button { min-height: 46px; font-size: 11px; }
+  body { padding-bottom: calc(70px + env(safe-area-inset-bottom)); }
+  .twin-trigger { bottom: calc(84px + env(safe-area-inset-bottom)) !important; }
+  .twin-close, .twin-home-btn, .t-nav-btn { min-width: 40px; min-height: 40px; display: inline-flex; align-items: center; justify-content: center; }
+  .twin-tab { min-height: 36px; }
+  .twin-nudge { min-height: 38px; padding-top: 8px; padding-bottom: 8px; }
+  .twin-voice, .twin-send, .tl-filter, .reader-share-btn { min-height: 40px; }
+  .t-dot { position: relative; }
+  .t-dot::after { content: ""; position: absolute; inset: -14px -8px; }
+  .reader-body .dd-option { padding: 16px; }
+  .twin-trigger { width: 56px; height: 56px; padding: 0 !important; border-radius: 50% !important; justify-content: center; right: max(14px, env(safe-area-inset-right)) !important; }
+  .twin-trigger .twin-trigger-text { display: none; }
+  .twin-trigger .twin-trigger-icon { display: block; }
+  .twin-trigger .twin-trigger-dot { position: absolute; top: 9px; right: 10px; margin: 0; }
+  #vcardOverlay button[onclick*="'none'"] { min-width: 44px; min-height: 44px; font-size: 22px !important; top: 6px !important; right: 6px !important; }
+  #vcardOverlay div[style*="font-size:10px"], #vcardOverlay div[style*="font-size:10.5px"] { font-size: 11.5px !important; }
+}
 """
 rep("\n</style>\n</head>", TWIN_CSS + "\n</style>\n</head>", label="twin css")
 

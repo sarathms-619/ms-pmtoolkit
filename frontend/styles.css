@@ -272,7 +272,19 @@ abbr.term { text-decoration: underline dotted var(--accent); text-underline-offs
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 .doc[open] > summary .doc-plain { display: none; }
 .doc, .cat-block, .glossary div { scroll-margin-top: 84px; }
+/* Phones: brand + back link share the first row, nav scrolls on the second; bigger touch targets. */
 @media (max-width: 720px) {
-  .topbar-inner { position: relative; }
-  .back-link { position: absolute; right: max(16px, env(safe-area-inset-right, 0px)); top: 14px; }
+  .topbar-inner { display: grid; grid-template-columns: 1fr auto; align-items: center; row-gap: 0; }
+  .brand { min-height: 44px; }
+  .back-link { grid-row: 1; grid-column: 2; margin-left: 0; display: inline-flex; align-items: center; min-height: 44px; padding-left: 12px; }
+  .nav { grid-column: 1 / -1; }
+  .nav a { padding-block: 12px; }
+  .trail a { display: inline-flex; align-items: center; min-height: 40px; border-bottom: 0; text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 4px; }
+  .section-head a { display: inline-flex; align-items: center; min-height: 44px; }
+  .kind, .facts b, .chip, .fmt, .path span, .figures span, .eyebrow { font-size: .74rem; }
+  .used-in a { min-height: 40px; display: inline-flex; align-items: center; }
+  .doc > summary { padding-block: 18px; }
+  .thresholds b { font-size: .72rem; }
+  .btn { min-height: 44px; }
+  .filters input, .filters select { min-height: 44px; font-size: 16px; }
 }
