@@ -46,7 +46,7 @@ def insert_before(anchor, text, after_pos=0, label=""):
 rep('<a class="nav-cta" href="sarathms_resume_2026.pdf" target="_blank">Resume ↗</a>',
     f'<a class="nav-cta" href="{RESUME_PATH}" target="_blank" rel="noopener">Resume ↗</a>', label="nav resume")
 rep('<a class="btn-resume-hero" href="sarathms_resume_2026.pdf" target="_blank" onclick="resumeDownload(event)">Download Resume ↓</a>',
-    f'<a class="btn-resume-hero" href="{RESUME_PATH}" download="Sarath_MS_Resume_2026.pdf">Download Resume ↓</a>', label="hero resume")
+    f'<a class="btn-resume-hero" href="{RESUME_PATH}" download="Sarath_MS_Delivery_Operations.pdf">Download Resume ↓</a>', label="hero resume")
 # The old fetch-and-blob handler is no longer used by any link; keep a harmless stub.
 start = s.index("function resumeDownload(e) {")
 end = s.index("// ═══════════════════════════════════════\n// TESTIMONIAL CAROUSEL", start)
