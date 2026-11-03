@@ -11,7 +11,7 @@ from pptx.util import Inches, Pt, Emu
 import data as D
 from data import name, fmt_date
 
-INK = RGBColor(0x1B, 0x2A, 0x3A); ACCENT = RGBColor(0x0F, 0x5E, 0x6E); MUTED = RGBColor(0x5B, 0x67, 0x73)
+INK = RGBColor(0x0F, 0x1F, 0x3D); ACCENT = RGBColor(0x1C, 0x4E, 0xD8); MUTED = RGBColor(0x5B, 0x67, 0x73)
 ALT = RGBColor(0xF1, 0xF4, 0xF6); WHITE = RGBColor(0xFF, 0xFF, 0xFF); ORANGE = RGBColor(0xD9, 0x82, 0x2B)
 RAG = {"Green": RGBColor(0x5F, 0xA3, 0x6B), "Amber": RGBColor(0xE0, 0xA4, 0x3A), "Red": RGBColor(0xC8, 0x55, 0x3D),
        "Complete": RGBColor(0x5F, 0xA3, 0x6B), "On track": RGBColor(0x5F, 0xA3, 0x6B), "At risk": RGBColor(0xE0, 0xA4, 0x3A)}
@@ -70,7 +70,7 @@ def build(out):
     s = prs.slides.add_slide(prs.slide_layouts[6])
     box(s, 0, 0, 13.333, 7.5, INK)
     box(s, 0.6, 2.2, 0.12, 2.0, ACCENT)
-    text(s, 0.95, 2.1, 11, 0.4, "STEERING COMMITTEE #5", 12, True, RGBColor(0x9C, 0xC9, 0xCF))
+    text(s, 0.95, 2.1, 11, 0.4, "STEERING COMMITTEE #5", 12, True, RGBColor(0xA9, 0xBE, 0xF2))
     text(s, 0.95, 2.5, 11, 1.0, D.PROJECT_FULL, 36, True, WHITE)
     text(s, 0.95, 3.6, 11, 0.5, f"{D.ORG} · 24 June 2026 · Presented by {name('pm')}", 16, False, RGBColor(0xC9, 0xD1, 0xD8))
     text(s, 0.95, 6.6, 11, 0.4, D.SAMPLE_NOTE, 10, False, RGBColor(0x9C, 0xA7, 0xB1))

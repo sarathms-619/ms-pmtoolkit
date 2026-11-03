@@ -4,7 +4,8 @@
 (function () {
   "use strict";
 
-  const CFG = Object.assign({ apiBase: "", siteName: "PM Toolkit" }, window.PMT_CONFIG || {});
+  const CFG = Object.assign({ apiBase: "", siteName: "PM Toolkit", portfolioUrl: "https://sarathms.com" }, window.PMT_CONFIG || {});
+  ["back-link", "footer-portfolio"].forEach((id) => { const el = document.getElementById(id); if (el) el.href = CFG.portfolioUrl; });
   const API = CFG.apiBase.replace(/\/$/, "");
   const main = document.getElementById("main");
   const PHASES = [
@@ -385,7 +386,7 @@
     for (const [re, fn] of routes) { const m = path.match(re); if (m) { page = fn(...m.slice(1)); break; } }
     page = page || notFound();
     main.innerHTML = page.html;
-    document.title = page.title === CFG.siteName ? CFG.siteName : `${page.title} · ${CFG.siteName}`;
+    document.title = page.title === CFG.siteName ? `${CFG.siteName} · Sarath MS` : `${page.title} · ${CFG.siteName}`;
     const section = path.split("/")[1] || "";
     const navKey = section === "documents" ? "library" : section;
     document.querySelectorAll("[data-nav]").forEach((a) => (a.dataset.nav === navKey ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current")));

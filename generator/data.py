@@ -5,7 +5,7 @@ regenerate every document, spreadsheet and deck with consistent numbers.
 """
 from datetime import date, timedelta
 
-BRAND = "PM Toolkit"            # shown in footers; change to your name
+BRAND = "Sarath MS · sarathms.com"  # shown in every template footer
 SAMPLE_NOTE = "Sample data. Fictional company and people. Replace before use."
 
 ORG = "Halcyon Outfitters"      # fictional retailer

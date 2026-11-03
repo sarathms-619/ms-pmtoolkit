@@ -5,4 +5,6 @@ window.PMT_CONFIG = {
   // apiBase: "https://pm-toolkit-api.YOUR-SUBDOMAIN.workers.dev",
   apiBase: "",
   siteName: "PM Toolkit",
+  // Your portfolio, used by the "← Portfolio" link and footer credit.
+  portfolioUrl: "https://sarathms.com",
 };

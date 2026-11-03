@@ -7,9 +7,9 @@ from xlsxwriter.utility import xl_rowcol_to_cell as rc, xl_col_to_name as colnam
 import data as D
 from data import name, money
 
-INK = "#1B2A3A"; ACCENT = "#0F5E6E"; MUTED = "#5B6773"; ALT = "#F1F4F6"; GUIDE = "#E8F2F3"
+INK = "#0F1F3D"; ACCENT = "#1C4ED8"; MUTED = "#5B6773"; ALT = "#F1F4F6"; GUIDE = "#E9EEFB"
 GREEN = "#CDEBD3"; AMBER = "#FBE3B5"; RED = "#F6C6C2"
-SERIES = ["#0F5E6E", "#D9822B", "#5B6773", "#7FB7BE", "#B5523B"]
+SERIES = ["#0F5E6E", "#D9822B", "#5B6773", "#8FA9EE", "#B5523B"]
 
 
 class Book:
@@ -312,7 +312,7 @@ def schedule(out):
     last = r
     grid = f"I{first+1}:{colname(8+len(weeks)-1)}{last}"
     tl = f"I${hrow+1}"
-    done = b.wb.add_format({"bg_color": ACCENT}); todo = b.wb.add_format({"bg_color": "#9CC9CF"})
+    done = b.wb.add_format({"bg_color": ACCENT}); todo = b.wb.add_format({"bg_color": "#A9BEF2"})
     today = b.wb.add_format({"left": 2, "left_color": "#C0392B"})
     ws.conditional_format(grid, {"type": "formula", "criteria": f"=AND({tl}+6>=$D{first+1},{tl}<=$E{first+1},{tl}<=$D{first+1}+($E{first+1}-$D{first+1})*$G{first+1})", "format": done})
     ws.conditional_format(grid, {"type": "formula", "criteria": f"=AND({tl}+6>=$D{first+1},{tl}<=$E{first+1})", "format": todo})
@@ -604,7 +604,7 @@ def quality_metrics(out):
         ws2.write_formula(r2, 7, f"=F{r2+1}-G{r2+1}" + (f"+H{r2}" if m else ""), b.f["num"])
         r2 += 1
     ch = b.wb.add_chart({"type": "column", "subtype": "stacked"})
-    for i, (sev, col) in enumerate(zip(["Critical", "High", "Medium", "Low"], ["#B5523B", "#D9822B", "#7FB7BE", "#C9D1D8"])):
+    for i, (sev, col) in enumerate(zip(["Critical", "High", "Medium", "Low"], ["#B5523B", "#D9822B", "#8FA9EE", "#C9D1D8"])):
         ch.add_series({"name": sev, "categories": ["Defects", f2, 0, r2 - 1, 0], "values": ["Defects", f2, 1 + i, r2 - 1, 1 + i], "fill": {"color": col}, "gap": 70})
     ln = b.wb.add_chart({"type": "line"})
     ln.add_series({"name": "Closed", "categories": ["Defects", f2, 0, r2 - 1, 0], "values": ["Defects", f2, 6, r2 - 1, 6], "line": {"color": ACCENT, "width": 2.5},
@@ -826,7 +826,7 @@ def benefits_register(out):
         ws.write(r, 7, name(x[6]), b.f["cell"]); ws.write(r, 8, x[7], b.f["cell"]); ws.write(r, 9, x[8], b.f["cell"]); ws.write(r, 10, x[9], b.f["cell"])
         r += 1
     b.rag(ws, f"K{first+1}:K{r+20}")
-    ws.conditional_format(f"G{first+1}:G{r}", {"type": "data_bar", "bar_color": "#7FB7BE", "bar_solid": True, "min_type": "num", "min_value": 0, "max_type": "num", "max_value": 1})
+    ws.conditional_format(f"G{first+1}:G{r}", {"type": "data_bar", "bar_color": "#8FA9EE", "bar_solid": True, "min_type": "num", "min_value": 0, "max_type": "num", "max_value": 1})
     ws.write(r + 1, 0, "% of target = (Actual - Baseline) / (Target - Baseline). Works whether the measure should go up or down.", b.f["note"])
     b.close()
 

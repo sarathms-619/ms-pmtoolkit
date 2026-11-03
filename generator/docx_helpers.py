@@ -9,11 +9,11 @@ from docx.shared import Pt, RGBColor, Cm
 import data as D
 
 INK = RGBColor(0x1B, 0x2A, 0x3A)
-ACCENT = RGBColor(0x0F, 0x5E, 0x6E)
+ACCENT = RGBColor(0x1C, 0x4E, 0xD8)
 MUTED = RGBColor(0x5B, 0x67, 0x73)
-HEAD_FILL = "1B2A3A"
+HEAD_FILL = "0F1F3D"
 ALT_FILL = "F1F4F6"
-GUIDE_FILL = "E8F2F3"
+GUIDE_FILL = "E9EEFB"
 RAG_FILL = {"Green": "CDEBD3", "Amber": "FBE3B5", "Red": "F6C6C2",
             "Complete": "CDEBD3", "On track": "CDEBD3", "At risk": "FBE3B5",
             "Late": "F6C6C2", "Approved": "CDEBD3", "Rejected": "F6C6C2",

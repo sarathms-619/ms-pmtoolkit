@@ -49,7 +49,7 @@
    "plain": "The argument for spending the money: what it costs, what we get back, and why this option beats the others.",
    "like": "Like comparing quotes before a home renovation and working out whether it adds enough value to the house.",
    "without": "Money gets spent on projects nobody can later prove were worth it.",
-   "size": 40823
+   "size": 40838
   },
   {
    "id": "project-charter",
@@ -95,7 +95,7 @@
    "plain": "The official 'go ahead' for the project. It says what we will deliver, by when, for how much, and who is in charge.",
    "like": "Like the signed agreement with a builder before work starts.",
    "without": "People disagree later about what was promised, and the project manager has no authority to make calls.",
-   "size": 41285
+   "size": 41305
   },
   {
    "id": "stakeholder-register",
@@ -140,7 +140,7 @@
    "plain": "A list of everyone the project affects or who can affect it, how much they care, and how we'll keep them on side.",
    "like": "Like a wedding planner's guest list with notes on who needs special attention.",
    "without": "Someone important gets surprised late and blocks or delays the work.",
-   "size": 10708
+   "size": 10724
   },
   {
    "id": "raci-matrix",
@@ -181,7 +181,7 @@
    "plain": "A grid that shows, for each task, who does it, who signs it off, who gets asked, and who just gets told.",
    "like": "Like a household chore chart that also says who checks the job was done.",
    "without": "Work falls between the cracks, or two people both think they're in charge.",
-   "size": 7732
+   "size": 7744
   },
   {
    "id": "project-management-plan",
@@ -225,7 +225,7 @@
    "plain": "The rulebook for running the project: how we'll track time, money, quality and risk, and when we escalate.",
    "like": "Like the house rules a team agrees before a long trip: who drives, who books, what happens if we're late.",
    "without": "Everyone runs things their own way and problems get escalated too late, or not at all.",
-   "size": 40372
+   "size": 40386
   },
   {
    "id": "project-schedule-gantt",
@@ -269,7 +269,7 @@
    "plain": "The timeline: every piece of work with start and end dates, drawn as bars so you can see what overlaps and what is late.",
    "like": "Like a wedding-day timeline, but stretched over months.",
    "without": "Nobody can see that a delay in one task will push back everything after it.",
-   "size": 10919
+   "size": 10943
   },
   {
    "id": "budget-evm-tracker",
@@ -314,7 +314,7 @@
    "plain": "Tracks money: what we planned to spend by now, what we actually spent, and how much work that money really got done.",
    "like": "Like checking a renovation: half the budget is gone, but is half the house finished?",
    "without": "Overspending is noticed only when the money runs out.",
-   "size": 14353
+   "size": 14378
   },
   {
    "id": "resource-capacity-plan",
@@ -357,7 +357,7 @@
    "plain": "Shows how many people of each kind we need each month, compared with how many we actually have.",
    "like": "Like a restaurant rota: are there enough chefs on Saturday night?",
    "without": "Some people are overloaded and burn out while work waits for skills nobody booked.",
-   "size": 11875
+   "size": 11900
   },
   {
    "id": "communication-plan",
@@ -397,7 +397,7 @@
    "plain": "Who gets told what, how often and how: weekly emails, monthly meetings, team huddles.",
    "like": "Like a school's calendar of parent newsletters and meetings.",
    "without": "Some people feel ignored, others are flooded with updates, and rumours fill the gap.",
-   "size": 7114
+   "size": 7125
   },
   {
    "id": "benefits-register",
@@ -438,7 +438,7 @@
    "plain": "The list of good things the project promised (faster service, more sales) with how we'll measure them and who checks.",
    "like": "Like noting your electricity bill before installing solar panels, so you can prove the saving afterwards.",
    "without": "The project finishes but nobody can show it delivered what it promised.",
-   "size": 7763
+   "size": 7777
   },
   {
    "id": "raid-log",
@@ -482,7 +482,7 @@
    "plain": "One place to track what might go wrong (Risks), what we're taking for granted (Assumptions), what is going wrong (Issues), what we're waiting on (Dependencies), and what we decided (Decisions).",
    "like": "Like a ship captain's log of hazards ahead, problems on board and decisions made.",
    "without": "Known problems are forgotten until they explode, and old decisions get argued again.",
-   "size": 17153
+   "size": 17223
   },
   {
    "id": "change-log",
@@ -522,7 +522,7 @@
    "plain": "A running list of every request to change the plan and whether it was approved, with the extra cost and time.",
    "like": "Like the list of extras added to a building contract: 'add a window: +$800, +2 days'.",
    "without": "Lots of small extras add up to a big overrun nobody agreed to.",
-   "size": 7642
+   "size": 7653
   },
   {
    "id": "change-request-form",
@@ -563,7 +563,7 @@
    "plain": "The form used to ask for one change to the plan. It explains why, what it will cost, and what the alternatives are, so someone can decide.",
    "like": "Like asking your builder for a quote before agreeing to move a wall.",
    "without": "Changes slip in through hallway conversations and nobody owns the consequences.",
-   "size": 39943
+   "size": 39961
   },
   {
    "id": "weekly-status-report",
@@ -609,7 +609,7 @@
    "plain": "A one-page weekly update: are we on track (green, amber or red), what got done, what's next, and what help we need.",
    "like": "Like a weekly school report for the project.",
    "without": "Leaders find out about problems from rumours, or too late to help.",
-   "size": 40864
+   "size": 40881
   },
   {
    "id": "steering-committee-deck",
@@ -654,7 +654,7 @@
    "plain": "Slides for the monthly meeting with senior leaders who make the big decisions about the project.",
    "like": "Like a board meeting pack: short, focused on the decisions needed.",
    "without": "Big decisions get delayed because leaders don't have what they need to decide.",
-   "size": 46903
+   "size": 46901
   },
   {
    "id": "steering-committee-minutes",
@@ -696,7 +696,7 @@
    "plain": "The written record of what senior leaders decided in their meeting and who will do what by when.",
    "like": "Like the minutes of a residents' association meeting.",
    "without": "People remember decisions differently and agreed actions never happen.",
-   "size": 39853
+   "size": 39870
   },
   {
    "id": "project-health-dashboard",
@@ -738,7 +738,7 @@
    "plain": "A single page of the most important numbers and colours that show at a glance how healthy the project is.",
    "like": "Like a car dashboard: speed, fuel and warning lights in one view.",
    "without": "People have to dig through many files to know if something is wrong.",
-   "size": 13673
+   "size": 13686
   },
   {
    "id": "agile-sprint-metrics",
@@ -778,7 +778,7 @@
    "plain": "Tracks how much work the team finishes in each two-week cycle (a 'sprint'), so we can predict when the rest will be done.",
    "like": "Like tracking how many kilometres you run each week to predict when you'll be ready for a marathon.",
    "without": "Delivery dates are guesses, and teams take on more than they can finish.",
-   "size": 12829
+   "size": 12849
   },
   {
    "id": "quality-delivery-metrics",
@@ -817,7 +817,7 @@
    "plain": "Measures how good and how reliable the software work is: how often it's released, how often releases break, how many bugs are found.",
    "like": "Like a factory tracking defects per batch and how quickly the line restarts after a stoppage.",
    "without": "Quality problems surface only when customers find them.",
-   "size": 11317
+   "size": 11338
   },
   {
    "id": "program-portfolio-dashboard",
@@ -857,7 +857,7 @@
    "plain": "One view of several related projects together, so leaders can see which need attention.",
    "like": "Like an air-traffic control screen showing every plane at once.",
    "without": "Leaders can't compare projects or spot a struggling one in time.",
-   "size": 11060
+   "size": 11071
   },
   {
    "id": "uat-signoff-certificate",
@@ -900,7 +900,7 @@
    "plain": "The business's formal 'yes, this works for us' after real users have tested the new system.",
    "like": "Like the final walk-through of a new house before you accept the keys.",
    "without": "A system goes live that the people using it never agreed was ready.",
-   "size": 39906
+   "size": 39922
   },
   {
    "id": "go-no-go-checklist",
@@ -940,7 +940,7 @@
    "plain": "The final checklist before launch. Each item must be 'yes' before we switch the new system on.",
    "like": "Like a pilot's pre-flight checklist.",
    "without": "Launch happens because the date arrived, not because everything was ready.",
-   "size": 39580
+   "size": 39597
   },
   {
    "id": "cutover-runbook",
@@ -981,7 +981,7 @@
    "plain": "The step-by-step script for launch weekend: who does what, at what time, how we check it worked, and how to undo it if needed.",
    "like": "Like a stage manager's cue sheet for opening night.",
    "without": "Launch night becomes improvised, and nobody knows how to roll back if it fails.",
-   "size": 8907
+   "size": 8929
   },
   {
    "id": "lessons-learned-report",
@@ -1022,7 +1022,7 @@
    "plain": "What went well and what didn't, written down so the next project does better.",
    "like": "Like a sports team reviewing match footage.",
    "without": "The organisation repeats the same mistakes on every project.",
-   "size": 40102
+   "size": 40117
   },
   {
    "id": "project-closure-report",
@@ -1065,7 +1065,7 @@
    "plain": "The final report: what was delivered compared with what was promised, what's been handed over, and confirmation the project can close.",
    "like": "Like the final handover pack when you move out of a rented flat.",
    "without": "Loose ends stay open, money stays committed and nobody owns what's left.",
-   "size": 40294
+   "size": 40313
   }
  ],
  "projectCategories": [
