@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PM Toolkit — LinkedIn Carousel</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Outfit:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* 1080 x 1350 portrait slides (LinkedIn document post). One slide per printed page. */
+@page { size: 1080px 1350px; margin: 0; }
+:root{
+  --bg:#0B1426;--bg2:#111C33;--bg3:#17233D;--border:rgba(220,228,245,0.13);
+  --text:#E8EDF6;--dim:#B4C0D6;--faint:#7484A2;--blue:#7FA2FF;--deep:#1C4ED8;
+  --green:#7FCB97;--amber:#F0C46B;--red:#F2998A;
+  --display:'Bricolage Grotesque',sans-serif;--sans:'Outfit',sans-serif;--mono:'IBM Plex Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{background:var(--bg);}
+body{font-family:var(--sans);color:var(--text);-webkit-font-smoothing:antialiased;}
+.slide{width:1080px;height:1350px;position:relative;overflow:hidden;padding:96px 92px 110px;display:flex;flex-direction:column;page-break-after:always;break-after:page;
+  background:radial-gradient(ellipse 900px 700px at 95% -5%,rgba(28,78,216,0.28),transparent 62%),radial-gradient(ellipse 700px 600px at -10% 105%,rgba(127,162,255,0.07),transparent 60%),var(--bg);}
+.top{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:22px;letter-spacing:3px;text-transform:uppercase;color:var(--faint);}
+.top b{color:var(--blue);font-weight:500;}
+.foot{position:absolute;left:92px;right:92px;bottom:64px;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:20px;letter-spacing:2px;text-transform:uppercase;color:var(--faint);}
+.foot .swipe{color:var(--blue);}
+.body{flex:1;display:flex;flex-direction:column;justify-content:center;gap:36px;}
+.eyebrow{font-family:var(--mono);font-size:24px;letter-spacing:4px;text-transform:uppercase;color:var(--blue);}
+h1{font-family:var(--display);font-size:118px;font-weight:600;line-height:1.0;letter-spacing:-4px;}
+h1 em,h2 em{font-style:italic;font-weight:400;color:var(--blue);}
+h2{font-family:var(--display);font-size:78px;font-weight:600;line-height:1.05;letter-spacing:-2.4px;}
+.lede{font-size:36px;line-height:1.45;color:var(--dim);max-width:860px;}
+.chips{display:flex;flex-wrap:wrap;gap:14px;}
+.chip{font-family:var(--mono);font-size:24px;letter-spacing:1px;padding:12px 20px;border-radius:999px;background:var(--bg3);color:var(--dim);}
+.chip.on{background:var(--deep);color:#fff;}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:24px;padding:40px 44px;display:grid;gap:22px;}
+.row{display:grid;grid-template-columns:200px 1fr;gap:24px;font-size:32px;line-height:1.4;color:var(--dim);}
+.row b{font-family:var(--mono);font-weight:500;font-size:22px;letter-spacing:2.5px;text-transform:uppercase;color:var(--blue);padding-top:8px;}
+.card-head{font-family:var(--display);font-size:42px;font-weight:600;letter-spacing:-0.8px;color:var(--text);}
+.list{display:grid;gap:26px;}
+.li{display:grid;grid-template-columns:64px 1fr;gap:20px;font-size:36px;line-height:1.4;color:var(--dim);}
+.li i{font-style:normal;font-family:var(--mono);font-size:26px;color:var(--faint);padding-top:6px;}
+.li strong{color:var(--text);font-weight:500;}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+.stat{background:var(--bg2);border:1px solid var(--border);border-radius:24px;padding:36px 40px;display:grid;gap:8px;}
+.stat b{font-family:var(--display);font-size:120px;font-weight:600;line-height:1;letter-spacing:-3px;}
+.stat span{font-family:var(--mono);font-size:24px;letter-spacing:2.5px;text-transform:uppercase;color:var(--faint);}
+.stat small{font-size:26px;color:var(--dim);}
+.th{display:grid;grid-template-columns:repeat(3,1fr);border-radius:18px;overflow:hidden;font-size:28px;}
+.th div{padding:20px 24px;display:grid;gap:4px;}
+.th b{font-family:var(--mono);font-size:20px;letter-spacing:2px;}
+.g{background:rgba(127,203,151,0.14);} .g b{color:var(--green);}
+.a{background:rgba(240,196,107,0.16);} .a b{color:var(--amber);}
+.r{background:rgba(242,153,138,0.15);} .r b{color:var(--red);}
+.plain{display:grid;gap:20px;}
+.plain .card{padding:32px 40px;gap:10px;}
+.plain .lbl{font-family:var(--mono);font-size:22px;letter-spacing:3px;text-transform:uppercase;color:var(--blue);}
+.plain p{font-size:34px;line-height:1.4;color:var(--dim);}
+.url{font-family:var(--display);font-size:64px;font-weight:600;letter-spacing:-1.5px;color:#fff;background:var(--deep);border-radius:22px;padding:34px 44px;display:inline-block;}
+.quote{font-family:var(--display);font-style:italic;font-size:52px;line-height:1.3;color:var(--dim);border-left:6px solid var(--blue);padding-left:40px;}
+.quote strong{font-style:normal;color:var(--text);}
+.n{display:none;font-family:var(--display);font-size:200px;font-weight:600;color:rgba(127,162,255,0.10);position:absolute;right:70px;top:40px;line-height:1;letter-spacing:-6px;}
+</style>
+</head>
+<body>
+
+<!-- 1. COVER -->
+<section class="slide">
+  <div class="top"><span><b>PM</b> Toolkit</span><span>Free · 25 templates</span></div>
+  <div class="body">
+    <div class="eyebrow">For PMs, and everyone who works with one</div>
+    <h1>Every document a project needs.<br><em>And when to use it.</em></h1>
+    <p class="lede">25 free templates, mapped to 18 project types, with a playbook for the numbers on your status report. Written in plain English.</p>
+  </div>
+  <div class="foot"><span>Sarath MS</span><span class="swipe">Swipe →</span></div>
+</section>
+
+<!-- 2. PROBLEM -->
+<section class="slide">
+  <div class="n">01</div>
+  <div class="top"><span><b>The</b> problem</span><span>2 / 7</span></div>
+  <div class="body">
+    <h2>Template packs give you the form.<br><em>Not the judgement.</em></h2>
+    <div class="list">
+      <div class="li"><i>✕</i><span>They don't tell you <strong>which documents your project actually needs</strong>, and which you can skip.</span></div>
+      <div class="li"><i>✕</i><span>They don't say <strong>when to create, when to update, or who owns</strong> each one.</span></div>
+      <div class="li"><i>✕</i><span>Dashboards show CPI and SPI, then go quiet on <strong>what to do when they slip</strong>.</span></div>
+      <div class="li"><i>✕</i><span>Most of it is written for people who <strong>already speak PM</strong>.</span></div>
+    </div>
+  </div>
+  <div class="foot"><span>PM Toolkit</span><span class="swipe">→</span></div>
+</section>
+
+<!-- 3. TRACK 1 -->
+<section class="slide">
+  <div class="n">02</div>
+  <div class="top"><span><b>Way in #1</b> · Start from your project</span><span>3 / 7</span></div>
+  <div class="body">
+    <h2>Pick your project.<br><em>Get only what it needs.</em></h2>
+    <div class="chips"><span class="chip">Category</span><span class="chip">Project type</span><span class="chip">Documents</span><span class="chip on">When · How · Who · What</span></div>
+    <div class="card">
+      <div class="card-head">ERP implementation → Cutover Runbook</div>
+      <div class="row"><b>When</b><span>Start 3 months before go-live. Rehearse at least 3 times.</span></div>
+      <div class="row"><b>Who</b><span>Technical Lead owns it. Delivery Manager approves.</span></div>
+      <div class="row"><b>What</b><span>Step timings after every rehearsal; live status on the night.</span></div>
+    </div>
+  </div>
+  <div class="foot"><span>18 project types · 7 categories</span><span class="swipe">→</span></div>
+</section>
+
+<!-- 4. TRACK 2 -->
+<section class="slide">
+  <div class="n">03</div>
+  <div class="top"><span><b>Way in #2</b> · Start from a number</span><span>4 / 7</span></div>
+  <div class="body">
+    <h2>Your CPI is 0.90.<br><em>Now what?</em></h2>
+    <div class="chips"><span class="chip">Category</span><span class="chip">Metric</span><span class="chip">Impact</span><span class="chip on">Resolution</span></div>
+    <div class="th"><div class="g"><b>GREEN</b>≥ 0.95</div><div class="a"><b>AMBER</b>0.85 – 0.94</div><div class="r"><b>RED</b>&lt; 0.85</div></div>
+    <div class="card">
+      <div class="row"><b>Means</b><span>Every dollar spent buys 90 cents of planned work.</span></div>
+      <div class="row"><b>Impact</b><span>Final cost rises. Contingency gets used up.</span></div>
+      <div class="row"><b>Resolve</b><span>Find the overspending workstream. Share cost with the vendor. Trim scope.</span></div>
+      <div class="row"><b>Escalate</b><span>Below 0.95 for two months running.</span></div>
+    </div>
+  </div>
+  <div class="foot"><span>27 metrics · 9 categories</span><span class="swipe">→</span></div>
+</section>
+
+<!-- 5. WHAT'S INSIDE -->
+<section class="slide">
+  <div class="n">04</div>
+  <div class="top"><span><b>What's</b> inside</span><span>5 / 7</span></div>
+  <div class="body">
+    <h2>Filled in, <em>not empty.</em></h2>
+    <div class="stats">
+      <div class="stat"><b>25</b><span>Templates</span><small>10 Word · 14 Excel · 1 PowerPoint</small></div>
+      <div class="stat"><b>18</b><span>Project types</span><small>From agile builds to fixed-bid work</small></div>
+      <div class="stat"><b>27</b><span>Metrics</span><small>Each with impact and resolution</small></div>
+      <div class="stat"><b>1</b><span>Worked example</span><small>Same project, numbers match across files</small></div>
+    </div>
+  </div>
+  <div class="foot"><span>Live formulas · real charts</span><span class="swipe">→</span></div>
+</section>
+
+<!-- 6. PLAIN ENGLISH -->
+<section class="slide">
+  <div class="n">05</div>
+  <div class="top"><span><b>Plain</b> English</span><span>6 / 7</span></div>
+  <div class="body">
+    <h2>If a sponsor can't follow it,<br><em>it isn't finished.</em></h2>
+    <div class="plain">
+      <div class="card"><div class="lbl">RAID log · what it is</div><p>One place for what might go wrong, what we're assuming, what is going wrong, what we're waiting on, and what we decided.</p></div>
+      <div class="card"><div class="lbl">Think of it as</div><p>A ship captain's log of hazards ahead and decisions made.</p></div>
+      <div class="card"><div class="lbl">Without it</div><p>Known problems are forgotten until they explode.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>51 terms explained</span><span class="swipe">→</span></div>
+</section>
+
+<!-- 7. CTA -->
+<section class="slide">
+  <div class="top"><span><b>PM</b> Toolkit</span><span>7 / 7</span></div>
+  <div class="body">
+    <div class="quote">"The template was never the hard part. <strong>The judgement is.</strong> So I left it in."</div>
+    <div class="eyebrow">Free · No sign-up · Word, Excel, PowerPoint</div>
+    <div><span class="url">ms-pmtoolkit.netlify.app</span></div>
+    <p class="lede">Built from 14 years of delivery across Tech Mahindra, EY, BCG and NetBramha Studios.</p>
+  </div>
+  <div class="foot"><span>Sarath MS</span><span>sarathms.com</span></div>
+</section>
+
+</body>
+</html>
