@@ -1,0 +1,6 @@
+# Ask AI: the page calls /api/twin on your own domain and Netlify forwards it to
+# the Cloudflare Worker. Visitors on networks that block *.workers.dev still get answers.
+/api/twin   https://sarath-digital-twin.rey619-ms.workers.dev   200!
+
+# Short link to the toolkit (change the target if your toolkit URL differs)
+/toolkit    https://ms-pmtoolkit.netlify.app   302

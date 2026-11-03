@@ -1,0 +1,8 @@
+Put your resume PDF in this folder, named exactly:
+
+    sarathms_resume_2026.pdf
+
+The "Resume" button in the header and the "Download Resume" button on the
+home page both point to  resume/sarathms_resume_2026.pdf
+
+You can delete this text file afterwards.

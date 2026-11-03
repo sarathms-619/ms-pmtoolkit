@@ -1,0 +1,283 @@
+ESSAYS_HI = [
+dict(num="67", cat="H", title="I Know More Than the Person Who's Supposed to Be Mentoring Me.", time="8 min read",
+hook="Your new manager is also your assigned mentor. In your weekly one-to-one, they've just suggested you \"think about stakeholder mapping.\" You built the stakeholder mapping process the whole studio uses.",
+situation=[
+"They joined three months ago, from a product background at a much bigger company. They're smart, well-meaning, and senior. The organisation decided that, as your new line manager, they'd also be your mentor for the year.",
+"The trouble shows up in the details. Their advice is the kind you'd find in a good book on project management: map your stakeholders, communicate early, manage up. You've been doing those things here for three years, through situations they haven't seen yet. In your mid-year review, the feedback was about \"executive presence\" and \"visibility.\" Nothing about the work itself, because they don't yet know enough about the work to comment on it.",
+"You can't say any of this. They own your appraisal. And saying \"I know more than you\" to the person who decides your promotion sounds exactly as bad as it is.",
+],
+ideal=[
+"Mentoring should be matched to need, not hierarchy. A good organisation lets you choose a mentor, or at least change one that isn't working. Managers who know less about a domain learn from their reports, and the best ones say so openly.",
+"One-to-ones are meant to be two-way. If the mentoring isn't useful, the healthy move is to say so, kindly and specifically, and agree what would be more useful.",
+],
+why=[
+"Because there's no safe way to say it. Even the gentlest version, \"I'm not sure this is the right fit,\" lands as a judgement on the person. Managers are human. They remember.",
+"Because organisations assign mentors by org chart. It's administratively tidy. Changing it requires someone to admit the original match was wrong, which nobody wants to do in a manager's first quarter.",
+"Because your knowledge is mostly invisible. Three years of knowing how this studio actually runs doesn't appear on any document. It lives in judgement calls that work out quietly. The new manager sees the outcomes, not the thinking.",
+"And because you might be partly wrong. They may know less about delivery here and more about something you need: how senior leadership decides things, how to be noticed by the people who decide promotions. That's uncomfortable to admit when you're frustrated.",
+],
+thought=[
+"I'd start by asking myself what I actually need. Usually it's one of three things: to keep growing in my craft, to be recognised for what I already do, or to have someone senior arguing for me when I'm not in the room. Those need different people.",
+"Then I'd ask, honestly, what this person has that I don't. Not delivery knowledge. Maybe access to rooms I'm not in. Maybe experience of how a bigger organisation promotes people. Maybe a view of what leadership above us is worried about.",
+"I'd separate mentor from sponsor in my own head. A mentor teaches you. A sponsor spends their reputation on you. You can learn your craft from peers, from outside the company, from writing about it. Sponsorship can only come from someone with power where you work.",
+"And I'd ask what it would look like to teach upward without making them small. A new manager who's well briefed on how delivery works here is useful to me. A new manager who feels shown up is not.",
+],
+options=[
+("Treat them as a sponsor, not a teacher", "They have access and goodwill, and they're open to learning the domain from you.", "They need to be seen as the expert and resent being briefed.", "Some of the mentoring you hoped for, in exchange for advocacy you can't get elsewhere."),
+("Build a mentoring bench outside the line", "There are peers, former colleagues or external people who know your craft deeply.", "You rely on it to avoid ever addressing the line relationship.", "Time, and the effort of maintaining relationships outside work."),
+("Have the direct conversation", "The manager is secure and genuinely wants the one-to-ones to be useful.", "They hear it as a challenge to their authority.", "Some risk to the relationship, for the chance of a much better one."),
+],
+do=[
+"I'd combine the first two, and use a soft version of the third.",
+"In the next one-to-one, I'd shift what I bring. Less asking for advice, more briefing: here's a decision I made this week, here's why, here's what I'm worried about next month. That turns the meeting into something useful for both of us. They learn the domain; I get a senior person who understands my work well enough to represent it.",
+"Then I'd ask for the one thing they're well placed to give: \"What do you see from leadership's side that I should be paying attention to?\" That's a real question, and it gives them a genuine way to be useful.",
+"For craft, I'd find one or two people outside the reporting line, possibly outside the company, and meet them every month or two. That's where the hard delivery conversations go.",
+],
+pull="A mentor teaches you. A sponsor spends their reputation on you. You can find the first anywhere. The second has to be someone with power where you are.",
+changed=[
+"I used to judge mentors by how much they knew about my job. If they knew less, I quietly stopped listening.",
+"What I've learned is that some of the most useful people I've worked with knew very little about delivery. They knew how decisions actually got made two levels up. They knew which parts of my work leadership noticed and which parts were invisible. They opened doors I didn't know were there.",
+"I still learn the craft mostly from peers and from doing the work. But I've stopped expecting one person to be both my teacher and my advocate. When I separated those two needs, a relationship I'd written off became one of the more useful ones I've had.",
+],
+principles=[
+("Mentor and sponsor are different roles", "Mentors build your capability; sponsors build your opportunities. Expecting one person to do both often leaves you frustrated with someone who's good at the other one."),
+("Expertise isn't hierarchy", "Organisations assign authority by role, not by knowledge. Accepting that gap, rather than resenting it, makes it easier to work with."),
+("Brief upward", "Most managers welcome a report who makes them look informed. Teaching the domain generously turns a knowledge gap into an alliance."),
+("Invisible knowledge doesn't count until it's said", "Judgement that works quietly looks like luck from the outside. If you want it recognised, it has to be narrated."),
+]),
+
+dict(num="68", cat="H", title="My Good Weeks Look Like I Did Nothing.", time="8 min read",
+hook="Your appraisal says you had a quiet quarter. A colleague is praised for stepping up during a crisis. You spent the quarter making sure your projects never had one.",
+situation=[
+"It was, by every measure you track, a good quarter. Three launches, all on time. No escalations from clients. Budget variance under two percent. The team took their leave and came back to a project that hadn't caught fire.",
+"In your review, your manager is warm but vague. \"You were a bit quiet this quarter. Compare that with how another PM really stepped up when their project hit trouble. That's the kind of leadership we want to see more of.\"",
+"You know that project. You know its crisis started with a risk that was visible in week two and ignored until week nine. The PM did work incredibly hard to rescue it. They're good at rescues. They've had a lot of practice.",
+],
+ideal=[
+"Performance should be measured on outcomes. On-time delivery, client satisfaction, margin and team health are all measurable, and a good review process looks at them over the whole period, not just the memorable moments.",
+"Experienced leaders understand that the absence of problems is usually the result of work, not luck. Prevention is part of the job, and a well-run organisation recognises it.",
+],
+why=[
+"Because rescues produce stories and prevention doesn't. A crisis has a beginning, a hero and an ending. Leadership hears about it in real time, in meetings and messages. A risk that was retired in week two produces no story at all, because nothing happened.",
+"Because outcomes without a narrative look like luck. If your project went smoothly, the default explanation is that it was an easy project. Nobody saw the three things that nearly went wrong.",
+"Because there's no counterfactual. You can't show the crisis that didn't happen. You can only say it would have, and that sounds defensive.",
+"And because, quite often, the organisation rewards firefighting without realising it. The PM who lets a fire start and then puts it out gets more credit than the one who never let it start. Over time, that shapes what people choose to do.",
+],
+thought=[
+"I'd want to be clear with myself about what bothers me. Is it the appraisal rating? The comparison? Or the sense that leadership doesn't understand what good delivery looks like? Each of those needs a different response.",
+"Then I'd ask whether I've been making the work visible. Not bragging, just narrating. If my status reports only list open risks, the reader never sees the risks I closed. If I never mention the hard call I made in week two, nobody knows a hard call was made.",
+"I'd also be honest about the trap. The fastest way to look like a leader in this system is to have a visible crisis and handle it well. I don't want to become someone who waits for fires so I can be seen putting them out.",
+"So the question becomes: how do I make prevention legible, in a way that's factual rather than self-promoting?",
+],
+options=[
+("Keep a near-miss log", "You can point to specific risks, what you did, and what it would have cost.", "It reads as a list of things that never happened, with no evidence they would have.", "A few minutes a week, and some discomfort about writing your own case."),
+("Report retired risks, not just open ones", "Your status reports go to the people who decide your review.", "Leadership doesn't read status reports.", "Almost nothing; it's a change of format."),
+("Accept it, and look for a place that values it", "You've tried to make the work visible and the culture still rewards heroics.", "You leave before giving the first two options a fair try.", "Potentially your role, for an environment that fits."),
+],
+do=[
+"I'd start the near-miss log and change my status reports this week. Every report would include a short section: risks retired this week, and what it took.",
+"Then I'd go back to my manager, not to argue the rating, but to share the log for the quarter. \"I want to make sure the way I run projects is visible to you. Here are the five things that could have become a crisis this quarter, and what we did about them.\" I'd keep it factual, with dates and numbers.",
+"I wouldn't criticise the other PM. That conversation would cost me more than it gained, and it isn't my story to tell.",
+"If, after two or three quarters of doing this, the culture still only rewards heroics, then I'd take that as information about the organisation, not about me.",
+],
+pull="Good work doesn't speak for itself. It whispers. If you want it heard, you have to say what didn't happen and why.",
+changed=[
+"I believed for a long time that good work speaks for itself. If the projects went well, people would notice. It felt slightly beneath me to point at my own work.",
+"What I learned, slowly, is that most leaders aren't watching closely enough to notice an absence. They're busy. They notice noise. Quiet competence registers as \"fine\", and fine isn't what gets people promoted.",
+"Writing a short line about retired risks in every status report felt awkward the first few times. Now it's routine, and it's changed the conversations I have with leadership. They ask about the near-misses. Some of them have started asking other PMs for the same thing.",
+],
+principles=[
+("The prevention paradox", "When prevention works, it looks unnecessary. The better you are at stopping problems, the less evidence there is that you did anything."),
+("Availability shapes judgement", "Leaders remember vivid events. A crisis is vivid; a smooth quarter isn't. Reviews end up weighted towards memorable moments rather than outcomes."),
+("What gets reported gets valued", "If status reports only show open risks, closed ones disappear. Changing the format changes what leadership sees."),
+("Don't become the firefighter to be seen", "Systems that reward rescues produce more fires. Narrating prevention is the way out of that trap that doesn't require you to change how you work."),
+]),
+
+dict(num="69", cat="H", title="I'm Being Asked to Fix a Project I Warned Them About.", time="8 min read",
+hook="Four months ago, you said in writing that the timeline was unrealistic. You were overruled. Now the project is red, the client is angry, and leadership wants you to take it over \"because you're the best at turnarounds.\"",
+situation=[
+"At the pitch review, you flagged the plan. The estimate assumed the client's content would arrive in week one, the integration would be straightforward, and the team would be fully staffed from day one. You put it in an email: this timeline has no buffer and depends on three things we don't control.",
+"The deal was signed on that timeline anyway. Another PM ran it. All three assumptions failed, in roughly the order you predicted.",
+"Now the client is escalating, the team is exhausted, and the original PM is still on the project, demoralised. Leadership asks you to step in. They're complimentary. Nobody mentions the email. You still have your own projects, which are going well and still need you.",
+],
+ideal=[
+"In a healthy organisation, leadership acknowledges that the original plan was flawed and gives the turnaround PM what they need: authority to reset the plan with the client, the right people, and time to stabilise before being judged.",
+"There's also a post-mortem on the original decision. Not to blame anyone, but so the next pitch review takes risk flags more seriously.",
+],
+why=[
+"Because nobody will say you were right. Acknowledging it means acknowledging the decision was wrong, and the people who made it are the people asking you for help.",
+"Because if you say it yourself, you lose the room. \"I told you so\" is true and useless. It makes leadership defensive, humiliates the original PM, and turns your turnaround into a referendum on your judgement.",
+"Because \"turnaround\" often means the same constraints with a new person. Same budget, same date, same team, and now the failure has your name on it. The clock on blame resets the moment you accept.",
+"And because your existing projects won't run themselves. Taking on a red project usually means a green one quietly turns amber.",
+],
+thought=[
+"I'd want to separate two things: being right and being effective. Being right is already done. The email exists. Nothing I say now makes it more true. Being effective is the only thing left to play for.",
+"Then I'd think hard about leverage. The moment I have the most influence is before I say yes. Once I've accepted, every condition I ask for sounds like an excuse. So whatever I need, I ask for now.",
+"What would I need? Authority to reset the plan with the client, including scope and date. A realistic window, say two weeks, to stabilise before anyone expects improvement. Clarity on who covers my current projects. And a decision about the original PM: are they staying, and in what role?",
+"I'd also ask myself whether the request is genuine. Sometimes leadership wants the project fixed. Sometimes they want someone else to be holding it when it fails. The conditions conversation tends to reveal which one it is.",
+],
+options=[
+("Accept with conditions", "Leadership genuinely wants a fix and will give you authority to reset.", "They agree to conditions they don't intend to honour.", "Your current projects' attention, and some personal risk."),
+("Decline, and offer to advise", "Your current projects are critical, or the conditions won't be met.", "Leadership reads it as unwillingness when the company needs you.", "Some political capital, in exchange for not inheriting a failure on bad terms."),
+("Accept unconditionally", "The client relationship is at immediate risk and there's no time to negotiate.", "Almost always, eventually.", "Your leverage, permanently."),
+],
+do=[
+"I'd accept with conditions, and I'd never mention the email.",
+"I'd say something like: I'll take it. To give it a real chance I need three things. Authority to reset scope and timeline with the client in the next two weeks. Someone named to cover my current projects. And agreement that we judge the reset plan, not the old one.",
+"With the original PM, I'd ask them to stay on in a defined role if they want to. They know things I don't, and how I treat them will be watched by the whole team. A turnaround that humiliates the predecessor teaches everyone to hide problems.",
+"Later, when things are stable, I'd suggest that pitch reviews include a short risk sign-off from delivery. Not as a lesson about this project. As a practice for the next one.",
+],
+pull="Being right early only matters if it changes the next decision. It never changes the last one.",
+changed=[
+"The first time this happened to me, I wanted acknowledgement more than I wanted the project to work. I didn't say \"I told you so\", but I made sure people knew. It cost me goodwill I needed for the turnaround itself.",
+"What I've come to believe is that the warning was a contribution to a decision, not a bet I'd won. The decision went the other way. That happens. My job now is the situation in front of me.",
+"The place where being right is useful is in the process, not the person. Asking for a lightweight decision review, so risk flags are recorded and revisited, does more for the next project than any amount of credit for this one.",
+],
+principles=[
+("Leverage is highest before yes", "Conditions asked for before accepting are seen as professional. The same conditions asked for afterwards are seen as excuses."),
+("Hindsight and outcome bias", "Once an outcome is known, everyone overestimates how predictable it was, and judges decisions by results. Pointing that out mid-crisis rarely helps; building it into future reviews does."),
+("Protect the predecessor's dignity", "Teams watch how failure is treated. Turnarounds that humiliate the previous lead teach everyone to hide bad news."),
+("Effective over right", "The email is a historical fact. The only question still open is whether the project recovers."),
+]),
+
+dict(num="70", cat="I", title="The AI Summary Was Accurate and Still Wrong.", time="8 min read",
+hook="The morning brief said the client had confirmed the timeline and had \"minor feedback on screens.\" Every word was true. Buried in the original email was one polite sentence about checking budget implications with their CFO. Nobody saw it for three days.",
+situation=[
+"I built a tool that reads client email threads overnight and posts a short summary to each project's Slack channel. It's genuinely useful. Account leads and PMs start the day knowing what changed, without wading through thirty emails.",
+"On this particular morning, the summary for one account read: client confirmed the timeline; minor feedback on two screens; next review Thursday. All accurate.",
+"What it didn't capture was a single sentence near the end of the client's email: \"We'll need to discuss the budget implications of the revised scope with our CFO before we confirm phase 2.\" Polite, low-key, and the start of a serious commercial conversation. The account lead read the summary, not the email. The CFO conversation happened without us. We found out three days later.",
+],
+ideal=[
+"AI tools should keep a human in the loop. Summaries are an aid, not a replacement. For anything important, people read the source. The tool's prompt can be improved to flag commercial risk explicitly, and the team can be trained on what it might miss.",
+"This is standard advice for any automated reporting: trust it for volume, verify it for anything that matters.",
+],
+why=[
+"Because once a summary exists, nobody reads the source. That's the point of the tool. Telling people to always check the original email defeats the reason they wanted a summary in the first place.",
+"Because summarising and protecting a project are different jobs. A summary keeps the main points. Delivery risk usually lives in the subtext: a hedge, a mention of a new person, a slightly cooler tone. Those are exactly the things a good summary leaves out because they aren't the main point.",
+"Because confident formatting earns trust it hasn't earned. A tidy, bulleted summary reads as complete. It doesn't say \"I may have left out the most important sentence.\" It can't, because it doesn't know which sentence is most important to you.",
+"And \"improve the prompt\" helps, but only a bit. You can tell the model to flag budget mentions. Then the next risk arrives as something you didn't think to list.",
+],
+thought=[
+"I had to ask what the tool was actually for. I'd built it to save reading time. But the account leads were using it as their early-warning system. Those are different design goals, and I'd only designed for the first.",
+"Then I asked what tends to predict trouble in client email. In my experience it's a fairly short list: money, dates, scope, new names, and hedging language like \"we'll need to discuss\" or \"before we confirm.\" Those signals are things a model can spot reliably if you ask it to look for them specifically, rather than asking for a general summary.",
+"The other thing I realised is that paraphrase is where nuance dies. When a summary rewrites \"we'll need to discuss budget implications with our CFO\" as \"next steps on phase 2 pending,\" the meaning hasn't technically changed. The weight has.",
+"So the question became: how do I make the tool surface uncertainty and quote evidence, instead of producing confident conclusions?",
+],
+options=[
+("Change the tool's job from summarise to flag", "The main risk signals can be described clearly.", "Signals are too subtle or too varied to list.", "A redesign, and a slightly noisier output."),
+("Tier the accounts", "A few accounts carry most of the commercial risk.", "Risk shows up in accounts nobody marked as important.", "Reading time on the key accounts, which is what the tool was meant to save."),
+("Keep the tool, train the team on its limits", "The team is small and experienced.", "Training fades and the summary becomes the source of truth again.", "Very little, and very little protection."),
+],
+do=[
+"I did the first two.",
+"The tool now produces two sections. A short summary, as before. Then a section called \"Worth reading in full\" that quotes, word for word, any sentence mentioning money, dates, scope changes, new stakeholders, or hedged commitments, with a link to the original email. No paraphrasing in that section, ever.",
+"For the handful of accounts where commercial risk is highest, the account lead reads the full thread on any day the flag section isn't empty. That keeps the time saving for the quiet days and brings back human reading on the days that matter.",
+"I also added a line at the bottom of every summary: \"This is a summary. It may miss tone and subtext.\" It sounds obvious. It changed how people read it.",
+],
+pull="A summary can be accurate and still drop the one sentence that mattered. Paraphrase is where nuance goes to die.",
+changed=[
+"When I built the tool, I thought accuracy was the bar. If the summary faithfully reflected the email, the tool was working. I tested it for accuracy and it passed.",
+"This incident taught me that the bar is decision-usefulness. Does the person reading it make the right decision? An accurate summary that leads someone to miss a budget conversation has failed, whatever its accuracy score says.",
+"I now test my tools differently. I take real situations where something went wrong, run them through, and check whether the output would have helped someone catch it. That's a much harder test, and a much more honest one.",
+],
+principles=[
+("Summarising is lossy compression", "Every summary decides what to throw away. The question is whether it throws away what you can afford to lose."),
+("Automation bias", "People trust automated output more than they should, especially when it's well formatted. Design has to work against that, not rely on people resisting it."),
+("Subtext is signal", "In client relationships, risk is often expressed politely and indirectly. Tools that keep only the main point strip out the early warnings."),
+("Design for the failure that matters", "Test tools against the mistakes that would hurt most, not against average accuracy. A tool that's right ninety-nine percent of the time and wrong on the one email that mattered isn't good enough."),
+]),
+
+dict(num="71", cat="I", title="Everyone Wants an AI Tool. Nobody Wants to Own It.", time="8 min read",
+hook="One of your tools broke while you were on leave. An API changed, nobody else knew how to fix it, and the team went back to doing things by hand for a week. When you got back, three new tool requests were waiting in your inbox.",
+situation=[
+"It started well. I built a resume screener for a studio with no structured hiring process, and it became the most-used tool in the organisation within weeks. Then a pipeline tracker. Then a few more. Each one solved a real problem, and each one was built in evenings and weekends.",
+"Success created demand. Finance wanted an invoice checker. Sales wanted a proposal generator. Team leads wanted their own dashboards. Everyone was enthusiastic, and nobody asked who would look after these things once they existed.",
+"Then I went on leave. A provider changed an API, one of the hiring tools stopped working, and nobody else knew where the code lived or how to fix it. The team went back to manual screening for a week and quietly decided the tool wasn't reliable. I came back to a broken tool, a dent in trust, and three new requests.",
+],
+ideal=[
+"Internal tools should be treated like products. Each one has a business owner, documentation, a support process, and a maintenance budget. Hosting and security sit with IT. The builder isn't a single point of failure because the knowledge is written down and shared.",
+"This is standard governance for any software an organisation depends on.",
+],
+why=[
+"Because tools built by operations people sit outside IT. They start as experiments, so nobody sets them up as products. By the time they're critical, they're already running on one person's accounts and one person's knowledge.",
+"Because nobody budgets for maintenance. Building gets praised. Maintaining is invisible until it fails. AI tools need more maintenance than people expect: models change, prompts drift, APIs move, keys expire.",
+"Because requesting is easy and owning is not. People want the outcome, not the responsibility. A finance lead wants invoices checked; they don't want to be on the hook when the checker breaks.",
+"And because the builder enjoys building. Saying yes to the next tool is more fun than writing a runbook for the last one. I'm describing myself here.",
+],
+thought=[
+"I had to look at the total cost of ownership honestly. Each tool takes maybe a few evenings to build and then an unknown amount of time, forever, to keep alive. With six tools, that unknown amount was quietly becoming a second job.",
+"Then I asked what ownership really means for an AI tool. It means someone notices when outputs drift. Someone holds the API keys. Someone decides when the prompt needs changing because the business changed. Someone can explain to users what the tool can and can't do. Most of that doesn't need a developer. It needs an accountable person who cares.",
+"I also asked which tools were actually earning their keep. Some had dozens of daily users. Some had been used enthusiastically for a month and then barely touched. Keeping the low-use ones alive was cost without benefit.",
+"And I asked the uncomfortable question: if I left, which of these would survive? The honest answer was none of them.",
+],
+options=[
+("No owner, no build", "Requesters are willing to take responsibility as the price of getting a tool.", "Nobody volunteers and genuinely useful tools never get built.", "Some requests, and some goodwill from people who hear no."),
+("Retire and consolidate", "Usage data shows clear winners and clear losers.", "A low-use tool turns out to be critical for one person at month-end.", "A few unhappy users, for a smaller maintenance burden."),
+("Hand critical tools to IT", "IT has capacity and the tools are important enough to justify it.", "IT sees them as shadow IT and doesn't want them.", "Control, and possibly speed of change."),
+],
+do=[
+"All three, in that order of priority for new work, existing work and critical work.",
+"For any new tool, there's now a simple rule: a named business owner before I build anything. The owner agrees to monitor outputs, report problems, and be the first point of contact for users. I write a one-page runbook at launch: where it lives, what it depends on, how to restart it, what to do if the model's output looks wrong.",
+"For existing tools, I looked at usage and retired the two that weren't being used. The rest got runbooks and owners.",
+"For the two tools the business genuinely depends on, I started a conversation with IT about formal hosting and access. It's slower than doing it myself. That's the point.",
+],
+pull="I used to measure success by tools shipped. Now I measure it by tools that survive my absence.",
+changed=[
+"For a while, the number of tools I'd built was my favourite fact about my own work. It was a good story. Fifteen tools, no developer background, real users.",
+"The week the hiring tool broke while I was away changed what I was proud of. A tool that only works when I'm around isn't an asset to the organisation. It's a dependency on me, wearing a nice interface.",
+"Now the question I ask before building anything is: who looks after this when I'm on holiday? If the answer is nobody, the honest move is to not build it yet.",
+],
+principles=[
+("Bus factor", "The number of people who'd have to disappear before something stops working. For most ops-built AI tools, it's one. That's a risk, however good the tool is."),
+("Total cost of ownership", "Building is the cheap part. AI tools add model changes, prompt drift and API churn to the usual maintenance. Count it before you commit."),
+("Ownership isn't usage", "Lots of people using a tool doesn't mean anyone owns it. Commons without owners degrade."),
+("Write it down", "A one-page runbook turns personal knowledge into organisational knowledge. It's the cheapest risk reduction available."),
+]),
+
+dict(num="72", cat="I", title="The Team Started Writing for the AI Instead of for Each Other.", time="8 min read",
+hook="The AI scores every daily update for clarity and completeness. Scores went up across the team in the first month. Then you noticed the updates had stopped saying anything, and the real blockers had moved into private messages.",
+situation=[
+"The delivery platform asks everyone to post a short daily update: what they did, what's next, what's blocking them. To encourage the habit, it uses AI to score each update on clarity and completeness, and shows a team leaderboard.",
+"At first it worked. Updates became more regular, and more structured. Compliance went up. Leadership liked the dashboard.",
+"Then the updates started to look alike. Longer, smoother, full of phrases like \"aligned with stakeholders\", \"risk mitigated\" and \"blocker resolved.\" Scores kept rising. But when a project slipped, the warning had never appeared in the updates. People had been talking about the real problems in direct messages. The updates had become a performance for the scorer.",
+],
+ideal=[
+"Measurement improves behaviour. Scoring updates encourages discipline, and the scoring rubric can be refined to reward the right things. If people are gaming it, you improve the rubric until gaming stops paying off.",
+"Making participation visible is a reasonable way to build a habit, especially early on.",
+],
+why=[
+"Because once the score is the goal, people write for the scorer. That's Goodhart's law, and it doesn't care how good your rubric is. People are better at learning what a scorer rewards than any rubric is at anticipating them.",
+"Because an AI rubric rewards form more easily than substance. It can tell that an update mentions blockers and next steps. It can't easily tell whether the blocker is real, or whether the next step is the one that matters.",
+"Because the leaderboard made it social. Nobody wants to be at the bottom of a public list. Honest updates, the ones that say \"I'm stuck and I don't know why,\" score lower and feel riskier to post.",
+"And because the audience changed. Updates used to be written for teammates and the PM. Now they're written for an evaluator. When you change who you're writing for, you change what you write.",
+],
+thought=[
+"I had to go back to why the updates existed. They weren't for compliance. They were for communication: so problems surfaced early and people could help each other. The score was meant to support that, and it had started working against it.",
+"Then I asked what the AI was good at here. Not judging usefulness. It's genuinely good at helping someone write a clearer update, prompting them to add a missing blocker, or noticing an update that's vague. That's coaching, not grading.",
+"I also asked who was actually reading the updates. If the honest answer was the AI and the dashboard, that's the real problem. People write carefully when they know a person will read and respond.",
+"And I asked what I should measure instead. Probably something downstream: how early blockers are raised before they cause a delay. That's harder to game, because it depends on what actually happens.",
+],
+options=[
+("Remove the score, keep the AI as an assistant", "The habit is established and no longer needs pushing.", "Participation drops once nobody's counting.", "A metric leadership liked."),
+("Change the rubric to reward specifics", "Specific details (names, dates, numbers) are a reasonable proxy for useful updates.", "People learn to add specifics that don't matter.", "Some time tuning, and probably another round of gaming."),
+("Make scores private feedback, not a leaderboard", "Individuals want to improve and value private coaching.", "Leadership insists on the dashboard.", "Visibility for leadership, in exchange for honesty from the team."),
+],
+do=[
+"I made the scores private and changed what the AI does. Each person gets gentle, private suggestions on their own update, like \"you mentioned a delay but not what's causing it,\" and nobody else sees a number.",
+"I also changed the rubric to reward concrete specifics and penalise stock phrases, knowing that it will need revisiting.",
+"Most importantly, I made sure humans read and respond. PMs reply to updates that mention blockers within the day. When people see that an honest update gets help rather than a lower score, honest updates come back.",
+"For leadership, the dashboard now shows blockers raised and how quickly they were resolved, not individual scores.",
+],
+pull="I believed measuring the updates would improve them. It improved how they looked. What people write depends on who they think is reading.",
+changed=[
+"I built the scoring because I believed that measuring something improves it. In plenty of cases it does. Here, it improved the shape of the updates and hollowed out their content.",
+"What I learned is that measuring an artefact is different from measuring an outcome. The update is an artefact. Problems surfacing early is the outcome. When I scored the artefact, people optimised the artefact.",
+"Now, whenever I'm tempted to add AI scoring to anything people write, I ask two questions first. Who is this person writing for? And what will they do differently once they know a machine is grading it?",
+],
+principles=[
+("Goodhart's law", "When a measure becomes a target, it stops being a good measure. Public AI scores turned a communication habit into a points system."),
+("Campbell's law", "The more a quantitative indicator is used for decisions, the more it distorts the process it was meant to monitor. The leaderboard made the distortion social."),
+("Audience shapes writing", "People write for whoever they believe is reading. Put a scorer in that seat and you get writing for scorers."),
+("Measure outcomes, coach artefacts", "Use AI to help people write better, privately. Measure what happens downstream, where gaming is harder."),
+]),
+]

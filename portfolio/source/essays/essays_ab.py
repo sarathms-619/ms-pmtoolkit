@@ -1,0 +1,283 @@
+ESSAYS_AB = [
+dict(num="04", cat="A", title="The Client Wants More Than They Paid For.", time="9 min read",
+hook="The SOW says twelve page templates. The client's marketing head has just sent a spreadsheet with thirty-one pages on it, each with a column called \"design status\". Nobody on their side thinks they're asking for more. That's the problem.",
+situation=[
+"It's a fixed-fee website redesign. The contract is clear: a design system, twelve page templates, and a content population guide so the client's team can build the rest. Discovery went well. The templates are half done and the work is strong.",
+"Then the marketing head joins the weekly review for the first time. She's been busy with a campaign. She opens her spreadsheet and walks through thirty-one pages, asking when each one will be \"designed\". When you explain the template approach, she looks at the account lead and says, \"But the pitch showed us all of these.\"",
+"She's not wrong. The pitch deck had a beautiful grid of thirty page mockups, labelled as inspiration, built to win the deal. The account lead goes quiet. You've burned forty percent of the budget. By the client's count, you've delivered about twenty-five percent of what they think they bought.",
+],
+ideal=[
+"The SOW is the agreement. It was reviewed and signed by both sides, and it defines the deliverables precisely. When a client's expectation exceeds the contract, the PM walks them back to the document, explains what's included, and offers a change request for anything beyond it.",
+"This protects the margin, the team's time, and the integrity of the commercial relationship. It also teaches the client that the contract means something, which makes every future conversation easier. A clean, early correction is kinder than a vague promise that turns into resentment later.",
+],
+why=[
+"The client didn't form their expectation from the SOW. They formed it from the most vivid thing they saw, which was the pitch. Contracts are read once by procurement. Pitch decks get forwarded to the CEO.",
+"So when you point to the SOW, you're technically right and practically losing. The marketing head hears that the agency is using fine print to give her less than she was shown. The account lead, who made the deck, now has to choose between backing you and protecting the relationship he built. He'll protect the relationship. That's his job.",
+"There's a second, quieter problem. The client isn't negotiating. They genuinely believe this is what they bought. If you treat a misunderstanding like a negotiation, you escalate it into one. Suddenly every review meeting has a scorekeeper.",
+"And the gap was created on our side. That doesn't make it free to fix, but it does mean holding the line with full confidence is harder than the textbook suggests.",
+],
+thought=[
+"The first thing I'd want to separate is the position from the interest. Her position is thirty-one designed pages. Her interest is probably something like: when this site launches, every page needs to look like it belongs to the new brand, and I can't be the person who launched a site with half of it looking unfinished.",
+"Those two things have very different costs. Thirty-one bespoke designs is roughly two and a half times the budget. A site where every page looks designed might be achievable with the templates we're building, plus some extra effort in the right places.",
+"Then I'd ask what actually happens to the remaining nineteen pages under the current plan. If the client's team is going to populate them from templates, do they have the skill and time to do it well? If not, the risk isn't scope. The risk is a launch that looks broken, which hurts both of us.",
+"I'd also want to know how much of the gap is the pitch deck's fault, honestly. If our deck clearly implied thirty designs, I can't pretend it didn't. That doesn't mean we eat the full cost. It means some of the fix is ours to own, and owning it visibly buys credibility for the part that isn't.",
+"The last question is about precedent. Whatever I agree now sets the tone for the remaining sixty percent of the project. If I give everything, every future ask arrives expecting the same. If I give nothing, the client spends the rest of the project feeling short-changed and the feedback rounds get longer and pettier. Both of those cost margin, just in different ways.",
+],
+options=[
+("Hold the line on the SOW", "The relationship is new, the deck clearly said 'inspiration', and the client respects contracts.", "The client feels misled, the account lead disowns the position, and the project turns adversarial.", "Goodwill, and possibly the next project."),
+("Reframe the deliverable around their real interest", "The real concern is a launch that looks consistent. You can meet it with templates, a short content-styling sprint, and a few hero pages done properly.", "The client is anchored on the number thirty-one and treats any reframe as a downgrade.", "Some unbilled effort, which you need to cap and name."),
+("Re-scope commercially", "The client has budget, values the extra pages, and a phase 2 is realistic.", "Budget is fixed for this year and a CR feels like an ambush.", "Time, and the risk of the project pausing while procurement reviews it."),
+],
+do=[
+"I'd go with the reframe, and use it to open the door to the commercial option rather than replace it.",
+"In practice that means a short meeting with the marketing head where I start with her interest, not the contract. Something like: you need every page on launch day to feel like the new brand. Here's how the template system gets you there, here are the five pages we'll design individually because they carry the most traffic, and here's a two-week styling pass where we sit with your team while they build the rest.",
+"I'd be explicit that the five hero pages are beyond the SOW and that we're doing them because the pitch set an expectation we should honour. That makes the generosity visible and puts a number on it. Then the remaining pages, if she still wants them bespoke, become a priced phase 2.",
+"If the client rejects all of that and insists on thirty-one, then it's a commercial conversation, and I'd want the account lead leading it, not me.",
+],
+pull="The SOW is the floor of the conversation, not the whole of it. Clients remember what they were shown, not what they signed.",
+changed=[
+"For years I treated the SOW as the answer to every scope question. If it wasn't written down, it wasn't in. I was right on paper and lost a lot of goodwill being right.",
+"What changed my mind was noticing where the gaps kept coming from. Almost every serious expectation mismatch I've dealt with started before the project did: a pitch mockup, a throwaway line in a sales call, a case study that looked like a promise. The SOW never stood a chance against those.",
+"So now I read the pitch deck before kickoff, the same way I read the SOW. Anything in it that could be mistaken for a commitment gets raised in the first week, in writing, with the client. It's an awkward conversation in week one. It's a much worse one in week eight.",
+],
+principles=[
+("Expectations follow the most vivid artefact", "People anchor on what they saw, not what they read. The pitch beat the contract because it was more memorable, which is the availability heuristic at work."),
+("Separate the position from the interest", "From principled negotiation: the client's position (thirty-one pages) and their interest (a launch that looks finished) have very different costs. Solving the interest is usually cheaper and lands better."),
+("Make concessions visible and priced", "Reciprocity only works when the other side knows they received something. Unlabelled extra work just resets the baseline."),
+("Fix the source, not just the symptom", "If expectations keep breaking in the same place, the problem is upstream. A pitch-to-SOW handover check prevents the next version of this."),
+]),
+
+dict(num="05", cat="A", title="The Client Hasn't Paid the Last Invoice but Wants Work to Continue.", time="9 min read",
+hook="Finance has sent you the same email three times: the Milestone 2 invoice is forty-seven days old. Your client counterpart has sent you a different email: when can we see Milestone 3? Neither of them is talking to the other.",
+situation=[
+"The payment terms are thirty days. The invoice for Milestone 2 went out on time, was acknowledged, and has been \"in process\" with the client's procurement team for seven weeks. Nobody has disputed it. Nobody has paid it either.",
+"Meanwhile, Milestone 3 is due next week. The client's project lead is engaged, friendly, and pushing for an early preview because her leadership wants to see progress. She has no visibility of invoices. As far as she's concerned, the project is going well.",
+"Your finance head wants delivery paused until payment lands. The account director says pausing would be a disaster: this client is a recognisable logo, there's a renewal conversation in two months, and \"they always pay eventually.\" Five people on your team are allocated full time. You're the one who has to decide what they do on Monday.",
+],
+ideal=[
+"The contract covers this. Most service agreements allow the supplier to suspend work when invoices are overdue past a set period, after written notice. Finance sends the notice, the account director informs the client sponsor, and work pauses until payment arrives.",
+"This isn't aggressive; it's what the clause is for. It protects cash flow, signals that the commercial terms matter, and stops the exposure from growing. Organisations that never enforce payment terms tend to become the supplier everyone pays last.",
+],
+why=[
+"The people asking for the work aren't the people holding the money. The client's project lead can't pay the invoice and probably doesn't know it exists. If you pause, you punish the one person on their side who wants you to succeed, and you make her look bad in front of her leadership.",
+"Pausing also doesn't stop your costs. The five people still get paid. They sit on the bench, or get pulled onto other work and then aren't available when payment lands and the client wants to restart immediately. A pause can cost you more than the invoice is worth.",
+"And there's the logo. Account directors are measured on revenue and renewals. Finance is measured on cash. Delivery is measured on, well, delivery. Each of them is right inside their own scoreboard, which is why this conversation goes in circles.",
+"Finally, \"in process\" can mean three very different things: slow procurement, a budget problem on their side, or quiet dissatisfaction with Milestone 2. Each needs a completely different response, and nobody has asked which one it is.",
+],
+thought=[
+"I'd start by working out what kind of problem this actually is. A slow payer is an admin problem. A client who can't pay is a commercial risk. A client who won't pay because they're unhappy is a delivery problem wearing a finance costume. Those three look identical from the invoice ageing report.",
+"So the first move is a question, not a decision. I'd ask the client lead directly, privately and without accusation: is there anything about Milestone 2 that isn't sitting right? Sometimes that question surfaces a concern nobody raised. If it does, I'd much rather know now.",
+"Then I'd put a number on the exposure. Outstanding invoice plus work in progress plus next month's burn. If that number is small relative to the account, the risk is manageable for a while. If it's approaching a month of the studio's margin, the conversation changes.",
+"I'd also want to know whether the client lead can help. She's probably better placed than our finance team to find out where the invoice is stuck. Champions are often happy to chase their own procurement once they understand that it's blocking the thing they care about.",
+"What I'm trying to protect is the relationship and the cash at the same time. What I'm willing to give up is some short-term comfort: I'd rather have a slightly awkward conversation now than a pause that surprises everyone.",
+],
+options=[
+("Pause formally", "Exposure is high, payment history is poor, or there are signs the client can't pay.", "The client lead is blindsided, the renewal sours, and restarting costs more than the delay saved.", "Relationship capital, and idle team cost during the pause."),
+("Continue with a dated trigger and a cap", "It's slow procurement, the champion can help, and exposure is moderate.", "The date passes, nobody acts on it, and you've trained the client that deadlines are soft.", "Some risk, in exchange for momentum and goodwill."),
+("Continue the work, hold the release", "The deliverables are files or code you can show without handing over.", "The client needs the assets in production, or sees it as hostage-taking.", "A slightly tense review, and a clear signal without stopping the team."),
+],
+do=[
+"I'd combine the second and third options, and I'd make sure the client lead hears about it from me before she hears about it from anyone else.",
+"I'd call her and say, plainly: our Milestone 2 invoice has been with your procurement team for seven weeks. I know that's not your area, but it's started to affect what I can commit. Can you help me find out where it's stuck? Then I'd agree a date with her, usually ten working days.",
+"Work continues. Milestone 3 gets reviewed with the client on schedule. But final files and source assets for Milestones 2 and 3 are released when payment clears, and I'd say that in writing with the date attached.",
+"If the date passes with no payment and no explanation, I'd support finance's pause, with notice, and the client lead would already know why.",
+],
+pull="An unpaid invoice is often the first written evidence of a problem nobody has said out loud.",
+changed=[
+"I used to treat payment as entirely finance's business. My job was the work; their job was the money. If they wanted to chase, they could chase.",
+"What changed that was a project where an invoice sat unpaid for two months and we kept delivering. When it finally came out, the client sponsor had been unhappy with a deliverable all along and had quietly stopped approving payments as a protest. Nobody had told us. The invoice was the only signal, and we'd ignored it because it wasn't ours.",
+"Now I look at the receivables list for my projects every month. Not because I'm chasing cash, but because late payment is delivery information. It tells me something about the client's budget, their process, or their satisfaction, usually before anyone says it.",
+],
+principles=[
+("Diagnose before you decide", "The same symptom (late payment) has three different causes with three different treatments. Acting before you know which one you're facing is how good relationships get damaged by correct policies."),
+("Quantify the exposure", "Risk decisions get easier when the risk has a number. Outstanding invoice plus work in progress plus next month's burn turns an argument about principle into a decision about tolerance."),
+("Use the champion as a channel", "The client lead has internal access you don't. Most people are willing to help unblock something that's blocking them, once they understand the link."),
+("Incentives explain the stalemate", "Finance, sales and delivery are each optimising their own measure. Naming that out loud stops the conversation being about who cares more about the company."),
+]),
+
+dict(num="08", cat="A", title="The Client Wants Us to Absorb the Cost Because \"We'll Recover It Later.\"", time="9 min read",
+hook="The project is eighteen percent over effort, most of it caused by the client's own delays. Their head of digital has a solution: absorb it now, because phase 2 is worth three times as much and you'll make it back. Your sales director is nodding.",
+situation=[
+"It's a design and build engagement, phase 1 of a programme that everyone has been calling \"multi-year\" since the pitch. Phase 1 has run long: content arrived six weeks late, two stakeholders rewrote the requirements after sign-off, and the client's IT team took a month to grant access to their environments.",
+"You've tracked all of it. The overrun is real, documented, and mostly not your fault. When you raise it, the client's head of digital is gracious about the delays and then makes his offer. \"Let's not get stuck on this. Phase 2 is three times the size. Absorb it here and you'll recover it there.\"",
+"Your sales director likes the sound of a three-times-bigger phase 2. What nobody mentions is that phase 2 isn't signed, its budget isn't approved, and the person making the promise isn't the one who will sign it.",
+],
+ideal=[
+"Client-caused delays are a change in circumstances, and the contract usually has a mechanism for them. The PM documents the cause, quantifies the impact, and raises a change request. The client approves it or negotiates it down. Either way, the cost is visible and agreed.",
+"Future work is priced on its own merits when it's ready to be contracted. Mixing the two blurs accountability: phase 1 should stand on its own, and phase 2 should be won fairly, not bought with an IOU.",
+],
+why=[
+"Because the client is being reasonable, and saying no to a reasonable-sounding offer from a senior stakeholder feels like choosing a fight. He's acknowledged the delays. He's offering a path forward. Pushing a change request after that can look petty.",
+"And the sales director has a pipeline target. A three-times phase 2 is worth a lot more to him than a change request on phase 1. His instinct is to keep the client happy and protect the big number.",
+"The trouble is that \"later\" has no owner. Phase 2 will be negotiated by procurement, probably with a competitive bid. The head of digital may not be in the room. He may not be at the company. And nobody in procurement will see a line that says \"credit owed to the agency for phase 1.\"",
+"There's also an anchoring effect nobody's thinking about. If you absorb the overrun, phase 1's effective rate drops. That lower rate becomes the reference point when phase 2 gets priced. You don't recover the cost later. You make the next project cheaper too.",
+],
+thought=[
+"The question I keep coming back to is: who is holding this promise, and what happens to it if they leave? A verbal assurance from one person isn't an asset. It's a hope with a name attached.",
+"Then I'd try to be honest about the probability. How likely is phase 2, really? Is it in their budget cycle? Has anyone above the head of digital mentioned it? If I'd put the odds at sixty percent, then \"absorb it now\" means giving up a certain cost for an uncertain recovery, and an uncertain recovery that will be negotiated by someone else.",
+"I'd also want to separate the relationship from the money. It's possible to be generous and still keep score. Generosity that's documented is a gift. Generosity that isn't documented is just a discount nobody remembers giving.",
+"Finally, I'd ask what we're trying to buy with this. If the honest answer is goodwill for phase 2, then the goodwill has to be visible to the people deciding phase 2. If it isn't, we're paying for something we won't receive.",
+],
+options=[
+("Absorb it, but record it as an investment", "The client will put it in writing: the amount, the reason, and how it's credited if phase 2 goes ahead.", "The client won't document it, which tells you how much the promise is worth.", "The full overrun now, with a real (if uncertain) route to recovery."),
+("Split the cost", "Both sides contributed to the delay, or the relationship needs a visible gesture.", "Splitting becomes the default for every future overrun.", "Half the overrun, and a precedent you'll need to manage."),
+("Decline, and offer a cheaper way to finish", "Phase 2 is unlikely or distant, and phase 1 can be completed within budget by trimming low-value scope.", "The client sees descoping as punishment and the relationship cools.", "Some scope, in exchange for a clean commercial position."),
+],
+do=[
+"I'd go with the first option if, and only if, the client will write it down. That's the test. I'd send a short note after the meeting: phase 1 overran by this amount for these reasons; we've agreed to absorb it now as an investment in the programme; if phase 2 is contracted, it will be credited against the first invoice. Then I'd ask him to confirm by reply.",
+"If he confirms, the IOU has an owner and a paper trail. If he won't put it in writing, I'd move to splitting the cost, and I'd say why as gently as I could: I can't carry an unwritten commitment on a project this size.",
+"Either way, I'd want the sales director in the loop and agreeing to the approach before we reply. He should own the commercial decision with me, not after me.",
+],
+pull="A promise without an owner decays. \"We'll recover it later\" is only worth what someone is willing to write down today.",
+changed=[
+"I've been on the absorbing side of this more than once, and I believed it every time. The client was sincere. The phase 2 was real, as far as anyone knew.",
+"In my experience, the recovery almost never happened as promised. Sometimes phase 2 went to tender and we won it at a lower rate. Sometimes the person who promised it moved on. Once, phase 2 happened with a different agency, and the credit we were owed simply didn't exist anywhere outside my memory.",
+"None of those people were acting in bad faith. Organisations just don't remember favours. People do, and people change jobs. So I've stopped treating \"later\" as a commercial term. It's a sentiment. I'm happy to accept sentiments, but I price them at zero until they're on paper.",
+],
+principles=[
+("Promises need owners", "An informal commitment is only as durable as the person who made it. Writing it down transfers it from a person to the organisation."),
+("Anchoring", "Whatever rate phase 1 effectively runs at becomes the reference for phase 2. Discounts don't stay in the past; they set expectations for the future."),
+("Expected value beats optimism", "A certain cost traded for a sixty-percent chance of partial recovery, negotiated by someone else, is rarely a good trade. Putting even rough numbers on it makes that visible."),
+("Visible generosity builds trust; invisible generosity just resets the price", "Reciprocity depends on the other side knowing they received something. If it isn't documented, it isn't remembered."),
+]),
+
+dict(num="13", cat="B", title="A Designer Finished Early. Another Project Is Burning.", time="8 min read",
+hook="It's Tuesday. One of your designers has just finished her screens four days ahead of plan. Ten minutes later, the PM on another project asks if he can borrow her for a week. Her own PM says absolutely not. Both of them are looking at you.",
+situation=[
+"Project A is in good shape. The designer has delivered every screen for the current milestone, early and well. The client review is on Thursday, and there's a feedback round scheduled for the following week.",
+"Project B is not in good shape. They've lost a sprint to a requirements change and are now trying to fit two sprints of UI into one. The PM has done the maths and needs a strong visual designer for five days. Project A's designer is the obvious choice.",
+"Project A's PM pushes back hard. The last time someone borrowed one of her people \"for a week\", they came back a month later. Thursday's feedback might be heavy. And the designer herself hasn't been asked. She's been looking forward to a slightly quieter week to tidy up the design system she's been neglecting.",
+],
+ideal=[
+"This is exactly what resource management exists for. Capacity is a shared studio asset, not a project's property. When one project has spare capacity and another has a shortfall, the resource manager moves people to where the value is highest, based on priority and the plan.",
+"A good capacity plan shows the free days, the priority call is made transparently, and the move is temporary with a clear return date. Hoarding people is a known anti-pattern, and the job of delivery leadership is to break it.",
+],
+why=[
+"Because \"finished early\" is rarely finished. Those four days aren't idle time. They're the buffer that absorbs whatever comes back from Thursday's review. Take them away, and Project A's risk goes up in exactly the week the client is paying closest attention.",
+"Project A's PM isn't hoarding for the sake of it. She's been burned before. The loan turned into a transfer, nobody told her, and she had to explain a delay to her client. Her resistance is a rational response to an organisation that doesn't return what it borrows.",
+"There's also the designer. If finishing early means you immediately get thrown onto a burning project, she learns that early finishes are punished. Next time she'll finish on the day, exactly. So will everyone who watched it happen.",
+"And context switching isn't free. Five days on Project B includes a day of getting up to speed, and a day of getting back into Project A afterwards. The week you lend is really three productive days.",
+],
+thought=[
+"The first thing I'd want to know is what Project B actually needs. Is it five days of a designer, or is it one specific problem that only a strong visual designer can solve? If it's the second, maybe she can solve it in two days instead of five.",
+"Then, what's the real risk on Project A? When is the feedback coming, how heavy is it likely to be, and who else could handle a first pass on it? If Thursday's review is low-risk, the buffer is less precious. If the client has a history of big feedback rounds, it's more precious than it looks.",
+"I'd ask whether Project B's problem has a non-person solution. Can the sprint be re-sequenced? Can a scope item move to the next release? Borrowing a person is the most expensive fix, because it moves risk from one project to another rather than reducing it.",
+"And I'd ask the designer. Not as a formality, but because she knows things I don't: how settled her screens are, what she thinks Thursday will bring, whether she has the energy for a burning project this week. People who are asked tend to say yes more often, and mean it.",
+],
+options=[
+("Lend her fully, with a written return date", "Project A's review is low-risk, and Project B's deadline is genuinely critical.", "Thursday's feedback is heavy and she's not available to handle it.", "Project A's buffer, and some of its PM's trust."),
+("Split her time with protected return", "Project B needs a specific problem solved rather than a week of production.", "The split turns into constant switching and neither project gets her best work.", "Some efficiency, in exchange for keeping both risks manageable."),
+("Don't move her; fix Project B another way", "Project B's problem can be solved by re-sequencing or a scope change.", "There's no scope flexibility and the deadline is fixed.", "Project B's PM has a harder week, and possibly a difficult client conversation."),
+],
+do=[
+"I'd start with the designer, then go with a split if she's comfortable with it.",
+"Concretely: three days on Project B, starting tomorrow, focused on the specific screens that unblock their sprint. Back on Project A by Friday morning, in time to digest Thursday's review notes, with a calendar block that nobody can book over. I'd tell both PMs the return date in the same message, so it's one commitment rather than two private ones.",
+"I'd also say something to the designer about the early finish itself. Publicly, in the team channel. Finishing early should be visibly appreciated, even when it leads to being asked for help.",
+"If Project B's problem turned out to be scope rather than capacity, I'd spend the time on that conversation instead.",
+],
+pull="Slack isn't waste. It's the capacity a system uses to absorb the things nobody planned for.",
+changed=[
+"I used to see free capacity as a problem to solve. If someone had a quiet afternoon, I'd find something for them. Idle time felt like money leaking out of the studio.",
+"Two things changed that. The first was watching how fast the most reliable people learned to pace their work so they were never visibly free. Within months, nobody finished early anymore. The work didn't get slower; it just stopped getting faster.",
+"The second was understanding a bit of queueing theory. Systems running at full utilisation can't absorb variation, so every small surprise becomes a delay. A bit of slack is what lets a project survive a heavy feedback round without missing a date. These days I'm more suspicious of a team with zero free time than of one with a little.",
+],
+principles=[
+("Slack is capacity", "Queueing theory is blunt about this: as utilisation approaches one hundred percent, waiting time grows sharply. Buffer isn't inefficiency; it's what keeps lead times stable."),
+("Parkinson's law and student syndrome", "Work expands to fill the time available, and people start late when deadlines feel distant. Punishing early finishes teaches both behaviours."),
+("Return what you borrow", "Resource-sharing only works in an organisation that keeps its promises. Every honoured return date makes the next loan easier to agree."),
+("Ask the person", "The individual being moved has information and agency that a capacity plan doesn't capture. Asking costs a minute and changes the outcome."),
+]),
+
+dict(num="14", cat="B", title="Half My Team Is on Leave During the Most Important Sprint.", time="8 min read",
+hook="Sprint planning, three weeks before launch. Someone opens the team calendar to check a date and goes quiet. Four of eight people are on approved leave for most of the next sprint, the one that has to deliver everything the launch depends on.",
+situation=[
+"The leave was approved months ago, by line managers, through the HR system. It's a festival week. People have flights booked to see family. Nobody did anything wrong by booking it.",
+"The launch date was set by the client's marketing team, who have a campaign going live that week with paid media already bought. The date has been communicated to their leadership as fixed.",
+"The project plan assumed a full team for this sprint, because whoever built the plan didn't cross-check the leave calendar. You're now discovering it in sprint planning, with three weeks to go. Someone on the team, trying to help, says: \"I'll take my laptop, I can check in.\"",
+],
+ideal=[
+"Leave should be visible in the capacity plan from the moment it's approved. Sprints are planned on actual availability, and velocity is reduced accordingly. If the reduced capacity can't deliver the committed scope, the PM goes to the client early with options: reduce scope or move the date.",
+"Approved leave is not up for negotiation. Sustainable pace is a core agile principle for a reason. Teams that skip recovery pay for it later in mistakes, attrition and burnout.",
+],
+why=[
+"Because the leave calendar and the project plan live in different systems, owned by different people. Line managers approve leave against their own team's needs, not against every project's critical path. Nobody connects them unless someone deliberately does.",
+"Because the client's date isn't the client PM's to move. Paid media is booked. The campaign manager has already told her boss. Asking to move the date now isn't a scope conversation; it's asking them to unwind commitments they've made to their own leadership.",
+"And because the easiest path is the worst one. Asking people to cancel leave, or accepting their offer to \"check in\", feels like a small favour. It isn't. Half-present people make decisions without context, interrupt the people who stayed, and come back tired. Everyone else learns that leave is conditional.",
+"Meanwhile, the four people who are around get quietly loaded with double the work, and the overtime gets borrowed from a future sprint that doesn't know it's been mortgaged.",
+],
+thought=[
+"The first question is what the launch actually requires. Not the full sprint backlog, but the minimum that has to be live for the campaign to work. Usually that's a much shorter list than the sprint plan, because sprint plans include a lot of things that are nice to have on day one.",
+"Then I'd look at who's away and what they know. If the only person who understands the payment integration is on leave, that's a different problem from losing four interchangeable people. Knowledge concentration matters more than headcount here.",
+"I'd ask whether the date is really fixed or just expensive to move. Paid media can sometimes shift by a week. A soft launch to a smaller audience might satisfy the campaign while the full release follows.",
+"And I'd decide up front what I won't do. I won't ask anyone to cancel leave. I'll say that out loud at the start of the conversation, so nobody offers out of guilt and nobody feels they have to.",
+],
+options=[
+("Cut scope to fit the team you have", "The launch has a clear minimum, and the client accepts phased features.", "Everything is labelled 'must have' and the client won't prioritise.", "Some day-one features, and possibly a harder client conversation."),
+("Add temporary help for a specific gap", "One role is the constraint, and someone from another project or a freelancer can step into it.", "The work needs deep context and onboarding eats the time you saved.", "Onboarding effort, and capacity borrowed from elsewhere."),
+("Move or split the launch", "The campaign can shift, or a soft launch serves its purpose.", "Paid media is locked and the client's leadership has committed publicly.", "Client goodwill, and possibly their internal credibility."),
+],
+do=[
+"I'd lead with scope, add one targeted person if a specific gap demands it, and keep the date if those two together make it realistic.",
+"Before anyone leaves, I'd run proper handovers, especially for anyone holding knowledge nobody else has. I'd ask them to write down the three things most likely to go wrong in their area while they're away, and who to call instead of them.",
+"Then I'd go to the client within forty-eight hours with a launch scope that the available team can deliver well, and a follow-up release date for the rest. I'd frame it around the campaign's needs, not our constraints.",
+"And I'd agree with the people going on leave that they are not on call. Genuinely not. If something breaks, we deal with it. That promise has to be kept, or the next leave conversation gets harder.",
+],
+pull="Asking someone to cancel their leave is a small request that costs a large amount of trust.",
+changed=[
+"Early on, I asked someone to cut a holiday short for a launch. She said yes immediately, came back, and the launch went fine. I thought I'd handled it well.",
+"She left about six months later. In her exit conversation she mentioned, without any drama, that the cancelled trip was the moment she decided the job wasn't going to change. I hadn't connected the two at all.",
+"The other lesson was less personal and more embarrassing. The problem wasn't the leave. It was that I'd discovered it in sprint planning instead of six weeks earlier. Now the leave calendar is part of every monthly capacity review, and major dates get checked against it before they're committed to a client. It's a ten-minute check that would have saved that whole situation.",
+],
+principles=[
+("Brooks's law", "Adding people late to a project can make it later, because onboarding takes time from the people already doing the work. Temporary help has to be targeted to be useful."),
+("Plan with the calendar you have", "Capacity plans that ignore leave aren't plans. The most reliable fix is procedural: cross-check leave before committing dates."),
+("Sustainable pace", "Recovery isn't a perk. Teams that skip it make more mistakes and lose people. The cost shows up later, which is exactly why it's tempting to ignore."),
+("The psychological contract", "People trade effort for an unwritten set of expectations, including that approved leave is safe. Breaking that contract, even once, changes how much discretionary effort you get afterwards."),
+]),
+
+dict(num="66", cat="B", title="My Team Is Context Switching Between Four Projects.", time="8 min read",
+hook="Every designer in the studio is allocated across three or four projects. Utilisation is at ninety-five percent. Every project is on track, more or less. And somehow nothing seems to finish.",
+situation=[
+"On the resourcing sheet, it looks efficient. Six designers, each split across three or four projects at twenty-five or thirty percent. No one is on the bench. Every client has a named designer. The utilisation chart is the healthiest it's been all year.",
+"In the studio, it feels different. Designers start their mornings scrolling back through four Slack channels to work out what changed overnight. Each project has its own stand-up, its own review, its own client call. The calendar has more meetings in it than design time.",
+"Every project PM believes they have a quarter of a designer. In practice, each of them is getting whatever's left after the loudest project has taken its share. Delivery dates are slipping by a few days at a time, across the board, and nobody can point to why.",
+],
+ideal=[
+"Fractional allocation is normal in agencies. Not every project needs a full-time designer, and splitting people across work lets the studio serve more clients with the same team. The resource plan sets the split, PMs respect it, and utilisation targets make sure nobody's time is wasted.",
+"With good planning, a designer at twenty-five percent on four projects can contribute meaningfully to all four. The tools exist: shared calendars, clear priorities, defined working hours for each project.",
+],
+why=[
+"Because the split on the sheet isn't the split in reality. Twenty-five percent assumes the work arrives evenly and politely. It doesn't. It arrives in bursts, with deadlines, and whoever shouts loudest gets the morning.",
+"Because switching has a cost that the sheet doesn't record. Every switch means rebuilding context: what did the client say, where did I leave this file, what changed. The commonly quoted rule of thumb is that each extra concurrent project eats around a fifth of a person's productive time. With four projects, a large share of the day is spent getting ready to work.",
+"Because the meeting load multiplies. Four projects means four stand-ups, four weekly reviews, four sets of client calls. The designer's day gets cut into pieces too small for deep design work.",
+"And because fractional allocation is often a commercial decision dressed as a resourcing one. It lets sales sell more projects than there are people. Utilisation looks excellent, which makes it very hard to argue with.",
+],
+thought=[
+"I'd want to look at a different number. Not utilisation, but how long things take to get done. How many days from a task starting to a task finishing? If that number is growing while utilisation stays high, the studio is busy but slow, which is the classic sign of too much work in progress.",
+"Then I'd look at the shape of each project's demand. Some projects need steady attention every day. Others need intense bursts followed by quiet weeks while the client reviews. Mixing those types on one person is manageable. Putting four steady-attention projects on one person isn't.",
+"I'd ask whether some work could be sequenced instead of parallelised. If two projects each need two weeks of a designer, doing them one after the other finishes both sooner than doing them at the same time at half speed. That's counterintuitive for clients, who like seeing activity, but it's usually true.",
+"And I'd ask the designers. They know exactly which combinations of projects are painful and which ones aren't. That knowledge rarely makes it into the resource plan.",
+],
+options=[
+("Time-block by day", "Projects can live with a designer being unavailable on certain days.", "Clients expect same-day responses and every project claims an exception.", "Some responsiveness, in exchange for real focus time."),
+("Cap concurrency at two projects per person", "The studio has enough people to reorganise into small pods.", "Sales has sold more projects than the cap allows.", "A short-term reshuffle and some client handovers."),
+("Sequence new work with a studio WIP limit", "New projects can start a week or two later without commercial damage.", "Every new client is promised an immediate start.", "Slower starts, in exchange for faster finishes."),
+],
+do=[
+"I'd start with time-blocking this week, because it needs no permission and helps immediately. Monday and Tuesday for one project, Wednesday morning for another, and so on. Client calls get moved into each project's block wherever possible.",
+"Over the next month, I'd work towards a cap of two projects per person for anyone doing deep design work. That's a resourcing conversation with sales, and I'd bring data to it: cycle times before and after time-blocking, and a list of slipped dates.",
+"For new work, I'd propose a simple studio rule: a new project doesn't start until a designer has capacity to give it focused time. That's the hardest one to agree, and the most valuable.",
+],
+pull="A studio running at ninety-five percent utilisation isn't efficient. It's full. Those are different things.",
+changed=[
+"I used to treat high utilisation as the clearest sign of a healthy studio. It was the number I reported first. When it dipped, I worried; when it was high, I relaxed.",
+"What changed was sitting with a designer for a day, on a project review, and watching how much of her time went to switching. She wasn't slow. She was constantly re-entering work. Her day had six beginnings and no middle.",
+"Now I report cycle time alongside utilisation, and I get more nervous when utilisation is very high, not less. I've written before about whether 100% utilisation hurts delivery. Context switching is the specific mechanism by which it does.",
+],
+principles=[
+("Little's law", "Average lead time equals work in progress divided by throughput. If throughput is fixed, more work in progress means everything takes longer. You can't escape this with better spreadsheets."),
+("Switching has a cost", "Every additional concurrent project consumes some of a person's time in context recovery. Allocation sheets that ignore it overstate real capacity."),
+("Flow efficiency over resource efficiency", "Keeping every person busy is not the same as keeping work moving. Lean operations optimise for the work, not the worker's utilisation."),
+("Goodhart's law", "When utilisation becomes the target, the studio optimises for looking busy. The measure stops telling you what you wanted it to."),
+]),
+]
