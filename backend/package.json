@@ -1,0 +1,16 @@
+{
+  "name": "pm-toolkit-api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --port 8787",
+    "deploy": "wrangler deploy",
+    "db:init:local": "wrangler d1 execute pm-toolkit-db --local --file=schema.sql",
+    "db:init": "wrangler d1 execute pm-toolkit-db --remote --file=schema.sql",
+    "upload:local": "bash scripts/upload-files.sh --local",
+    "upload": "bash scripts/upload-files.sh --remote"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

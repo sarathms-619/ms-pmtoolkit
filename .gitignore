@@ -1,0 +1,5 @@
+node_modules/
+backend/.wrangler/
+__pycache__/
+*.pyc
+.DS_Store

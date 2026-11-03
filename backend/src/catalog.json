@@ -1,0 +1,3576 @@
+{
+ "version": 1,
+ "sample": {
+  "org": "Halcyon Outfitters",
+  "project": "Project Lighthouse: Omnichannel Customer Platform",
+  "note": "Sample data. Fictional company and people. Replace before use."
+ },
+ "documents": [
+  {
+   "id": "business-case",
+   "title": "Business Case",
+   "file": "business-case.docx",
+   "format": "docx",
+   "kind": "Document",
+   "phase": "Initiation",
+   "summary": "Why the project is worth doing: options, costs, benefits, NPV and the decision you need.",
+   "inside": [
+    "Executive summary and funding ask",
+    "Options analysis (including do nothing)",
+    "3-year cash flow, NPV, IRR, payback",
+    "Benefits with baselines and owners",
+    "Risks and recommendation"
+   ],
+   "when": {
+    "create": "Before funding approval, after the idea is shaped enough to cost (typically 2-4 weeks before the investment committee).",
+    "update": "At each stage gate, and whenever cost or benefits move by more than 10%.",
+    "cadence": "Per stage gate"
+   },
+   "how": [
+    "Start from the decision you need and work backwards",
+    "Show at least three options, including do nothing",
+    "Get Finance to validate the cost model and discount rate",
+    "Run a sensitivity check: what if benefits are 40% lower?",
+    "Keep the main body to 6-8 pages; put workings in an appendix"
+   ],
+   "who": {
+    "owner": "Executive Sponsor",
+    "author": "Project / Program Manager",
+    "contributors": "Finance, Product, Tech Lead, benefit owners",
+    "approver": "Investment committee or Sponsor"
+   },
+   "what": [
+    "Cost estimates and funding ask",
+    "Benefit values and timing",
+    "NPV / payback after any change",
+    "Option recommendation if circumstances change"
+   ],
+   "mistake": "Writing it to justify a decision already made. If no option could ever lose, reviewers stop trusting it.",
+   "plain": "The argument for spending the money: what it costs, what we get back, and why this option beats the others.",
+   "like": "Like comparing quotes before a home renovation and working out whether it adds enough value to the house.",
+   "without": "Money gets spent on projects nobody can later prove were worth it.",
+   "size": 40823
+  },
+  {
+   "id": "project-charter",
+   "title": "Project Charter",
+   "file": "project-charter.docx",
+   "format": "docx",
+   "kind": "Document",
+   "phase": "Initiation",
+   "summary": "Formally authorises the project and the PM: objectives, scope, milestones, budget, governance.",
+   "inside": [
+    "Purpose and background",
+    "SMART objectives and success measures",
+    "In / out of scope",
+    "Milestones and budget summary",
+    "Governance, roles and tolerances",
+    "Sign-off block"
+   ],
+   "when": {
+    "create": "Immediately after the business case is approved, before the team mobilises.",
+    "update": "Only through approved change requests that alter objectives, scope boundaries, budget envelope or governance.",
+    "cadence": "Rarely: it is the anchor"
+   },
+   "how": [
+    "Keep it to 3-5 pages",
+    "Lift objectives and budget from the approved business case",
+    "Write scope as lists of deliverables, not activities",
+    "Set explicit tolerances (cost, time) and who can approve changes",
+    "Walk the sponsor through it in person before asking for a signature"
+   ],
+   "who": {
+    "owner": "Project Manager",
+    "author": "Project Manager",
+    "contributors": "Sponsor, Product Owner, Tech Lead",
+    "approver": "Executive Sponsor"
+   },
+   "what": [
+    "Version and change history",
+    "Scope boundaries after approved CRs",
+    "Budget envelope after approved CRs",
+    "Governance names when people change"
+   ],
+   "mistake": "Treating it as paperwork. A charter without tolerances means every slip becomes a negotiation.",
+   "plain": "The official 'go ahead' for the project. It says what we will deliver, by when, for how much, and who is in charge.",
+   "like": "Like the signed agreement with a builder before work starts.",
+   "without": "People disagree later about what was promised, and the project manager has no authority to make calls.",
+   "size": 41285
+  },
+  {
+   "id": "stakeholder-register",
+   "title": "Stakeholder Register",
+   "file": "stakeholder-register.xlsx",
+   "format": "xlsx",
+   "kind": "Tracker",
+   "phase": "Initiation",
+   "summary": "Everyone affected by the project, how much they matter, and the engagement plan for each.",
+   "inside": [
+    "Interest and influence scores with calculated quadrant",
+    "Attitude and current vs desired engagement",
+    "Key needs and concerns",
+    "Influence / interest grid chart",
+    "Drop-downs for consistent scoring"
+   ],
+   "when": {
+    "create": "Week 1, before kickoff invitations go out.",
+    "update": "Monthly, plus after re-organisations, new phases or a stakeholder changes role.",
+    "cadence": "Monthly"
+   },
+   "how": [
+    "Brainstorm with the sponsor: who gains, who loses, who can block",
+    "Score interest and influence 1-5; the quadrant calculates",
+    "Write their actual concern in their words",
+    "Plan actions for every row where current engagement is below desired",
+    "Keep it private: it holds candid judgements"
+   ],
+   "who": {
+    "owner": "Project Manager",
+    "author": "Project Manager",
+    "contributors": "Sponsor, Delivery Manager, change lead",
+    "approver": "None (working document)"
+   },
+   "what": [
+    "Attitude and engagement level",
+    "New or departed stakeholders",
+    "Key concerns raised since last review",
+    "Communication frequency"
+   ],
+   "mistake": "Listing names and never scoring attitude. The value is in spotting the gap between current and desired engagement.",
+   "plain": "A list of everyone the project affects or who can affect it, how much they care, and how we'll keep them on side.",
+   "like": "Like a wedding planner's guest list with notes on who needs special attention.",
+   "without": "Someone important gets surprised late and blocks or delays the work.",
+   "size": 10708
+  },
+  {
+   "id": "raci-matrix",
+   "title": "RACI Matrix",
+   "file": "raci-matrix.xlsx",
+   "format": "xlsx",
+   "kind": "Tracker",
+   "phase": "Initiation",
+   "summary": "Who is Responsible, Accountable, Consulted and Informed for each key activity.",
+   "inside": [
+    "14 activities x 10 roles",
+    "Automatic check: exactly one A per row",
+    "Colour-coded R/A/C/I with drop-downs"
+   ],
+   "when": {
+    "create": "During mobilisation, before the first sprint or work package starts.",
+    "update": "When roles change, a vendor joins, or a decision gets stuck because nobody owns it.",
+    "cadence": "Per phase"
+   },
+   "how": [
+    "List decisions and deliverables, not daily tasks",
+    "Exactly one Accountable per row (the check column flags errors)",
+    "Limit C's: every C is a meeting or a review cycle",
+    "Review it live with all named roles so they agree, not just see it"
+   ],
+   "who": {
+    "owner": "Project Manager",
+    "author": "Project Manager",
+    "contributors": "All role holders",
+    "approver": "Delivery Manager / Sponsor"
+   },
+   "what": [
+    "Role holders after changes",
+    "New activities (e.g. vendor added)",
+    "Rows where reality differs from the plan"
+   ],
+   "mistake": "Two A's on one row. Shared accountability means nobody is accountable.",
+   "plain": "A grid that shows, for each task, who does it, who signs it off, who gets asked, and who just gets told.",
+   "like": "Like a household chore chart that also says who checks the job was done.",
+   "without": "Work falls between the cracks, or two people both think they're in charge.",
+   "size": 7732
+  },
+  {
+   "id": "project-management-plan",
+   "title": "Project Management Plan",
+   "file": "project-management-plan.docx",
+   "format": "docx",
+   "kind": "Document",
+   "phase": "Planning",
+   "summary": "How the project will be run: approach, scope, schedule, cost, quality, risk, resources, comms and vendors.",
+   "inside": [
+    "Delivery approach and definition of done",
+    "Scope, schedule and cost control with tolerances",
+    "Quality, risk and resource management",
+    "Vendor management clauses",
+    "Governance calendar"
+   ],
+   "when": {
+    "create": "During planning; baselined at the design / planning gate.",
+    "update": "When the approach changes (e.g. moving to agile build) or after a re-baseline.",
+    "cadence": "Per phase / re-baseline"
+   },
+   "how": [
+    "Describe how you will manage, not the work itself",
+    "Link to the detailed logs instead of copying their content",
+    "State numeric thresholds: what triggers escalation",
+    "Scale it: 5 pages for a small project, 20 for a regulated one"
+   ],
+   "who": {
+    "owner": "Project Manager",
+    "author": "Project Manager",
+    "contributors": "Delivery Manager, Tech Lead, QA Lead, Finance",
+    "approver": "Delivery Manager or Sponsor"
+   },
+   "what": [
+    "Tolerances and thresholds",
+    "Governance forums and attendees",
+    "Methods and tools",
+    "Baseline version references"
+   ],
+   "mistake": "A 60-page plan no one reads. If it does not change behaviour, cut it.",
+   "plain": "The rulebook for running the project: how we'll track time, money, quality and risk, and when we escalate.",
+   "like": "Like the house rules a team agrees before a long trip: who drives, who books, what happens if we're late.",
+   "without": "Everyone runs things their own way and problems get escalated too late, or not at all.",
+   "size": 40372
+  },
+  {
+   "id": "project-schedule-gantt",
+   "title": "Project Schedule (Gantt)",
+   "file": "project-schedule-gantt.xlsx",
+   "format": "xlsx",
+   "kind": "Tracker",
+   "phase": "Planning",
+   "summary": "Integrated WBS schedule with a self-drawing weekly Gantt, status-date line and milestone tracker.",
+   "inside": [
+    "WBS with owners, dates, % complete and predecessors",
+    "Phase roll-ups calculated",
+    "Gantt bars that redraw from dates",
+    "Milestone tab with baseline vs forecast variance"
+   ],
+   "when": {
+    "create": "During planning, once scope and the delivery approach are agreed.",
+    "update": "Weekly: % complete and forecast dates. Baseline only through change control.",
+    "cadence": "Weekly"
+   },
+   "how": [
+    "Build top-down from deliverables (WBS), then sequence",
+    "Keep tasks between 1 and 4 weeks for tracking",
+    "Get estimates from the people doing the work",
+    "Mark the critical path and milestones",
+    "Update forecast dates honestly; never overwrite the baseline"
+   ],
+   "who": {
+    "owner": "Project Manager",
+    "author": "Project Manager / PMO scheduler",
+    "contributors": "Workstream leads",
+    "approver": "Delivery Manager (baseline)"
+   },
+   "what": [
+    "% complete per task",
+    "Forecast start/finish",
+    "New dependencies",
+    "Milestone variance against baseline"
+   ],
+   "mistake": "Updating the baseline every week so variance is always zero. Then you can't see slippage.",
+   "plain": "The timeline: every piece of work with start and end dates, drawn as bars so you can see what overlaps and what is late.",
+   "like": "Like a wedding-day timeline, but stretched over months.",
+   "without": "Nobody can see that a delay in one task will push back everything after it.",
+   "size": 10919
+  },
+  {
+   "id": "budget-evm-tracker",
+   "title": "Budget and EVM Tracker",
+   "file": "budget-evm-tracker.xlsx",
+   "format": "xlsx",
+   "kind": "Tracker",
+   "phase": "Planning",
+   "summary": "Monthly planned value, earned value and actual cost with CPI, SPI, EAC, TCPI and an S-curve.",
+   "inside": [
+    "Monthly and cumulative PV / EV / AC",
+    "SV, CV, SPI, CPI with RAG",
+    "EAC (two methods), VAC, TCPI",
+    "Budget vs forecast by cost category",
+    "S-curve and category charts"
+   ],
+   "when": {
+    "create": "At baseline, once the schedule and cost estimate are agreed.",
+    "update": "Monthly, after finance close (working day 3-5). Forecast monthly; actuals from the ledger.",
+    "cadence": "Monthly"
+   },
+   "how": [
+    "Spread budget over time to get PV",
+    "Earn value only for measurable progress (0/50/100 rule for small tasks)",
+    "Take actuals from finance, not timesheets alone",
+    "Explain every variance over 5% in one line",
+    "Forecast at completion with judgement, not just the formula"
+   ],
+   "who": {
+    "owner": "Project Manager",
+    "author": "Project Manager / PMO analyst",
+    "contributors": "Finance Business Partner, vendor",
+    "approver": "Delivery Manager; Finance for forecast"
+   },
+   "what": [
+    "Monthly actuals (AC)",
+    "Earned value from % complete",
+    "Forecast at completion by category",
+    "Variance commentary"
+   ],
+   "mistake": "Using % spent as % complete. EV must come from delivered work, otherwise CPI is always 1.0.",
+   "plain": "Tracks money: what we planned to spend by now, what we actually spent, and how much work that money really got done.",
+   "like": "Like checking a renovation: half the budget is gone, but is half the house finished?",
+   "without": "Overspending is noticed only when the money runs out.",
+   "size": 14353
+  },
+  {
+   "id": "resource-capacity-plan",
+   "title": "Resource and Capacity Plan",
+   "file": "resource-capacity-plan.xlsx",
+   "format": "xlsx",
+   "kind": "Tracker",
+   "phase": "Planning",
+   "summary": "FTE demand by role and month against capacity, with labour cost and over-allocation flags.",
+   "inside": [
+    "Demand by role and month",
+    "Capacity tab with automatic red flags where demand > capacity",
+    "Cost from day rates",
+    "Stacked demand vs capacity chart"
+   ],
+   "when": {
+    "create": "During planning, alongside the schedule and budget.",
+    "update": "Monthly, and when a role is added, a person leaves, or the schedule moves.",
+    "cadence": "Monthly"
+   },
+   "how": [
+    "Plan by role first, then name people",
+    "Get capacity from line managers net of leave and BAU work",
+    "Resolve every red cell: hire, re-sequence, or descope",
+    "Reconcile labour cost with the budget tracker"
+   ],
+   "who": {
+    "owner": "Delivery Manager",
+    "author": "Project Manager",
+    "contributors": "Line managers, vendor, resource manager",
+    "approver": "Delivery Manager"
+   },
+   "what": [
+    "FTE per role per month",
+    "Available capacity",
+    "Named people",
+    "Rates when contracts change"
+   ],
+   "mistake": "Planning people at 100%. Real productive capacity is 70-80% after meetings and support.",
+   "plain": "Shows how many people of each kind we need each month, compared with how many we actually have.",
+   "like": "Like a restaurant rota: are there enough chefs on Saturday night?",
+   "without": "Some people are overloaded and burn out while work waits for skills nobody booked.",
+   "size": 11875
+  },
+  {
+   "id": "communication-plan",
+   "title": "Communication Plan",
+   "file": "communication-plan.xlsx",
+   "format": "xlsx",
+   "kind": "Tracker",
+   "phase": "Planning",
+   "summary": "What is communicated, to whom, why, how often, in what format and by whom.",
+   "inside": [
+    "8 standard communications from stand-up to SteerCo",
+    "Audience, purpose, format, frequency, owner, channel"
+   ],
+   "when": {
+    "create": "During planning, right after the stakeholder register.",
+    "update": "At each phase change and when stakeholders say they are over- or under-informed.",
+    "cadence": "Per phase"
+   },
+   "how": [
+    "Derive audiences from the stakeholder register",
+    "Every 'manage closely' stakeholder must appear at least once",
+    "Name a single owner for each communication",
+    "Prefer fewer, regular communications over ad hoc emails"
+   ],
+   "who": {
+    "owner": "Project Manager",
+    "author": "Project Manager",
+    "contributors": "Change lead, Sponsor",
+    "approver": "Sponsor (for executive communications)"
+   },
+   "what": [
+    "Audiences and frequency",
+    "Owners",
+    "Channels (new tools, new forums)"
+   ],
+   "mistake": "A plan full of broadcasts. Include two-way forums where stakeholders can push back.",
+   "plain": "Who gets told what, how often and how: weekly emails, monthly meetings, team huddles.",
+   "like": "Like a school's calendar of parent newsletters and meetings.",
+   "without": "Some people feel ignored, others are flooded with updates, and rumours fill the gap.",
+   "size": 7114
+  },
+  {
+   "id": "benefits-register",
+   "title": "Benefits Register",
+   "file": "benefits-register.xlsx",
+   "format": "xlsx",
+   "kind": "Tracker",
+   "phase": "Planning",
+   "summary": "Benefits from the business case with baseline, target, latest actual, owner and measurement date.",
+   "inside": [
+    "Benefit, measure, baseline, target, actual",
+    "% of target calculated (works for up or down measures)",
+    "Business owner and review date"
+   ],
+   "when": {
+    "create": "With the business case; refined during planning.",
+    "update": "At each gate, then at post-go-live review points (e.g. 30, 90, 180 days).",
+    "cadence": "Quarterly after go-live"
+   },
+   "how": [
+    "Measure the baseline before work starts",
+    "Assign each benefit to a business owner, not the PM",
+    "Separate enabling benefits (e.g. single customer view) from financial ones",
+    "Agree the data source for each measure now"
+   ],
+   "who": {
+    "owner": "Executive Sponsor",
+    "author": "Project / Program Manager",
+    "contributors": "Benefit owners, Finance, Data team",
+    "approver": "Sponsor"
+   },
+   "what": [
+    "Latest actual values",
+    "Status and confidence",
+    "Target dates if the business changes"
+   ],
+   "mistake": "No baseline. Without a 'before' number, no 'after' number proves anything.",
+   "plain": "The list of good things the project promised (faster service, more sales) with how we'll measure them and who checks.",
+   "like": "Like noting your electricity bill before installing solar panels, so you can prove the saving afterwards.",
+   "without": "The project finishes but nobody can show it delivered what it promised.",
+   "size": 7763
+  },
+  {
+   "id": "raid-log",
+   "title": "RAID Log",
+   "file": "raid-log.xlsx",
+   "format": "xlsx",
+   "kind": "Tracker",
+   "phase": "Execution",
+   "summary": "Risks, Assumptions, Issues, Dependencies and Decisions in one workbook with heat map and summary.",
+   "inside": [
+    "Summary tab with live counts",
+    "Risks with 5x5 scoring and automatic heat map",
+    "Issues with days-open ageing",
+    "Assumptions, dependencies (inbound/outbound) and decision log"
+   ],
+   "when": {
+    "create": "At kickoff. Seed it from the charter's risks and assumptions.",
+    "update": "Weekly review with workstream leads; add items the day they are found.",
+    "cadence": "Weekly"
+   },
+   "how": [
+    "Write risks as cause, event and effect",
+    "Score probability and impact 1-5; escalate at the thresholds",
+    "Every item gets an owner and a next action date",
+    "Close risks that can no longer happen",
+    "Log decisions the day they are made"
+   ],
+   "who": {
+    "owner": "Project Manager",
+    "author": "Project Manager",
+    "contributors": "All workstream leads, vendor",
+    "approver": "None; escalations go to Program Manager / SteerCo"
+   },
+   "what": [
+    "New items",
+    "Scores and trend",
+    "Mitigation progress and status",
+    "Dependency dates with other teams"
+   ],
+   "mistake": "A risk log that only grows. If nothing closes, it's not being managed.",
+   "plain": "One place to track what might go wrong (Risks), what we're taking for granted (Assumptions), what is going wrong (Issues), what we're waiting on (Dependencies), and what we decided (Decisions).",
+   "like": "Like a ship captain's log of hazards ahead, problems on board and decisions made.",
+   "without": "Known problems are forgotten until they explode, and old decisions get argued again.",
+   "size": 17153
+  },
+  {
+   "id": "change-log",
+   "title": "Change Log",
+   "file": "change-log.xlsx",
+   "format": "xlsx",
+   "kind": "Tracker",
+   "phase": "Execution",
+   "summary": "Every change request with cost and schedule impact, status and running revised budget.",
+   "inside": [
+    "CR register with type, impact and status",
+    "Net approved impact and pending totals",
+    "Revised budget calculated"
+   ],
+   "when": {
+    "create": "At baseline.",
+    "update": "Whenever a CR is raised or decided.",
+    "cadence": "As changes occur"
+   },
+   "how": [
+    "Log every request, including rejected ones",
+    "Link each row to its CR form",
+    "Feed approved impacts into the schedule and budget"
+   ],
+   "who": {
+    "owner": "Project Manager",
+    "author": "Project Manager",
+    "contributors": "Requesters",
+    "approver": "Per change authority limits"
+   },
+   "what": [
+    "New CRs",
+    "Status and decision date",
+    "Approved totals into the baseline"
+   ],
+   "mistake": "Absorbing small changes without logging them. Twenty small changes become a large overrun nobody approved.",
+   "plain": "A running list of every request to change the plan and whether it was approved, with the extra cost and time.",
+   "like": "Like the list of extras added to a building contract: 'add a window: +$800, +2 days'.",
+   "without": "Lots of small extras add up to a big overrun nobody agreed to.",
+   "size": 7642
+  },
+  {
+   "id": "change-request-form",
+   "title": "Change Request Form",
+   "file": "change-request-form.docx",
+   "format": "docx",
+   "kind": "Document",
+   "phase": "Execution",
+   "summary": "One change, fully assessed: reason, impact on scope/time/cost/quality, options, funding and decision.",
+   "inside": [
+    "Change description and reason",
+    "Impact on scope, schedule, cost, quality, benefits, other projects",
+    "Options with recommendation",
+    "Funding source and decision block"
+   ],
+   "when": {
+    "create": "When a change exceeds the PM's tolerance (e.g. cost > $10k or schedule > 5 days).",
+    "update": "Until decided; then frozen.",
+    "cadence": "Per change"
+   },
+   "how": [
+    "Quantify all four constraints even when zero",
+    "Always show alternatives you rejected",
+    "Say where the money comes from",
+    "Get impact estimates from the people who will do the work"
+   ],
+   "who": {
+    "owner": "Requester",
+    "author": "Project Manager",
+    "contributors": "Tech Lead, Finance, affected leads",
+    "approver": "Per change authority: PM / Program Manager / SteerCo"
+   },
+   "what": [
+    "Impact assessment",
+    "Decision, conditions and date"
+   ],
+   "mistake": "Presenting a single option. Approvers need a real choice, or they will ask for one and delay.",
+   "plain": "The form used to ask for one change to the plan. It explains why, what it will cost, and what the alternatives are, so someone can decide.",
+   "like": "Like asking your builder for a quote before agreeing to move a wall.",
+   "without": "Changes slip in through hallway conversations and nobody owns the consequences.",
+   "size": 39943
+  },
+  {
+   "id": "weekly-status-report",
+   "title": "Weekly Status Report",
+   "file": "weekly-status-report.docx",
+   "format": "docx",
+   "kind": "Report",
+   "phase": "Monitoring",
+   "summary": "One-page weekly status: RAG by dimension, summary, metrics, milestones, top risks and asks.",
+   "inside": [
+    "RAG for overall, schedule, cost, scope, quality, resources",
+    "Three-sentence summary",
+    "Key metrics with trend",
+    "Done / next week",
+    "Milestones, top risks and issues",
+    "Decisions and support needed"
+   ],
+   "when": {
+    "create": "From week 1.",
+    "update": "Every week, same day (e.g. Friday noon).",
+    "cadence": "Weekly"
+   },
+   "how": [
+    "Write the summary last, for someone who reads nothing else",
+    "RAG against tolerances, not gut feel",
+    "Every Amber/Red has a recovery action and owner",
+    "End with specific asks and dates",
+    "Pull numbers from the trackers; don't retype"
+   ],
+   "who": {
+    "owner": "Project Manager",
+    "author": "Project Manager",
+    "contributors": "Workstream leads (by Thursday)",
+    "approver": "Delivery Manager reviews before distribution"
+   },
+   "what": [
+    "RAG and summary",
+    "Metrics",
+    "Accomplishments and plan",
+    "Top risks and asks"
+   ],
+   "mistake": "Watermelon reporting: green outside, red inside. Report Amber early; Red surprises cost trust.",
+   "plain": "A one-page weekly update: are we on track (green, amber or red), what got done, what's next, and what help we need.",
+   "like": "Like a weekly school report for the project.",
+   "without": "Leaders find out about problems from rumours, or too late to help.",
+   "size": 40864
+  },
+  {
+   "id": "steering-committee-deck",
+   "title": "Steering Committee Deck",
+   "file": "steering-committee-deck.pptx",
+   "format": "pptx",
+   "kind": "Deck",
+   "phase": "Monitoring",
+   "summary": "7-slide SteerCo pack: executive summary, milestones, EVM chart, risks, decision with options, asks.",
+   "inside": [
+    "RAG tiles and decision-first summary",
+    "Milestone table",
+    "Native PowerPoint EVM chart (editable)",
+    "Top 5 risks",
+    "Change decision with three options",
+    "Asks and next 30 days"
+   ],
+   "when": {
+    "create": "Before the first SteerCo.",
+    "update": "Monthly (or per SteerCo), sent 2 working days before.",
+    "cadence": "Monthly"
+   },
+   "how": [
+    "Title each slide with the message, not the topic",
+    "Put the decision on slide 2",
+    "Pre-wire: brief each member 1:1 before the meeting",
+    "Keep detail in the appendix"
+   ],
+   "who": {
+    "owner": "Project Manager",
+    "author": "Project Manager",
+    "contributors": "Delivery Manager, Finance, Tech Lead",
+    "approver": "Sponsor reviews before circulation"
+   },
+   "what": [
+    "Status and RAG",
+    "Financials",
+    "Risks",
+    "Decisions requested"
+   ],
+   "mistake": "Using SteerCo to report status. Its job is decisions; status can be read beforehand.",
+   "plain": "Slides for the monthly meeting with senior leaders who make the big decisions about the project.",
+   "like": "Like a board meeting pack: short, focused on the decisions needed.",
+   "without": "Big decisions get delayed because leaders don't have what they need to decide.",
+   "size": 46903
+  },
+  {
+   "id": "steering-committee-minutes",
+   "title": "Steering Committee Minutes",
+   "file": "steering-committee-minutes.docx",
+   "format": "docx",
+   "kind": "Document",
+   "phase": "Monitoring",
+   "summary": "Decision-focused minutes: attendees, summary, decisions with IDs, actions with owners and dates.",
+   "inside": [
+    "Attendees and apologies",
+    "Agenda",
+    "Discussion summary",
+    "Numbered decisions",
+    "Action table with status"
+   ],
+   "when": {
+    "create": "Within 24 hours of each SteerCo.",
+    "update": "Action status at the next meeting.",
+    "cadence": "Per meeting"
+   },
+   "how": [
+    "Record decisions and actions, not a transcript",
+    "One owner and one date per action",
+    "Copy decisions into the RAID decision log",
+    "Get the chair to confirm before wide circulation"
+   ],
+   "who": {
+    "owner": "Sponsor (chair)",
+    "author": "Project Manager or PMO",
+    "contributors": "Attendees",
+    "approver": "Chair"
+   },
+   "what": [
+    "Action status",
+    "Decisions into the RAID log"
+   ],
+   "mistake": "Actions owned by 'the team'. Without a named owner nothing happens.",
+   "plain": "The written record of what senior leaders decided in their meeting and who will do what by when.",
+   "like": "Like the minutes of a residents' association meeting.",
+   "without": "People remember decisions differently and agreed actions never happen.",
+   "size": 39853
+  },
+  {
+   "id": "project-health-dashboard",
+   "title": "Project Health Dashboard",
+   "file": "project-health-dashboard.xlsx",
+   "format": "xlsx",
+   "kind": "Dashboard",
+   "phase": "Monitoring",
+   "summary": "One-screen view: KPI tiles (SPI, CPI, % complete, EAC, days to go-live), RAG by dimension, charts.",
+   "inside": [
+    "KPI tiles calculated from a Data tab",
+    "RAG by dimension with comments",
+    "Next milestones",
+    "S-curve, velocity and risk charts",
+    "Decisions needed"
+   ],
+   "when": {
+    "create": "Once baseline and trackers exist.",
+    "update": "Weekly (RAG) and monthly (financials).",
+    "cadence": "Weekly"
+   },
+   "how": [
+    "Feed it from the trackers, never type numbers twice",
+    "Limit to what drives decisions: 6 KPIs, 3 charts",
+    "Show trend, not just a snapshot"
+   ],
+   "who": {
+    "owner": "Project Manager",
+    "author": "PMO analyst / PM",
+    "contributors": "Finance (EVM), Scrum Master (velocity)",
+    "approver": "Delivery Manager"
+   },
+   "what": [
+    "Data tab values",
+    "RAG comments",
+    "Decisions needed"
+   ],
+   "mistake": "A dashboard with 30 metrics. If everything is shown, nothing stands out.",
+   "plain": "A single page of the most important numbers and colours that show at a glance how healthy the project is.",
+   "like": "Like a car dashboard: speed, fuel and warning lights in one view.",
+   "without": "People have to dig through many files to know if something is wrong.",
+   "size": 13673
+  },
+  {
+   "id": "agile-sprint-metrics",
+   "title": "Agile Sprint Metrics",
+   "file": "agile-sprint-metrics.xlsx",
+   "format": "xlsx",
+   "kind": "Dashboard",
+   "phase": "Monitoring",
+   "summary": "Velocity, say/do ratio, scope added, rolling average forecast and a daily sprint burndown.",
+   "inside": [
+    "Sprint table with say/do % and 3-sprint rolling average",
+    "Sprints-to-finish forecast",
+    "Velocity and burndown charts"
+   ],
+   "when": {
+    "create": "At sprint 1.",
+    "update": "Daily (burndown) and at each sprint review (velocity).",
+    "cadence": "Per sprint"
+   },
+   "how": [
+    "Use the rolling average, not the best sprint, to forecast",
+    "Track scope added mid-sprint separately",
+    "Never compare velocity across teams"
+   ],
+   "who": {
+    "owner": "Scrum Master / Delivery Manager",
+    "author": "Scrum Master",
+    "contributors": "Product Owner, team",
+    "approver": "None"
+   },
+   "what": [
+    "Committed / completed points",
+    "Daily remaining points",
+    "Remaining backlog size"
+   ],
+   "mistake": "Turning velocity into a target. Teams will inflate estimates and the forecast breaks.",
+   "plain": "Tracks how much work the team finishes in each two-week cycle (a 'sprint'), so we can predict when the rest will be done.",
+   "like": "Like tracking how many kilometres you run each week to predict when you'll be ready for a marathon.",
+   "without": "Delivery dates are guesses, and teams take on more than they can finish.",
+   "size": 12829
+  },
+  {
+   "id": "quality-delivery-metrics",
+   "title": "Quality and Delivery Metrics",
+   "file": "quality-delivery-metrics.xlsx",
+   "format": "xlsx",
+   "kind": "Dashboard",
+   "phase": "Monitoring",
+   "summary": "DORA measures, test coverage, pass rate, escaped defects with sparklines, plus defect trend by severity.",
+   "inside": [
+    "8 KPIs with target, 4-month trend, direction and auto RAG",
+    "Sparklines",
+    "Defects found by severity vs closed, with backlog"
+   ],
+   "when": {
+    "create": "When build starts.",
+    "update": "Monthly (KPIs); weekly during test phases (defects).",
+    "cadence": "Monthly / weekly in test"
+   },
+   "how": [
+    "Automate data pulls from CI/CD and test tools where possible",
+    "Look at 3-month trends before acting",
+    "Agree targets with the tech lead, not top-down"
+   ],
+   "who": {
+    "owner": "QA Lead",
+    "author": "QA Lead / Tech Lead",
+    "contributors": "DevOps, Scrum Master",
+    "approver": "Tech Lead"
+   },
+   "what": [
+    "Monthly metric values",
+    "Defects found / closed by severity"
+   ],
+   "mistake": "Celebrating a high test pass rate when coverage is low. Measure both.",
+   "plain": "Measures how good and how reliable the software work is: how often it's released, how often releases break, how many bugs are found.",
+   "like": "Like a factory tracking defects per batch and how quickly the line restarts after a stoppage.",
+   "without": "Quality problems surface only when customers find them.",
+   "size": 11317
+  },
+  {
+   "id": "program-portfolio-dashboard",
+   "title": "Program / Portfolio Dashboard",
+   "file": "program-portfolio-dashboard.xlsx",
+   "format": "xlsx",
+   "kind": "Dashboard",
+   "phase": "Monitoring",
+   "summary": "All projects in one view: RAG by dimension, budget vs actual, SPI/CPI, next milestone, high risks.",
+   "inside": [
+    "Row per project with RAG, financials and indices",
+    "Program totals and weighted % complete",
+    "RAG doughnut and budget vs actual chart"
+   ],
+   "when": {
+    "create": "When the program or PMO is set up.",
+    "update": "Weekly (each PM updates their row by a fixed time).",
+    "cadence": "Weekly"
+   },
+   "how": [
+    "Use the same RAG definitions on every project",
+    "Make PMs own their rows; PMO checks consistency",
+    "Red projects need a recovery plan within 5 working days"
+   ],
+   "who": {
+    "owner": "Program Manager / PMO lead",
+    "author": "PMO analyst",
+    "contributors": "All project managers",
+    "approver": "Program Manager"
+   },
+   "what": [
+    "Each project's row",
+    "Program totals",
+    "Cross-project risks"
+   ],
+   "mistake": "Different RAG rules per project, so the portfolio view compares apples with oranges.",
+   "plain": "One view of several related projects together, so leaders can see which need attention.",
+   "like": "Like an air-traffic control screen showing every plane at once.",
+   "without": "Leaders can't compare projects or spot a struggling one in time.",
+   "size": 11060
+  },
+  {
+   "id": "uat-signoff-certificate",
+   "title": "UAT Sign-off Certificate",
+   "file": "uat-signoff-certificate.docx",
+   "format": "docx",
+   "kind": "Document",
+   "phase": "Execution",
+   "summary": "Formal business acceptance: test results by area, open defects with workarounds, criteria and conditions.",
+   "inside": [
+    "Execution summary by area",
+    "Open defects with workaround and fix date",
+    "Acceptance criteria met / not met",
+    "Conditional acceptance statement",
+    "Signatures"
+   ],
+   "when": {
+    "create": "Before UAT starts (criteria); completed at UAT exit.",
+    "update": "Frozen after sign-off.",
+    "cadence": "Per release"
+   },
+   "how": [
+    "Agree acceptance criteria before testing begins",
+    "List every open defect with a workaround",
+    "Make conditions explicit and dated",
+    "Signatories are business owners, not the project team"
+   ],
+   "who": {
+    "owner": "Product Owner / business owner",
+    "author": "QA Lead",
+    "contributors": "UAT testers, PM",
+    "approver": "Business owners"
+   },
+   "what": [
+    "Test results",
+    "Open defects",
+    "Conditions"
+   ],
+   "mistake": "Asking for sign-off on criteria nobody agreed in advance. Then sign-off becomes a negotiation.",
+   "plain": "The business's formal 'yes, this works for us' after real users have tested the new system.",
+   "like": "Like the final walk-through of a new house before you accept the keys.",
+   "without": "A system goes live that the people using it never agreed was ready.",
+   "size": 39906
+  },
+  {
+   "id": "go-no-go-checklist",
+   "title": "Go/No-Go Checklist",
+   "file": "go-no-go-checklist.docx",
+   "format": "docx",
+   "kind": "Document",
+   "phase": "Execution",
+   "summary": "Readiness criteria across product, operations, people and data, with owners and the final decision.",
+   "inside": [
+    "Criteria grouped by product, operations, people, data",
+    "Ready? Yes/No with owner and evidence",
+    "Decision with conditions"
+   ],
+   "when": {
+    "create": "4-6 weeks before go-live.",
+    "update": "Daily in go-live week; final at the decision meeting.",
+    "cadence": "Daily in final week"
+   },
+   "how": [
+    "Agree criteria early so the meeting is a check, not a debate",
+    "Every criterion needs evidence, not opinion",
+    "A 'No' on a mandatory item is a no-go unless the sponsor accepts the risk in writing"
+   ],
+   "who": {
+    "owner": "Delivery Manager",
+    "author": "Project Manager",
+    "contributors": "All readiness owners",
+    "approver": "Executive Sponsor"
+   },
+   "what": [
+    "Readiness status",
+    "Evidence links",
+    "Decision"
+   ],
+   "mistake": "Deciding go-live by momentum. Have the courage to say no-go when criteria are missed.",
+   "plain": "The final checklist before launch. Each item must be 'yes' before we switch the new system on.",
+   "like": "Like a pilot's pre-flight checklist.",
+   "without": "Launch happens because the date arrived, not because everything was ready.",
+   "size": 39580
+  },
+  {
+   "id": "cutover-runbook",
+   "title": "Cutover Runbook",
+   "file": "cutover-runbook.xlsx",
+   "format": "xlsx",
+   "kind": "Tracker",
+   "phase": "Execution",
+   "summary": "Minute-by-minute go-live plan with owners, checks, go/no-go points and a rollback plan.",
+   "inside": [
+    "Sequenced steps with planned time, duration, owner, check",
+    "Live actual times and status",
+    "Go/no-go checkpoints highlighted",
+    "Rollback tab with point of no return"
+   ],
+   "when": {
+    "create": "6-8 weeks before go-live.",
+    "update": "After each rehearsal; live during cutover.",
+    "cadence": "Per rehearsal / live"
+   },
+   "how": [
+    "Rehearse at least twice with real data volumes",
+    "Define the point of no return",
+    "Each step has a verifiable check",
+    "Have a single cutover lead calling steps"
+   ],
+   "who": {
+    "owner": "Technical Lead / Cutover manager",
+    "author": "Technical Lead",
+    "contributors": "Data, QA, vendor, business verifiers",
+    "approver": "Delivery Manager"
+   },
+   "what": [
+    "Step timings from rehearsals",
+    "Actual start/end and status during cutover"
+   ],
+   "mistake": "No rollback rehearsal. A rollback you have never run is a hope, not a plan.",
+   "plain": "The step-by-step script for launch weekend: who does what, at what time, how we check it worked, and how to undo it if needed.",
+   "like": "Like a stage manager's cue sheet for opening night.",
+   "without": "Launch night becomes improvised, and nobody knows how to roll back if it fails.",
+   "size": 8907
+  },
+  {
+   "id": "lessons-learned-report",
+   "title": "Lessons Learned Report",
+   "file": "lessons-learned-report.docx",
+   "format": "docx",
+   "kind": "Document",
+   "phase": "Closure",
+   "summary": "What went well and what to improve, with impact, concrete recommendations and owners to embed them.",
+   "inside": [
+    "Method used to gather lessons",
+    "Summary of top themes",
+    "Lessons register with type",
+    "Actions to embed lessons"
+   ],
+   "when": {
+    "create": "Start at kickoff; collect at each retrospective and gate.",
+    "update": "Consolidated at closure.",
+    "cadence": "Ongoing; final at closure"
+   },
+   "how": [
+    "Collect throughout, not just at the end",
+    "Use a blameless format",
+    "Each lesson needs a recommendation and an owner",
+    "Send it to the PMO, not a shared drive nobody opens"
+   ],
+   "who": {
+    "owner": "Project Manager",
+    "author": "Project Manager",
+    "contributors": "Whole team, key stakeholders",
+    "approver": "Program Manager / PMO"
+   },
+   "what": [
+    "New lessons each sprint / phase",
+    "Actions to embed lessons"
+   ],
+   "mistake": "'Communication could be better.' A lesson must be specific enough to change what the next project does.",
+   "plain": "What went well and what didn't, written down so the next project does better.",
+   "like": "Like a sports team reviewing match footage.",
+   "without": "The organisation repeats the same mistakes on every project.",
+   "size": 40102
+  },
+  {
+   "id": "project-closure-report",
+   "title": "Project Closure Report",
+   "file": "project-closure-report.docx",
+   "format": "docx",
+   "kind": "Report",
+   "phase": "Closure",
+   "summary": "Final results against baseline, objectives and early benefits, handover, open items and financial closure.",
+   "inside": [
+    "Performance against baseline (time, cost, scope, quality)",
+    "Objectives and early benefits",
+    "Deliverables handed over",
+    "Open items transferred with owners",
+    "Financial closure and sign-off"
+   ],
+   "when": {
+    "create": "At the end of hypercare / transition.",
+    "update": "Frozen after Gate 4 approval.",
+    "cadence": "Once"
+   },
+   "how": [
+    "Compare to the original baseline and to approved changes",
+    "Hand every open item to a named owner",
+    "Close POs and release unused contingency",
+    "Hand benefits tracking to the business"
+   ],
+   "who": {
+    "owner": "Project Manager",
+    "author": "Project Manager",
+    "contributors": "Finance, Ops, Product Owner",
+    "approver": "Executive Sponsor"
+   },
+   "what": [
+    "Final actuals",
+    "Handover confirmations",
+    "Sign-off"
+   ],
+   "mistake": "Closing without handing over benefits tracking. Then nobody ever proves the business case.",
+   "plain": "The final report: what was delivered compared with what was promised, what's been handed over, and confirmation the project can close.",
+   "like": "Like the final handover pack when you move out of a rented flat.",
+   "without": "Loose ends stay open, money stays committed and nobody owns what's left.",
+   "size": 40294
+  }
+ ],
+ "projectCategories": [
+  {
+   "id": "software-digital",
+   "name": "Software & Digital Products",
+   "plain": "Building or changing apps, websites and software products that customers or staff use.",
+   "types": [
+    {
+     "id": "agile-product-build",
+     "name": "Agile product build",
+     "plain": "A team builds a new app or product in short two-week cycles, showing working pieces as they go and adjusting based on feedback.",
+     "examples": "New mobile app, customer portal, internal tool",
+     "method": "Scrum or Kanban",
+     "duration": "3-12 months",
+     "team": "5-15 people",
+     "docs": [
+      {
+       "doc": "project-charter",
+       "priority": "Essential",
+       "when": "Before sprint 0. Keep it light: vision, outcomes, budget envelope, team.",
+       "note": "Describe outcomes, not a fixed feature list: the backlog holds the detail."
+      },
+      {
+       "doc": "stakeholder-register",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "raci-matrix",
+       "priority": "Recommended",
+       "when": null,
+       "note": "Focus on decision rights between Product Owner, Tech Lead and business."
+      },
+      {
+       "doc": "agile-sprint-metrics",
+       "priority": "Essential",
+       "when": "From sprint 1; update daily (burndown) and at every sprint review.",
+       "note": "This is your primary progress tracker in agile delivery."
+      },
+      {
+       "doc": "raid-log",
+       "priority": "Essential",
+       "when": "Review at sprint planning, not in a separate meeting.",
+       "note": null
+      },
+      {
+       "doc": "weekly-status-report",
+       "priority": "Recommended",
+       "when": "Fortnightly, after each sprint review, can replace weekly.",
+       "note": "Link to the sprint review demo recording."
+      },
+      {
+       "doc": "quality-delivery-metrics",
+       "priority": "Recommended",
+       "when": null,
+       "note": "DORA measures matter most here: release frequency and change failure rate."
+      },
+      {
+       "doc": "budget-evm-tracker",
+       "priority": "Recommended",
+       "when": "Monthly. Use cost per sprint as PV if scope is fluid.",
+       "note": "In agile, earn value per completed story points vs planned points."
+      },
+      {
+       "doc": "benefits-register",
+       "priority": "Recommended",
+       "when": null,
+       "note": "Tie benefits to product metrics (activation, retention, conversion)."
+      },
+      {
+       "doc": "change-log",
+       "priority": "Optional",
+       "when": null,
+       "note": "Backlog reprioritisation is not a change request. Log only changes to budget, date or outcomes."
+      },
+      {
+       "doc": "go-no-go-checklist",
+       "priority": "Recommended",
+       "when": "Before each major release, not each sprint.",
+       "note": null
+      },
+      {
+       "doc": "lessons-learned-report",
+       "priority": "Recommended",
+       "when": "Feed from every sprint retrospective.",
+       "note": null
+      }
+     ]
+    },
+    {
+     "id": "website-app-redesign",
+     "name": "Website or app redesign",
+     "plain": "Redesigning how an existing website or app looks and works, usually with research, design, then build.",
+     "examples": "Website relaunch, checkout redesign, design system rollout",
+     "method": "Hybrid: research and design phases, agile build",
+     "duration": "2-6 months",
+     "team": "4-10 people",
+     "docs": [
+      {
+       "doc": "project-charter",
+       "priority": "Essential",
+       "when": null,
+       "note": "Include success metrics from analytics (conversion, task completion) with baselines."
+      },
+      {
+       "doc": "stakeholder-register",
+       "priority": "Essential",
+       "when": null,
+       "note": "Brand, legal and marketing often have sign-off power: map them early."
+      },
+      {
+       "doc": "raci-matrix",
+       "priority": "Essential",
+       "when": null,
+       "note": "Be explicit about who approves designs, otherwise review cycles multiply."
+      },
+      {
+       "doc": "project-schedule-gantt",
+       "priority": "Essential",
+       "when": null,
+       "note": "Show research, design, build, content and launch as phases with review rounds."
+      },
+      {
+       "doc": "raid-log",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "change-request-form",
+       "priority": "Recommended",
+       "when": null,
+       "note": "Use for scope additions after design sign-off."
+      },
+      {
+       "doc": "weekly-status-report",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "uat-signoff-certificate",
+       "priority": "Recommended",
+       "when": null,
+       "note": "Include content and accessibility checks, not only function."
+      },
+      {
+       "doc": "go-no-go-checklist",
+       "priority": "Essential",
+       "when": null,
+       "note": "Add SEO redirects, analytics tagging and rollback of DNS."
+      },
+      {
+       "doc": "benefits-register",
+       "priority": "Recommended",
+       "when": "Baseline analytics before design starts.",
+       "note": null
+      },
+      {
+       "doc": "lessons-learned-report",
+       "priority": "Recommended",
+       "when": null,
+       "note": null
+      }
+     ]
+    },
+    {
+     "id": "saas-implementation",
+     "name": "SaaS / off-the-shelf tool rollout",
+     "plain": "Buying a ready-made software service (like a CRM or HR system), configuring it, moving data in and training people.",
+     "examples": "Salesforce, Workday, ServiceNow, HubSpot rollout",
+     "method": "Phased / waterfall with configuration sprints",
+     "duration": "2-9 months",
+     "team": "3-12 people",
+     "docs": [
+      {
+       "doc": "business-case",
+       "priority": "Essential",
+       "when": null,
+       "note": "Include subscription costs for 3-5 years, not just implementation."
+      },
+      {
+       "doc": "project-charter",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "stakeholder-register",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "project-schedule-gantt",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "raid-log",
+       "priority": "Essential",
+       "when": null,
+       "note": "Vendor roadmap changes are a common risk."
+      },
+      {
+       "doc": "resource-capacity-plan",
+       "priority": "Recommended",
+       "when": null,
+       "note": "Business SMEs for configuration workshops are the bottleneck."
+      },
+      {
+       "doc": "communication-plan",
+       "priority": "Essential",
+       "when": null,
+       "note": "Adoption is the main risk: plan communications to end users."
+      },
+      {
+       "doc": "uat-signoff-certificate",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "cutover-runbook",
+       "priority": "Recommended",
+       "when": null,
+       "note": "Include data load and old-system read-only switch."
+      },
+      {
+       "doc": "go-no-go-checklist",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "benefits-register",
+       "priority": "Essential",
+       "when": null,
+       "note": "Track adoption (active users) as an early benefit."
+      },
+      {
+       "doc": "project-closure-report",
+       "priority": "Recommended",
+       "when": null,
+       "note": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "enterprise-it",
+   "name": "Enterprise IT & Systems",
+   "plain": "Large internal systems that run the business: finance, supply chain, HR, and the connections between systems.",
+   "types": [
+    {
+     "id": "erp-implementation",
+     "name": "ERP implementation",
+     "plain": "Replacing the core system a company uses to run finance, orders, stock and purchasing. Big, risky and touches almost every team.",
+     "examples": "SAP S/4HANA, Oracle Fusion, Microsoft Dynamics",
+     "method": "Waterfall / stage-gated (often with agile build)",
+     "duration": "9-24 months",
+     "team": "20-100+ people",
+     "docs": [
+      {
+       "doc": "business-case",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "project-charter",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "project-management-plan",
+       "priority": "Essential",
+       "when": null,
+       "note": "Formal plan is expected; auditors may review it."
+      },
+      {
+       "doc": "stakeholder-register",
+       "priority": "Essential",
+       "when": null,
+       "note": "Include every business process owner."
+      },
+      {
+       "doc": "raci-matrix",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "project-schedule-gantt",
+       "priority": "Essential",
+       "when": "Weekly; critical path review fortnightly.",
+       "note": "Expect 300-1,000 lines. Use the template's structure, scale up."
+      },
+      {
+       "doc": "budget-evm-tracker",
+       "priority": "Essential",
+       "when": null,
+       "note": "EVM is expected at this size."
+      },
+      {
+       "doc": "resource-capacity-plan",
+       "priority": "Essential",
+       "when": null,
+       "note": "Backfill for business SMEs is a budget item."
+      },
+      {
+       "doc": "communication-plan",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "raid-log",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "change-log",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "change-request-form",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "weekly-status-report",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "steering-committee-deck",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "steering-committee-minutes",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "project-health-dashboard",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "uat-signoff-certificate",
+       "priority": "Essential",
+       "when": null,
+       "note": "One certificate per process area."
+      },
+      {
+       "doc": "go-no-go-checklist",
+       "priority": "Essential",
+       "when": null,
+       "note": "Include financial period close and audit readiness."
+      },
+      {
+       "doc": "cutover-runbook",
+       "priority": "Essential",
+       "when": "Start 3 months before go-live; at least 3 rehearsals.",
+       "note": null
+      },
+      {
+       "doc": "benefits-register",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "lessons-learned-report",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "project-closure-report",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      }
+     ]
+    },
+    {
+     "id": "system-integration",
+     "name": "System integration / API platform",
+     "plain": "Connecting systems so they share data automatically, for example making the online shop talk to the stores' tills.",
+     "examples": "Integration layer, API gateway, middleware replacement",
+     "method": "Agile build with stage gates",
+     "duration": "3-9 months",
+     "team": "5-20 people",
+     "docs": [
+      {
+       "doc": "project-charter",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "raci-matrix",
+       "priority": "Essential",
+       "when": null,
+       "note": "Each connected system has an owner: list them as roles."
+      },
+      {
+       "doc": "project-schedule-gantt",
+       "priority": "Essential",
+       "when": null,
+       "note": "Model each external system's availability as a dependency."
+      },
+      {
+       "doc": "raid-log",
+       "priority": "Essential",
+       "when": null,
+       "note": "Dependencies tab is critical: every connected system is one."
+      },
+      {
+       "doc": "agile-sprint-metrics",
+       "priority": "Recommended",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "quality-delivery-metrics",
+       "priority": "Essential",
+       "when": null,
+       "note": "Track integration test pass rate separately."
+      },
+      {
+       "doc": "weekly-status-report",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "change-request-form",
+       "priority": "Recommended",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "cutover-runbook",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "go-no-go-checklist",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "lessons-learned-report",
+       "priority": "Recommended",
+       "when": null,
+       "note": null
+      }
+     ]
+    },
+    {
+     "id": "service-transition",
+     "name": "IT service transition / vendor onboarding",
+     "plain": "Moving the running of an IT service from one team or supplier to another without disrupting users.",
+     "examples": "Outsourcing service desk, changing managed-service provider",
+     "method": "Phased transition plan",
+     "duration": "3-6 months",
+     "team": "5-15 people",
+     "docs": [
+      {
+       "doc": "project-charter",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "stakeholder-register",
+       "priority": "Essential",
+       "when": null,
+       "note": "Include the outgoing provider: they may be unmotivated."
+      },
+      {
+       "doc": "raci-matrix",
+       "priority": "Essential",
+       "when": null,
+       "note": "Show responsibilities before, during and after handover."
+      },
+      {
+       "doc": "project-schedule-gantt",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "raid-log",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "communication-plan",
+       "priority": "Essential",
+       "when": null,
+       "note": "Users must know where to get help on day 1."
+      },
+      {
+       "doc": "go-no-go-checklist",
+       "priority": "Essential",
+       "when": null,
+       "note": "Include knowledge transfer completion and service levels."
+      },
+      {
+       "doc": "cutover-runbook",
+       "priority": "Recommended",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "weekly-status-report",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "project-closure-report",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "infrastructure-cloud",
+   "name": "Infrastructure & Cloud",
+   "plain": "The technical foundations: servers, networks, cloud platforms and security.",
+   "types": [
+    {
+     "id": "cloud-migration",
+     "name": "Cloud migration",
+     "plain": "Moving applications and data from the company's own servers to a cloud provider such as AWS, Azure or Google Cloud.",
+     "examples": "Data-centre exit, lift-and-shift, re-platforming",
+     "method": "Waves of migrations",
+     "duration": "6-18 months",
+     "team": "5-30 people",
+     "docs": [
+      {
+       "doc": "business-case",
+       "priority": "Essential",
+       "when": null,
+       "note": "Show run-cost comparison over 3-5 years including exit costs."
+      },
+      {
+       "doc": "project-charter",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "project-schedule-gantt",
+       "priority": "Essential",
+       "when": null,
+       "note": "Plan by migration wave; one row group per wave."
+      },
+      {
+       "doc": "raid-log",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "budget-evm-tracker",
+       "priority": "Essential",
+       "when": null,
+       "note": "Watch cloud run costs, not just project spend."
+      },
+      {
+       "doc": "resource-capacity-plan",
+       "priority": "Recommended",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "cutover-runbook",
+       "priority": "Essential",
+       "when": "One runbook per wave.",
+       "note": null
+      },
+      {
+       "doc": "go-no-go-checklist",
+       "priority": "Essential",
+       "when": "Per wave.",
+       "note": null
+      },
+      {
+       "doc": "quality-delivery-metrics",
+       "priority": "Optional",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "weekly-status-report",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "lessons-learned-report",
+       "priority": "Essential",
+       "when": "After every wave, not just at the end.",
+       "note": "Wave lessons make later waves faster."
+      }
+     ]
+    },
+    {
+     "id": "network-datacentre",
+     "name": "Network or data-centre upgrade",
+     "plain": "Replacing or upgrading physical network equipment or computer rooms, often across many sites.",
+     "examples": "Store network refresh, Wi-Fi rollout, data-centre move",
+     "method": "Waterfall, site-by-site rollout",
+     "duration": "3-12 months",
+     "team": "3-15 people + field engineers",
+     "docs": [
+      {
+       "doc": "project-charter",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "project-schedule-gantt",
+       "priority": "Essential",
+       "when": null,
+       "note": "Add a rollout tracker tab: one row per site."
+      },
+      {
+       "doc": "raid-log",
+       "priority": "Essential",
+       "when": null,
+       "note": "Supplier lead times are a frequent risk."
+      },
+      {
+       "doc": "budget-evm-tracker",
+       "priority": "Recommended",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "communication-plan",
+       "priority": "Essential",
+       "when": null,
+       "note": "Sites need notice of outage windows."
+      },
+      {
+       "doc": "cutover-runbook",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "go-no-go-checklist",
+       "priority": "Recommended",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "weekly-status-report",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "project-closure-report",
+       "priority": "Recommended",
+       "when": null,
+       "note": null
+      }
+     ]
+    },
+    {
+     "id": "security-remediation",
+     "name": "Cyber-security remediation",
+     "plain": "Fixing security weaknesses found in an audit or attack, often with a regulator or auditor watching.",
+     "examples": "Audit findings remediation, identity and access overhaul",
+     "method": "Prioritised workstreams",
+     "duration": "2-12 months",
+     "team": "3-20 people",
+     "docs": [
+      {
+       "doc": "project-charter",
+       "priority": "Essential",
+       "when": null,
+       "note": "Map each objective to the audit finding it closes."
+      },
+      {
+       "doc": "raid-log",
+       "priority": "Essential",
+       "when": null,
+       "note": "Treat each finding as an issue with a due date."
+      },
+      {
+       "doc": "raci-matrix",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "project-schedule-gantt",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "steering-committee-deck",
+       "priority": "Recommended",
+       "when": null,
+       "note": "Risk committee may replace SteerCo."
+      },
+      {
+       "doc": "weekly-status-report",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "project-closure-report",
+       "priority": "Essential",
+       "when": null,
+       "note": "Attach evidence of closure for auditors."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "data-ai",
+   "name": "Data & AI",
+   "plain": "Projects about moving, organising or using data, from reporting dashboards to machine-learning models.",
+   "types": [
+    {
+     "id": "data-migration",
+     "name": "Data migration",
+     "plain": "Moving data from an old system to a new one, cleaning and checking it so nothing is lost or wrong.",
+     "examples": "Customer records migration, legacy archive move",
+     "method": "Iterative dry runs, then a final cutover",
+     "duration": "2-9 months",
+     "team": "3-12 people",
+     "docs": [
+      {
+       "doc": "project-charter",
+       "priority": "Essential",
+       "when": null,
+       "note": "Define 'migrated correctly' as a measurable target (e.g. 99.5% reconciled)."
+      },
+      {
+       "doc": "raci-matrix",
+       "priority": "Essential",
+       "when": null,
+       "note": "Business data owners must sign off quality, not IT."
+      },
+      {
+       "doc": "project-schedule-gantt",
+       "priority": "Essential",
+       "when": null,
+       "note": "Schedule at least two full dry runs."
+      },
+      {
+       "doc": "raid-log",
+       "priority": "Essential",
+       "when": null,
+       "note": "Data quality is the top risk: profile data before estimating."
+      },
+      {
+       "doc": "quality-delivery-metrics",
+       "priority": "Recommended",
+       "when": null,
+       "note": "Add reconciliation % and error counts per run."
+      },
+      {
+       "doc": "cutover-runbook",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "go-no-go-checklist",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "uat-signoff-certificate",
+       "priority": "Essential",
+       "when": null,
+       "note": "Business validates samples of migrated records."
+      },
+      {
+       "doc": "weekly-status-report",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      }
+     ]
+    },
+    {
+     "id": "analytics-bi",
+     "name": "Analytics / BI platform",
+     "plain": "Building reports and dashboards so people can make decisions from data instead of spreadsheets.",
+     "examples": "Executive dashboards, self-service BI, data warehouse",
+     "method": "Agile, dashboard by dashboard",
+     "duration": "2-9 months",
+     "team": "3-10 people",
+     "docs": [
+      {
+       "doc": "project-charter",
+       "priority": "Essential",
+       "when": null,
+       "note": "List the decisions the dashboards will support."
+      },
+      {
+       "doc": "stakeholder-register",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "agile-sprint-metrics",
+       "priority": "Recommended",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "raid-log",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "uat-signoff-certificate",
+       "priority": "Recommended",
+       "when": null,
+       "note": "Users reconcile key numbers against finance."
+      },
+      {
+       "doc": "benefits-register",
+       "priority": "Essential",
+       "when": null,
+       "note": "Track active users and decisions supported."
+      },
+      {
+       "doc": "weekly-status-report",
+       "priority": "Recommended",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "lessons-learned-report",
+       "priority": "Recommended",
+       "when": null,
+       "note": null
+      }
+     ]
+    },
+    {
+     "id": "ai-ml-pilot",
+     "name": "AI / ML pilot",
+     "plain": "Testing whether an AI model can do a useful job (for example, predicting demand or answering customer questions) before investing more.",
+     "examples": "GenAI assistant pilot, churn prediction, document extraction",
+     "method": "Time-boxed experiments",
+     "duration": "6-16 weeks",
+     "team": "2-8 people",
+     "docs": [
+      {
+       "doc": "business-case",
+       "priority": "Recommended",
+       "when": "Light version before the pilot; full version only if the pilot succeeds.",
+       "note": "Define the kill criteria: what result means stop."
+      },
+      {
+       "doc": "project-charter",
+       "priority": "Essential",
+       "when": null,
+       "note": "State the hypothesis and success threshold up front."
+      },
+      {
+       "doc": "raid-log",
+       "priority": "Essential",
+       "when": null,
+       "note": "Include data privacy, bias and model-risk items."
+      },
+      {
+       "doc": "agile-sprint-metrics",
+       "priority": "Optional",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "weekly-status-report",
+       "priority": "Recommended",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "go-no-go-checklist",
+       "priority": "Essential",
+       "when": "At the end of the pilot: scale, iterate or stop.",
+       "note": "This is the scale-up decision, not a launch."
+      },
+      {
+       "doc": "lessons-learned-report",
+       "priority": "Essential",
+       "when": null,
+       "note": "Even a failed pilot must leave written findings."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "business-transformation",
+   "name": "Business Transformation",
+   "plain": "Changing how people work: processes, structures, ways of working. Often there is no software at the centre.",
+   "types": [
+    {
+     "id": "process-improvement",
+     "name": "Process improvement",
+     "plain": "Making an existing way of working faster, cheaper or less error-prone, for example how invoices get approved.",
+     "examples": "Order-to-cash redesign, Lean / Six Sigma initiative",
+     "method": "DMAIC or iterative",
+     "duration": "1-6 months",
+     "team": "2-8 people",
+     "docs": [
+      {
+       "doc": "project-charter",
+       "priority": "Essential",
+       "when": null,
+       "note": "Include current baseline metrics for the process."
+      },
+      {
+       "doc": "stakeholder-register",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "raci-matrix",
+       "priority": "Essential",
+       "when": "Before and after the redesign.",
+       "note": "Show who does what in the new process."
+      },
+      {
+       "doc": "raid-log",
+       "priority": "Recommended",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "benefits-register",
+       "priority": "Essential",
+       "when": null,
+       "note": "Benefits are the whole point: measure them."
+      },
+      {
+       "doc": "weekly-status-report",
+       "priority": "Recommended",
+       "when": "Fortnightly is usually enough.",
+       "note": null
+      },
+      {
+       "doc": "lessons-learned-report",
+       "priority": "Recommended",
+       "when": null,
+       "note": null
+      }
+     ]
+    },
+    {
+     "id": "org-change",
+     "name": "Organisational change / restructure",
+     "plain": "Changing team structures, roles or ways of working, where helping people adapt matters more than any system.",
+     "examples": "New operating model, merger integration, return-to-office",
+     "method": "Phased with change management",
+     "duration": "3-18 months",
+     "team": "3-15 people",
+     "docs": [
+      {
+       "doc": "business-case",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "project-charter",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "stakeholder-register",
+       "priority": "Essential",
+       "when": "Update fortnightly: sentiment shifts quickly.",
+       "note": "This is your most important document here."
+      },
+      {
+       "doc": "communication-plan",
+       "priority": "Essential",
+       "when": null,
+       "note": "Sequence matters: managers hear before teams."
+      },
+      {
+       "doc": "raci-matrix",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "raid-log",
+       "priority": "Essential",
+       "when": null,
+       "note": "Include people risks: attrition, morale, legal consultation."
+      },
+      {
+       "doc": "steering-committee-deck",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "benefits-register",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "lessons-learned-report",
+       "priority": "Recommended",
+       "when": null,
+       "note": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "program-portfolio",
+   "name": "Programs & Portfolio",
+   "plain": "Managing several related projects together, or the whole collection of projects an organisation is running.",
+   "types": [
+    {
+     "id": "multi-project-program",
+     "name": "Multi-project program",
+     "plain": "Several projects that together deliver one bigger goal, managed as one so their dependencies and shared resources line up.",
+     "examples": "Digital transformation program, new market entry",
+     "method": "Program governance over mixed project methods",
+     "duration": "1-3 years",
+     "team": "Multiple project teams",
+     "docs": [
+      {
+       "doc": "business-case",
+       "priority": "Essential",
+       "when": null,
+       "note": "Program-level case; each project may have a short one."
+      },
+      {
+       "doc": "benefits-register",
+       "priority": "Essential",
+       "when": null,
+       "note": "Benefits usually land at program level, not project level."
+      },
+      {
+       "doc": "program-portfolio-dashboard",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "raid-log",
+       "priority": "Essential",
+       "when": null,
+       "note": "Run one shared RAID log across the program."
+      },
+      {
+       "doc": "stakeholder-register",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "resource-capacity-plan",
+       "priority": "Essential",
+       "when": null,
+       "note": "Shared specialists are the usual bottleneck."
+      },
+      {
+       "doc": "steering-committee-deck",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "steering-committee-minutes",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "communication-plan",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "lessons-learned-report",
+       "priority": "Recommended",
+       "when": null,
+       "note": null
+      }
+     ]
+    },
+    {
+     "id": "pmo-setup",
+     "name": "PMO setup / portfolio governance",
+     "plain": "Setting up the team and rules that oversee all projects: standard templates, reporting and how projects get approved.",
+     "examples": "New PMO, portfolio prioritisation, governance refresh",
+     "method": "Iterative rollout",
+     "duration": "3-6 months",
+     "team": "2-6 people",
+     "docs": [
+      {
+       "doc": "project-charter",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "program-portfolio-dashboard",
+       "priority": "Essential",
+       "when": null,
+       "note": "Becomes the PMO's main product."
+      },
+      {
+       "doc": "project-management-plan",
+       "priority": "Recommended",
+       "when": null,
+       "note": "Use as the base for your standard PM method."
+      },
+      {
+       "doc": "weekly-status-report",
+       "priority": "Essential",
+       "when": null,
+       "note": "Standardise this template across all projects."
+      },
+      {
+       "doc": "raid-log",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "stakeholder-register",
+       "priority": "Recommended",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "communication-plan",
+       "priority": "Recommended",
+       "when": null,
+       "note": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "client-services",
+   "name": "Client Services & Agency Delivery",
+   "plain": "Delivering work for an external client, such as a design studio or consultancy building something under contract.",
+   "types": [
+    {
+     "id": "fixed-bid",
+     "name": "Fixed-bid client engagement",
+     "plain": "The client pays an agreed price for agreed work. Going over scope or time costs the agency money, so scope control is everything.",
+     "examples": "Website build, app design and build, research study",
+     "method": "Phased (discover, design, build) with sign-offs",
+     "duration": "1-6 months",
+     "team": "3-12 people",
+     "docs": [
+      {
+       "doc": "project-charter",
+       "priority": "Essential",
+       "when": null,
+       "note": "Mirror the statement of work: deliverables, assumptions, exclusions."
+      },
+      {
+       "doc": "stakeholder-register",
+       "priority": "Essential",
+       "when": null,
+       "note": "Map the client's real decision makers, not just your day-to-day contact."
+      },
+      {
+       "doc": "raci-matrix",
+       "priority": "Essential",
+       "when": null,
+       "note": "Include client-side approvals and turnaround times."
+      },
+      {
+       "doc": "project-schedule-gantt",
+       "priority": "Essential",
+       "when": null,
+       "note": "Show client review windows as tasks with owners."
+      },
+      {
+       "doc": "budget-evm-tracker",
+       "priority": "Essential",
+       "when": "Weekly: burn vs earned on a fixed fee.",
+       "note": "Track hours burned against % of deliverables accepted."
+      },
+      {
+       "doc": "change-request-form",
+       "priority": "Essential",
+       "when": null,
+       "note": "Every extra request goes through this; it protects margin."
+      },
+      {
+       "doc": "change-log",
+       "priority": "Essential",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "raid-log",
+       "priority": "Essential",
+       "when": null,
+       "note": "Log client-side assumptions (content, feedback speed)."
+      },
+      {
+       "doc": "weekly-status-report",
+       "priority": "Essential",
+       "when": null,
+       "note": "Client-facing version: no internal margin data."
+      },
+      {
+       "doc": "uat-signoff-certificate",
+       "priority": "Essential",
+       "when": null,
+       "note": "Acts as the deliverable acceptance that triggers invoices."
+      },
+      {
+       "doc": "project-closure-report",
+       "priority": "Recommended",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "lessons-learned-report",
+       "priority": "Recommended",
+       "when": null,
+       "note": null
+      }
+     ]
+    },
+    {
+     "id": "time-materials",
+     "name": "Time & materials / retainer",
+     "plain": "The client pays for the hours worked. The risk is less about margin and more about showing value for every hour.",
+     "examples": "Design retainer, staff augmentation, ongoing product team",
+     "method": "Agile / Kanban",
+     "duration": "Ongoing",
+     "team": "1-10 people",
+     "docs": [
+      {
+       "doc": "project-charter",
+       "priority": "Recommended",
+       "when": null,
+       "note": "A short engagement brief: goals, team, rate card, cap."
+      },
+      {
+       "doc": "resource-capacity-plan",
+       "priority": "Essential",
+       "when": null,
+       "note": "Doubles as the billing forecast."
+      },
+      {
+       "doc": "agile-sprint-metrics",
+       "priority": "Recommended",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "weekly-status-report",
+       "priority": "Essential",
+       "when": null,
+       "note": "Include hours used vs cap."
+      },
+      {
+       "doc": "raid-log",
+       "priority": "Recommended",
+       "when": null,
+       "note": null
+      },
+      {
+       "doc": "benefits-register",
+       "priority": "Optional",
+       "when": null,
+       "note": "Helps renewals: show outcomes, not hours."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "metricCategories": [
+  {
+   "id": "schedule",
+   "name": "Schedule",
+   "plain": "Are we on time?",
+   "metrics": [
+    {
+     "id": "spi",
+     "name": "Schedule Performance Index (SPI)",
+     "plain": "Compares the work actually done with the work we planned to have done by now. 1.0 means exactly on plan; 0.9 means we've done 90% of what we should have.",
+     "formula": "SPI = Earned Value ÷ Planned Value",
+     "example": "Lighthouse in June: $929k earned ÷ $980k planned = 0.95",
+     "thresholds": {
+      "green": "≥ 0.95",
+      "amber": "0.85 – 0.94",
+      "red": "< 0.85"
+     },
+     "frequency": "Monthly",
+     "template": "budget-evm-tracker",
+     "impact": {
+      "summary": "The finish date is at risk. Every month below 1.0 pushes the end date further unless something changes.",
+      "effects": [
+       "Later milestones and go-live slip",
+       "Downstream teams (testing, training, other projects) lose their windows",
+       "Costs rise because people stay on the project longer",
+       "Leaders lose confidence in forecasts"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Is the slip on the critical path, or on tasks that have slack?",
+       "Is it one workstream or spread across all?",
+       "Is the cause capacity (not enough people), productivity, dependencies, or scope growth?",
+       "Was the plan realistic in the first place?"
+      ],
+      "actions": [
+       "Re-sequence: start non-dependent tasks in parallel (fast-tracking)",
+       "Add people to critical-path tasks only, early (crashing)",
+       "Remove blockers: escalate late dependencies",
+       "Agree a reduced scope for the first release",
+       "Re-forecast the end date honestly and raise a change request if tolerance is breached"
+      ],
+      "escalate": "Below 0.95 for two months running, or any milestone slip over 10 working days: take it to the Steering Committee with options."
+     }
+    },
+    {
+     "id": "milestone-variance",
+     "name": "Milestone variance",
+     "plain": "How many working days late (or early) each key milestone is forecast to be compared with the original plan.",
+     "formula": "Forecast date − Baseline date (working days)",
+     "example": "MVP build complete: baseline 26 Jun, forecast 10 Jul = +10 days",
+     "thresholds": {
+      "green": "0 – 5 days",
+      "amber": "6 – 10 days",
+      "red": "> 10 days"
+     },
+     "frequency": "Weekly",
+     "template": "project-schedule-gantt",
+     "impact": {
+      "summary": "A late milestone usually means everything after it moves too, unless there is buffer.",
+      "effects": [
+       "Go-live date pressure",
+       "Compressed testing (the usual casualty)",
+       "Contract or regulatory deadlines missed"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "How much buffer is left before go-live?",
+       "Is the delay already absorbed by later tasks, or pushing them?",
+       "Is this the first slip or a pattern?"
+      ],
+      "actions": [
+       "Protect testing time: do not compress it to recover build delays",
+       "Use remaining buffer deliberately and say so",
+       "Split the milestone: deliver the critical part on time",
+       "Update all dependent teams the same day"
+      ],
+      "escalate": "Any slip that eats more than half of the remaining buffer, or touches a fixed external date."
+     }
+    },
+    {
+     "id": "schedule-buffer",
+     "name": "Buffer remaining",
+     "plain": "How much safety time is left between the forecast finish and the date we must hit.",
+     "formula": "Committed date − Forecast finish date",
+     "example": "Lighthouse: 4 weeks at baseline, 2 weeks now",
+     "thresholds": {
+      "green": "> 50% of original",
+      "amber": "25 – 50%",
+      "red": "< 25%"
+     },
+     "frequency": "Weekly",
+     "template": "project-schedule-gantt",
+     "impact": {
+      "summary": "Buffer is what lets you absorb surprises. When it's gone, every new problem becomes a missed date.",
+      "effects": [
+       "No room for late defects or rework",
+       "Teams start cutting corners to hold the date"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "How fast is buffer being consumed compared with project progress?",
+       "What used it up: one event or steady drift?"
+      ],
+      "actions": [
+       "Plan explicit buffer recovery (scope options, extra capacity)",
+       "Show buffer burn on the status report so leaders see the trend"
+      ],
+      "escalate": "Buffer burn faster than progress (e.g. 50% of buffer used at 30% complete)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "cost",
+   "name": "Cost",
+   "plain": "Are we on budget?",
+   "metrics": [
+    {
+     "id": "cpi",
+     "name": "Cost Performance Index (CPI)",
+     "plain": "Shows how much work you're getting for each dollar spent. 1.0 means a dollar of spending buys a dollar of planned work; 0.9 means it buys only 90 cents' worth.",
+     "formula": "CPI = Earned Value ÷ Actual Cost",
+     "example": "Lighthouse in June: $929k earned ÷ $1,029k spent = 0.90",
+     "thresholds": {
+      "green": "≥ 0.95",
+      "amber": "0.85 – 0.94",
+      "red": "< 0.85"
+     },
+     "frequency": "Monthly",
+     "template": "budget-evm-tracker",
+     "impact": {
+      "summary": "The project will cost more than budgeted. CPI rarely improves on its own after the project is 20% complete.",
+      "effects": [
+       "Final cost forecast rises (EAC = Budget ÷ CPI)",
+       "Contingency gets used up",
+       "Other work loses funding",
+       "For agencies on fixed price: margin disappears"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Which cost lines are over: people, vendors, licences?",
+       "Is it a one-off (e.g. a fixed problem) or a rate of overspend that will continue?",
+       "Are we earning value honestly, or claiming progress on unfinished work?",
+       "Are people charging time to the project that belongs elsewhere?"
+      ],
+      "actions": [
+       "Fix the root cause on the overspending workstream first",
+       "Negotiate cost sharing with the vendor where the contract allows",
+       "Reduce scope for the first release",
+       "Stop or delay non-essential spend",
+       "Raise a change request to re-baseline if the gap is permanent"
+      ],
+      "escalate": "Below 0.95 for two months, or forecast overrun above the PM's tolerance: change request to the sponsor / SteerCo."
+     }
+    },
+    {
+     "id": "eac-vac",
+     "name": "Estimate at Completion (EAC) and Variance at Completion (VAC)",
+     "plain": "EAC is today's best guess of what the project will cost in total. VAC is how far that is from the budget.",
+     "formula": "EAC = Budget ÷ CPI (if overspend continues), or Actual + (Budget − Earned) (if one-off). VAC = Budget − EAC",
+     "example": "Lighthouse: $1.85M ÷ 0.90 = $2.05M; VAC = −$199k",
+     "thresholds": {
+      "green": "VAC ≥ 0",
+      "amber": "VAC within contingency",
+      "red": "VAC exceeds contingency"
+     },
+     "frequency": "Monthly",
+     "template": "budget-evm-tracker",
+     "impact": {
+      "summary": "Tells leaders whether to find more money now, rather than discovering it at the end.",
+      "effects": [
+       "Funding requests late in the year are hard to approve",
+       "Benefits case may no longer stack up"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Which EAC formula fits: is overspend continuing or fixed?",
+       "Has the forecast been signed off by Finance?"
+      ],
+      "actions": [
+       "Present both EAC methods and say which you believe",
+       "Show the scope and timing options that close the gap"
+      ],
+      "escalate": "Any VAC beyond the remaining contingency."
+     }
+    },
+    {
+     "id": "burn-rate",
+     "name": "Burn rate vs plan",
+     "plain": "How fast money is being spent each month compared with the plan.",
+     "formula": "Actual spend this month ÷ Planned spend this month",
+     "example": "June: $262k ÷ $250k = 105%",
+     "thresholds": {
+      "green": "90 – 105%",
+      "amber": "105 – 115% or 75 – 90%",
+      "red": "> 115% or < 75%"
+     },
+     "frequency": "Monthly",
+     "template": "budget-evm-tracker",
+     "impact": {
+      "summary": "Overspending runs out of money early. Underspending can mean work is not happening, which is a schedule problem.",
+      "effects": [
+       "Overspend: budget exhausted before finish",
+       "Underspend: hidden delay, or year-end budget lost"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Is underspend caused by delayed hiring or vendor start?",
+       "Is overspend caused by more people than planned?"
+      ],
+      "actions": [
+       "Match spend profile to delivered work, not to the calendar",
+       "Release unused budget early if work is genuinely cheaper"
+      ],
+      "escalate": "Two months outside amber range in the same direction."
+     }
+    }
+   ]
+  },
+  {
+   "id": "scope",
+   "name": "Scope & Requirements",
+   "plain": "Are we building the right thing, and only that?",
+   "metrics": [
+    {
+     "id": "scope-change-rate",
+     "name": "Scope change rate",
+     "plain": "How much work has been added (or removed) compared with the original agreed scope.",
+     "formula": "Approved change effort ÷ Original baseline effort",
+     "example": "Lighthouse: CRs net +$20k on $1.85M ≈ +1%",
+     "thresholds": {
+      "green": "< 5%",
+      "amber": "5 – 15%",
+      "red": "> 15%"
+     },
+     "frequency": "Monthly",
+     "template": "change-log",
+     "impact": {
+      "summary": "Unmanaged scope growth is the most common reason projects run late and over budget.",
+      "effects": [
+       "Timeline and cost grow without a decision",
+       "Team morale drops as the finish line moves",
+       "Quality suffers as work is squeezed"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Are changes coming from one stakeholder or many?",
+       "Were requirements unclear at the start?",
+       "Are small changes being absorbed without logging?"
+      ],
+      "actions": [
+       "Route every change through the change request process",
+       "For each addition, ask what comes out (trade, don't add)",
+       "Hold a scope re-baselining session with the sponsor",
+       "Create a 'phase 2' list for good ideas that aren't urgent"
+      ],
+      "escalate": "Cumulative change above 10%, or any single change beyond the PM's authority."
+     }
+    },
+    {
+     "id": "requirements-stability",
+     "name": "Requirements stability / backlog churn",
+     "plain": "How many requirements (or backlog items) are being changed or reworked after they were agreed.",
+     "formula": "Items changed after approval ÷ Total approved items",
+     "example": "18 of 220 stories changed after refinement = 8%",
+     "thresholds": {
+      "green": "< 10%",
+      "amber": "10 – 20%",
+      "red": "> 20%"
+     },
+     "frequency": "Per sprint",
+     "template": "agile-sprint-metrics",
+     "impact": {
+      "summary": "High churn means the team keeps building and rebuilding; it shows the problem isn't understood yet.",
+      "effects": [
+       "Wasted effort and rework",
+       "Velocity looks fine but outcomes don't move"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Are the right users involved early enough?",
+       "Is the Product Owner empowered to decide?"
+      ],
+      "actions": [
+       "Add prototyping or user testing before build",
+       "Strengthen the definition of ready",
+       "Clarify decision rights in the RACI"
+      ],
+      "escalate": "Churn above 20% for two sprints."
+     }
+    },
+    {
+     "id": "scope-delivered",
+     "name": "Scope delivered vs committed",
+     "plain": "Of the features promised for a release, how many actually shipped.",
+     "formula": "Features delivered ÷ Features committed",
+     "example": "Release 1: 46 of 48 epics = 96%",
+     "thresholds": {
+      "green": "≥ 90%",
+      "amber": "75 – 89%",
+      "red": "< 75%"
+     },
+     "frequency": "Per release",
+     "template": "uat-signoff-certificate",
+     "impact": {
+      "summary": "Users and sponsors judge the project by what they receive versus what they were promised.",
+      "effects": [
+       "Business benefits delayed",
+       "Trust in future commitments falls"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Were the dropped features the low-value ones?",
+       "Was the cut decided early or forced late?"
+      ],
+      "actions": [
+       "Agree must-have vs nice-to-have up front (MoSCoW)",
+       "Communicate scope cuts early with the reason"
+      ],
+      "escalate": "Any must-have feature not delivered."
+     }
+    }
+   ]
+  },
+  {
+   "id": "quality",
+   "name": "Quality",
+   "plain": "Does it work properly?",
+   "metrics": [
+    {
+     "id": "defect-backlog",
+     "name": "Open defect backlog by severity",
+     "plain": "How many known bugs are still unfixed, sorted by how serious they are.",
+     "formula": "Count of open defects, grouped Critical / High / Medium / Low",
+     "example": "Lighthouse June: 1 critical, 6 high open",
+     "thresholds": {
+      "green": "0 critical, falling trend",
+      "amber": "Flat trend",
+      "red": "Rising trend near go-live"
+     },
+     "frequency": "Weekly (daily in test)",
+     "template": "quality-delivery-metrics",
+     "impact": {
+      "summary": "A growing bug list near launch means either a delayed go-live or a launch with known problems.",
+      "effects": [
+       "Go-live delay or launch with workarounds",
+       "Users lose confidence in the new system",
+       "Support costs rise after launch"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Are we finding more bugs than we fix each week?",
+       "Are bugs clustered in one area or component?",
+       "Are bugs being reopened after fixes?"
+      ],
+      "actions": [
+       "Stop new feature work and run a bug-fix sprint",
+       "Add fix capacity to the hot-spot area",
+       "Triage daily with the Product Owner",
+       "Agree exit criteria for testing (e.g. 0 critical, ≤ 5 high)"
+      ],
+      "escalate": "Any critical defect open for more than 2 days, or rising backlog within 4 weeks of go-live."
+     }
+    },
+    {
+     "id": "test-pass-rate",
+     "name": "Test pass rate",
+     "plain": "Of the tests run, what percentage passed.",
+     "formula": "Tests passed ÷ Tests executed",
+     "example": "UAT: 283 of 290 = 97.6%",
+     "thresholds": {
+      "green": "≥ 95%",
+      "amber": "85 – 94%",
+      "red": "< 85%"
+     },
+     "frequency": "Weekly in test",
+     "template": "uat-signoff-certificate",
+     "impact": {
+      "summary": "Low pass rates signal the product isn't ready; high pass rates with low coverage can be falsely reassuring.",
+      "effects": [
+       "Delayed acceptance and go-live",
+       "Unknown risk if coverage is low"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "How many tests are blocked, not just failed?",
+       "Are failures caused by the product or by test data / environments?"
+      ],
+      "actions": [
+       "Fix environment and data issues first: they waste test cycles",
+       "Re-prioritise test cases around high-risk journeys"
+      ],
+      "escalate": "Pass rate below 85% at the planned test exit date."
+     }
+    },
+    {
+     "id": "escaped-defects",
+     "name": "Escaped defects",
+     "plain": "Bugs found after the work was considered done, for example by users after release.",
+     "formula": "Count of defects found after sprint / release completion",
+     "example": "May: 4 escaped defects (target ≤ 3)",
+     "thresholds": {
+      "green": "≤ target",
+      "amber": "Up to 1.5× target",
+      "red": "> 1.5× target"
+     },
+     "frequency": "Monthly",
+     "template": "quality-delivery-metrics",
+     "impact": {
+      "summary": "Each escaped bug costs far more to fix later and is visible to customers.",
+      "effects": [
+       "Customer complaints and support load",
+       "Hotfixes interrupt planned work"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Which test stage should have caught it?",
+       "Is there a gap in automated tests?"
+      ],
+      "actions": [
+       "Add a test for every escaped bug (regression)",
+       "Strengthen the definition of done",
+       "Hold a short root-cause review"
+      ],
+      "escalate": "Any escaped critical defect."
+     }
+    }
+   ]
+  },
+  {
+   "id": "agile-flow",
+   "name": "Agile Delivery & Flow",
+   "plain": "Is the team delivering predictably?",
+   "metrics": [
+    {
+     "id": "velocity",
+     "name": "Velocity (and its stability)",
+     "plain": "How much work the team completes in each sprint, measured in story points. Useful only for the team's own forecasting.",
+     "formula": "Sum of story points completed in the sprint; use a 3-sprint rolling average",
+     "example": "Sprints 5-7: 39, 42, 37 → average 39",
+     "thresholds": {
+      "green": "Within ±10% of average",
+      "amber": "±10 – 20%",
+      "red": "> 20% swing"
+     },
+     "frequency": "Per sprint",
+     "template": "agile-sprint-metrics",
+     "impact": {
+      "summary": "Unstable velocity makes delivery dates unreliable.",
+      "effects": [
+       "Release dates can't be forecast",
+       "Stakeholders lose trust in the team's commitments"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Were there unplanned interruptions (support, meetings, absence)?",
+       "Did team membership change?",
+       "Are stories too big to finish in one sprint?"
+      ],
+      "actions": [
+       "Protect the team from unplanned work (support rota)",
+       "Split stories to under 3 days each",
+       "Keep the team stable"
+      ],
+      "escalate": "Never use velocity to compare teams or set targets. Escalate only the forecast impact."
+     }
+    },
+    {
+     "id": "say-do",
+     "name": "Say/do ratio (sprint commitment reliability)",
+     "plain": "Of the work the team said it would finish in a sprint, how much it actually finished.",
+     "formula": "Points completed ÷ Points committed",
+     "example": "Sprint 7: 37 ÷ 45 = 82%",
+     "thresholds": {
+      "green": "≥ 90%",
+      "amber": "80 – 89%",
+      "red": "< 80%"
+     },
+     "frequency": "Per sprint",
+     "template": "agile-sprint-metrics",
+     "impact": {
+      "summary": "Consistently low say/do means planning is over-optimistic or the team keeps being interrupted.",
+      "effects": [
+       "Carry-over piles up",
+       "Release forecasts become fiction"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "How much scope was added mid-sprint?",
+       "Were dependencies ready when the sprint started?"
+      ],
+      "actions": [
+       "Commit to the rolling-average velocity, not the hopeful number",
+       "Enforce a definition of ready",
+       "Track mid-sprint additions separately"
+      ],
+      "escalate": "Below 80% for two consecutive sprints."
+     }
+    },
+    {
+     "id": "cycle-time",
+     "name": "Cycle time",
+     "plain": "How long a piece of work takes from when someone starts it to when it's done.",
+     "formula": "Done date − Start date, per item (track the 85th percentile)",
+     "example": "85% of stories finish within 6 working days",
+     "thresholds": {
+      "green": "≤ target",
+      "amber": "Up to 1.5× target",
+      "red": "> 1.5× target"
+     },
+     "frequency": "Weekly",
+     "template": "quality-delivery-metrics",
+     "impact": {
+      "summary": "Long cycle times mean slow feedback and lots of half-finished work.",
+      "effects": [
+       "Slower response to change",
+       "More context switching and waste"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Where does work wait longest (review, testing, approval)?",
+       "How much work is in progress at once?"
+      ],
+      "actions": [
+       "Limit work in progress",
+       "Swarm on blocked items",
+       "Remove handoff queues (e.g. embed a tester)"
+      ],
+      "escalate": "Rising trend for 4+ weeks."
+     }
+    }
+   ]
+  },
+  {
+   "id": "engineering",
+   "name": "Engineering & Release (DORA)",
+   "plain": "How fast and safely can we release changes?",
+   "metrics": [
+    {
+     "id": "deploy-frequency",
+     "name": "Deployment frequency",
+     "plain": "How often the team releases changes to users (or to a test environment).",
+     "formula": "Number of deployments per week",
+     "example": "June: 6 per week to test",
+     "thresholds": {
+      "green": "≥ target",
+      "amber": "50 – 99% of target",
+      "red": "< 50%"
+     },
+     "frequency": "Monthly",
+     "template": "quality-delivery-metrics",
+     "impact": {
+      "summary": "Infrequent releases mean big, risky launches and slow feedback.",
+      "effects": [
+       "Larger, riskier releases",
+       "Slow reaction to bugs and feedback"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Is release manual?",
+       "Are approvals the bottleneck?"
+      ],
+      "actions": [
+       "Automate the build and deployment pipeline",
+       "Release smaller batches",
+       "Use feature flags to release safely"
+      ],
+      "escalate": "Not usually escalated; raise in tech governance."
+     }
+    },
+    {
+     "id": "change-failure-rate",
+     "name": "Change failure rate",
+     "plain": "Of all releases, what percentage caused a problem that needed fixing or rolling back.",
+     "formula": "Failed deployments ÷ Total deployments",
+     "example": "June: 12%",
+     "thresholds": {
+      "green": "≤ 15%",
+      "amber": "15 – 25%",
+      "red": "> 25%"
+     },
+     "frequency": "Monthly",
+     "template": "quality-delivery-metrics",
+     "impact": {
+      "summary": "High failure rates hurt users and make teams afraid to release.",
+      "effects": [
+       "Outages and customer impact",
+       "Slower releases as teams add manual checks"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Do failures share a cause (config, data, a component)?",
+       "Is automated test coverage adequate?"
+      ],
+      "actions": [
+       "Increase automated testing on risky areas",
+       "Add smoke tests after each deployment",
+       "Hold blameless post-incident reviews"
+      ],
+      "escalate": "Any failure causing a customer-facing outage."
+     }
+    },
+    {
+     "id": "mttr",
+     "name": "Mean time to restore (MTTR)",
+     "plain": "When something breaks, how long it takes on average to get it working again.",
+     "formula": "Total downtime ÷ Number of incidents",
+     "example": "June: 3.5 hours (test environment)",
+     "thresholds": {
+      "green": "≤ target",
+      "amber": "Up to 2× target",
+      "red": "> 2× target"
+     },
+     "frequency": "Monthly",
+     "template": "quality-delivery-metrics",
+     "impact": {
+      "summary": "Slow recovery multiplies the impact of every failure.",
+      "effects": [
+       "Longer outages",
+       "Missed service levels and penalties"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Is monitoring detecting problems quickly?",
+       "Is rollback automated?"
+      ],
+      "actions": [
+       "Improve alerts and dashboards",
+       "Automate rollback",
+       "Write runbooks for common failures"
+      ],
+      "escalate": "Any production outage longer than the agreed service level."
+     }
+    }
+   ]
+  },
+  {
+   "id": "risk-governance",
+   "name": "Risk & Governance",
+   "plain": "Are we managing what could go wrong?",
+   "metrics": [
+    {
+     "id": "high-risks",
+     "name": "Open high risks",
+     "plain": "How many serious risks (high probability and high impact) are currently open.",
+     "formula": "Count of open risks with score ≥ 15 (probability × impact on 1-5 scales)",
+     "example": "Lighthouse: 1 risk at 16 (POS integration)",
+     "thresholds": {
+      "green": "0 – 1, with mitigation on track",
+      "amber": "2 – 3",
+      "red": "> 3 or any without mitigation"
+     },
+     "frequency": "Weekly",
+     "template": "raid-log",
+     "impact": {
+      "summary": "Several high risks at once mean the project could fail in more than one way.",
+      "effects": [
+       "Higher chance of a major delay or overrun",
+       "Contingency may not cover what happens"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Does each high risk have an owner and a dated action?",
+       "Are mitigations actually reducing the score?"
+      ],
+      "actions": [
+       "Assign a single owner and a review date per risk",
+       "Fund mitigation for the top risks",
+       "Convert risks into issues as soon as they happen"
+      ],
+      "escalate": "Score 15+ goes to the Program Manager within 2 days; 20+ to the Steering Committee."
+     }
+    },
+    {
+     "id": "issue-ageing",
+     "name": "Issue ageing",
+     "plain": "How long current problems have been open without being resolved.",
+     "formula": "Today − Date raised, for each open issue (track the average and oldest)",
+     "example": "I-01 open 38 days",
+     "thresholds": {
+      "green": "All < 14 days",
+      "amber": "Some 14 – 30 days",
+      "red": "Any > 30 days"
+     },
+     "frequency": "Weekly",
+     "template": "raid-log",
+     "impact": {
+      "summary": "Old issues are usually stuck waiting for a decision or another team.",
+      "effects": [
+       "Blocked work and idle people",
+       "Problems turn into delays"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "What is each old issue waiting for, and from whom?"
+      ],
+      "actions": [
+       "Escalate decisions needed from outside the team",
+       "Agree a due date with the owner"
+      ],
+      "escalate": "Any high-priority issue open more than 14 days."
+     }
+    },
+    {
+     "id": "decision-latency",
+     "name": "Decision latency",
+     "plain": "How long the project waits for decisions after asking for them.",
+     "formula": "Date decided − Date requested",
+     "example": "CR-007 requested 17 Jun, decided 24 Jun = 5 working days",
+     "thresholds": {
+      "green": "≤ 5 days",
+      "amber": "6 – 10 days",
+      "red": "> 10 days"
+     },
+     "frequency": "Monthly",
+     "template": "raid-log",
+     "impact": {
+      "summary": "Slow decisions are one of the most common hidden causes of delay.",
+      "effects": [
+       "Teams wait or build on assumptions",
+       "Rework when the decision finally comes"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Who is the decision maker, and do they know?",
+       "Was enough information provided to decide?"
+      ],
+      "actions": [
+       "Pre-wire decisions with options and a recommendation",
+       "Agree decision deadlines in the governance calendar"
+      ],
+      "escalate": "Any decision blocking critical-path work for more than 5 days."
+     }
+    }
+   ]
+  },
+  {
+   "id": "people",
+   "name": "People & Resources",
+   "plain": "Do we have the right people, and are they OK?",
+   "metrics": [
+    {
+     "id": "utilisation",
+     "name": "Capacity utilisation",
+     "plain": "How much of people's available time is booked onto work.",
+     "formula": "Planned FTE ÷ Available FTE",
+     "example": "SI developers in June: 7 needed ÷ 6 available = 117%",
+     "thresholds": {
+      "green": "70 – 90%",
+      "amber": "90 – 100% or 50 – 70%",
+      "red": "> 100% or < 50%"
+     },
+     "frequency": "Monthly",
+     "template": "resource-capacity-plan",
+     "impact": {
+      "summary": "Overloaded people burn out and make mistakes; underloaded people mean wasted cost.",
+      "effects": [
+       "Burnout, sickness and attrition",
+       "Quality issues from rushing",
+       "Bottlenecks around key people"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Is over-allocation in one role or across the team?",
+       "Is it temporary (a peak) or structural?"
+      ],
+      "actions": [
+       "Re-sequence work to flatten peaks",
+       "Bring in extra capacity for the bottleneck role",
+       "Reduce or delay scope"
+      ],
+      "escalate": "Any role above 100% for more than one month."
+     }
+    },
+    {
+     "id": "attrition",
+     "name": "Team attrition / key-person risk",
+     "plain": "How many people leave or rotate off the team, and whether any one person is a single point of failure.",
+     "formula": "People who left in period ÷ Average team size",
+     "example": "SI partner rotated 2 of 8 in May = 25%",
+     "thresholds": {
+      "green": "< 5% per quarter",
+      "amber": "5 – 15%",
+      "red": "> 15%"
+     },
+     "frequency": "Monthly",
+     "template": "raid-log",
+     "impact": {
+      "summary": "Losing people mid-project loses knowledge and slows delivery while replacements ramp up.",
+      "effects": [
+       "Velocity drop for 2-6 weeks per change",
+       "Knowledge gaps and rework"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Is turnover concentrated with one vendor or manager?",
+       "Who has knowledge nobody else has?"
+      ],
+      "actions": [
+       "Add named-resource and handover clauses with vendors",
+       "Pair people on critical knowledge",
+       "Document key designs"
+      ],
+      "escalate": "Loss of any single point of failure."
+     }
+    },
+    {
+     "id": "team-health",
+     "name": "Team health / morale",
+     "plain": "How the team feels: a short regular survey (e.g. 1-5 scores on workload, clarity, support).",
+     "formula": "Average of anonymous pulse survey scores",
+     "example": "Sprint 7 pulse: 3.6 / 5",
+     "thresholds": {
+      "green": "≥ 4.0",
+      "amber": "3.0 – 3.9",
+      "red": "< 3.0"
+     },
+     "frequency": "Per sprint",
+     "template": "lessons-learned-report",
+     "impact": {
+      "summary": "Morale drops usually show up weeks before delivery problems do.",
+      "effects": [
+       "Lower productivity",
+       "Attrition"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Which questions dropped most?",
+       "Did something change (deadline, people, overtime)?"
+      ],
+      "actions": [
+       "Discuss results openly in the retrospective",
+       "Act visibly on one or two items"
+      ],
+      "escalate": "Sustained score below 3.0."
+     }
+    }
+   ]
+  },
+  {
+   "id": "stakeholder-value",
+   "name": "Stakeholders & Value",
+   "plain": "Are people happy and are we getting the benefits?",
+   "metrics": [
+    {
+     "id": "benefits-realisation",
+     "name": "Benefits realisation",
+     "plain": "How much of the promised benefit (savings, revenue, satisfaction) has actually been achieved.",
+     "formula": "(Actual − Baseline) ÷ (Target − Baseline)",
+     "example": "Handle time: (6.9 − 7.8) ÷ (6.2 − 7.8) = 56% of target",
+     "thresholds": {
+      "green": "On track for target date",
+      "amber": "Behind but recoverable",
+      "red": "Unlikely to reach target"
+     },
+     "frequency": "Quarterly after go-live",
+     "template": "benefits-register",
+     "impact": {
+      "summary": "If benefits don't arrive, the investment wasn't worth it, even if the project was on time and budget.",
+      "effects": [
+       "Business case fails",
+       "Future funding becomes harder"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Are people actually using the new system or process?",
+       "Is the measurement itself reliable?"
+      ],
+      "actions": [
+       "Drive adoption: training, champions, remove the old way",
+       "Fix usability blockers found after launch",
+       "Re-plan the benefit timeline honestly"
+      ],
+      "escalate": "Any benefit forecast below 70% of target."
+     }
+    },
+    {
+     "id": "stakeholder-satisfaction",
+     "name": "Stakeholder satisfaction",
+     "plain": "How satisfied key stakeholders are with the project, from a short regular survey.",
+     "formula": "Average survey score (1-5) from key stakeholders",
+     "example": "Quarterly survey: 4.1 / 5",
+     "thresholds": {
+      "green": "≥ 4.0",
+      "amber": "3.0 – 3.9",
+      "red": "< 3.0"
+     },
+     "frequency": "Quarterly",
+     "template": "stakeholder-register",
+     "impact": {
+      "summary": "Unhappy stakeholders withdraw support, block decisions or resist the change.",
+      "effects": [
+       "Slower decisions",
+       "Adoption problems at launch"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Which group is least satisfied and why?",
+       "Is it about results or about communication?"
+      ],
+      "actions": [
+       "Meet the least satisfied stakeholders 1:1",
+       "Adjust the communication plan",
+       "Show progress they care about"
+      ],
+      "escalate": "Any key decision-maker scoring below 3."
+     }
+    },
+    {
+     "id": "adoption",
+     "name": "Adoption rate",
+     "plain": "Of the people who should be using the new system or process, how many actually are.",
+     "formula": "Active users ÷ Target users",
+     "example": "Week 4: 162 of 180 agents active = 90%",
+     "thresholds": {
+      "green": "≥ 85%",
+      "amber": "60 – 84%",
+      "red": "< 60%"
+     },
+     "frequency": "Weekly after launch",
+     "template": "benefits-register",
+     "impact": {
+      "summary": "No adoption means no benefits. It's the bridge between delivery and value.",
+      "effects": [
+       "Benefits delayed",
+       "Parallel old and new ways of working cost more"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Which teams or sites lag?",
+       "Is the old way still available?"
+      ],
+      "actions": [
+       "Targeted coaching for lagging teams",
+       "Switch off the old way on a set date",
+       "Collect and fix top usability complaints"
+      ],
+      "escalate": "Below 60% four weeks after launch."
+     }
+    }
+   ]
+  }
+ ],
+ "glossary": [
+  {
+   "term": "RAG",
+   "definition": "Red / Amber / Green. A traffic-light status: green is on track, amber needs attention, red needs help now."
+  },
+  {
+   "term": "RAID",
+   "definition": "Risks, Assumptions, Issues, Dependencies (and Decisions). The things that can derail a project, tracked in one log."
+  },
+  {
+   "term": "RACI",
+   "definition": "Responsible (does the work), Accountable (signs it off), Consulted (asked for input), Informed (kept updated)."
+  },
+  {
+   "term": "SteerCo",
+   "definition": "Steering Committee. The group of senior leaders who make the big decisions about a project, usually monthly."
+  },
+  {
+   "term": "Sponsor",
+   "definition": "The senior leader who owns the project's purpose and budget, and who the project manager answers to."
+  },
+  {
+   "term": "Stakeholder",
+   "definition": "Anyone affected by the project or able to influence it."
+  },
+  {
+   "term": "Baseline",
+   "definition": "The approved original plan (dates, cost, scope) that progress is measured against."
+  },
+  {
+   "term": "Milestone",
+   "definition": "A key checkpoint in the plan, such as 'design signed off' or 'go-live'. It has a date but no duration."
+  },
+  {
+   "term": "Gantt",
+   "definition": "A chart that shows tasks as horizontal bars along a timeline."
+  },
+  {
+   "term": "WBS",
+   "definition": "Work Breakdown Structure. The project's work broken down into smaller, manageable pieces."
+  },
+  {
+   "term": "Critical path",
+   "definition": "The longest chain of dependent tasks. Any delay on it delays the whole project."
+  },
+  {
+   "term": "Stage gate",
+   "definition": "A formal checkpoint where leaders decide whether the project can move to its next phase."
+  },
+  {
+   "term": "EVM",
+   "definition": "Earned Value Management. A way to measure progress by comparing planned work, completed work and money spent."
+  },
+  {
+   "term": "PV",
+   "definition": "Planned Value. The budgeted cost of the work that should have been done by now."
+  },
+  {
+   "term": "EV",
+   "definition": "Earned Value. The budgeted cost of the work actually done by now."
+  },
+  {
+   "term": "AC",
+   "definition": "Actual Cost. What has actually been spent so far."
+  },
+  {
+   "term": "SPI",
+   "definition": "Schedule Performance Index = EV ÷ PV. Below 1.0 means behind schedule."
+  },
+  {
+   "term": "CPI",
+   "definition": "Cost Performance Index = EV ÷ AC. Below 1.0 means over budget."
+  },
+  {
+   "term": "EAC",
+   "definition": "Estimate at Completion. The forecast total cost of the project."
+  },
+  {
+   "term": "BAC",
+   "definition": "Budget at Completion. The total approved budget."
+  },
+  {
+   "term": "TCPI",
+   "definition": "To-Complete Performance Index. How efficient the remaining work must be to finish on budget."
+  },
+  {
+   "term": "Contingency",
+   "definition": "Money or time set aside for risks that might happen."
+  },
+  {
+   "term": "Change request",
+   "definition": "A formal request to change the agreed scope, budget or timeline. Also called a CR."
+  },
+  {
+   "term": "Scope creep",
+   "definition": "Gradual, unapproved growth in what the project is expected to deliver."
+  },
+  {
+   "term": "Sprint",
+   "definition": "A short, fixed period (usually two weeks) in which an agile team builds and shows a working piece of the product."
+  },
+  {
+   "term": "Velocity",
+   "definition": "How much work an agile team completes per sprint, measured in story points."
+  },
+  {
+   "term": "Story points",
+   "definition": "A relative measure of how much effort a piece of work needs. Used by agile teams instead of hours."
+  },
+  {
+   "term": "Burndown",
+   "definition": "A chart showing how much work is left in a sprint, day by day. It should slope down to zero."
+  },
+  {
+   "term": "Backlog",
+   "definition": "The prioritised list of work still to be done."
+  },
+  {
+   "term": "Product Owner",
+   "definition": "The person who decides what the team builds and in what order."
+  },
+  {
+   "term": "Scrum Master",
+   "definition": "The person who helps an agile team work well and removes blockers."
+  },
+  {
+   "term": "UAT",
+   "definition": "User Acceptance Testing. Real users test the system to confirm it does what the business needs."
+  },
+  {
+   "term": "SIT",
+   "definition": "System Integration Testing. Checking that connected systems work together correctly."
+  },
+  {
+   "term": "Go-live",
+   "definition": "The moment the new system or process starts being used for real."
+  },
+  {
+   "term": "Cutover",
+   "definition": "The planned switch from the old system to the new one, usually over a weekend."
+  },
+  {
+   "term": "Rollback",
+   "definition": "Undoing a launch and returning to the old system if something goes wrong."
+  },
+  {
+   "term": "Hypercare",
+   "definition": "Extra-intensive support for the first weeks after go-live."
+  },
+  {
+   "term": "DORA",
+   "definition": "Four measures of software delivery performance from Google's DevOps Research and Assessment team."
+  },
+  {
+   "term": "MTTR",
+   "definition": "Mean Time To Restore. How long it takes, on average, to fix something that broke."
+  },
+  {
+   "term": "FTE",
+   "definition": "Full-Time Equivalent. 1 FTE = one person working full time; 0.5 FTE = half their time."
+  },
+  {
+   "term": "SME",
+   "definition": "Subject Matter Expert. Someone who knows a business area or system in depth."
+  },
+  {
+   "term": "SOW",
+   "definition": "Statement of Work. The contract document describing what a supplier will deliver."
+  },
+  {
+   "term": "NPV",
+   "definition": "Net Present Value. Today's value of future gains minus costs. Positive means worth doing."
+  },
+  {
+   "term": "IRR",
+   "definition": "Internal Rate of Return. The yearly return the investment earns, as a percentage."
+  },
+  {
+   "term": "Payback",
+   "definition": "How long until the money gained equals the money spent."
+  },
+  {
+   "term": "PMO",
+   "definition": "Project Management Office. The team that sets standards and oversees projects."
+  },
+  {
+   "term": "Benefits realisation",
+   "definition": "Proving that the project delivered the value it promised, after it finishes."
+  },
+  {
+   "term": "Definition of done",
+   "definition": "The agreed checklist a piece of work must meet before it counts as finished."
+  },
+  {
+   "term": "Fixed bid",
+   "definition": "A contract where the client pays an agreed price for agreed work, whatever the effort."
+  },
+  {
+   "term": "Time and materials",
+   "definition": "A contract where the client pays for the hours actually worked."
+  },
+  {
+   "term": "MoSCoW",
+   "definition": "A way to prioritise: Must have, Should have, Could have, Won't have this time."
+  }
+ ]
+}

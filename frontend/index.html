@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>PM Toolkit</title>
+  <meta name="description" content="Every document, tracker and dashboard a project needs, filled with sample data and explained in plain English. Free to download.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230F5E6E'/%3E%3Cpath d='M9 8h10l4 4v12H9z' fill='none' stroke='white' stroke-width='2'/%3E%3Cpath d='M12 16h8M12 20h6' stroke='white' stroke-width='2'/%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="/" data-link>
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">PM Toolkit</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="/projects" data-link data-nav="projects">Documents by project</a>
+        <a href="/metrics" data-link data-nav="metrics">Metrics playbook</a>
+        <a href="/library" data-link data-nav="library">All templates</a>
+        <a href="/glossary" data-link data-nav="glossary">Glossary</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <div class="loading" aria-live="polite">Loading the toolkit…</div>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>All templates use one fictional project, <strong>Project Lighthouse</strong> at <strong>Halcyon Outfitters</strong>, so every number lines up across documents. Names and figures are invented: replace them before use.</p>
+      <p class="muted">Free to use and adapt. <span id="footer-stats"></span></p>
+    </div>
+  </footer>
+  <div id="term-pop" class="term-pop" role="tooltip" hidden></div>
+  <script src="/config.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
