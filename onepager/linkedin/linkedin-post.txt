@@ -1,26 +1,17 @@
-Your CPI is 0.90. Now what?
+First week as a PM, my manager pinged me at 6 PM: "Can you send the RAID log before tomorrow's client call?"
 
-I've sat in review meetings where that number came up. Everyone nodded. Someone said "slightly over budget". Next slide.
+I said "sure, will do". Then I googled what a RAID log was.
 
-Here's what it was actually saying: every ₹1 we spent was buying 90 paise of work. On a ₹2 crore project, that's about ₹22 lakh over by the end. And after the first few months, it rarely fixes itself.
+Downloaded three templates that night. All blank. None of them told me what actually goes in it, who keeps it updated, or what to do when something on it turns red.
 
-The fix isn't complicated:
-→ Find the one workstream burning the money
-→ Check what the vendor contract says about sharing the overrun
-→ Trim scope before you trim quality
-→ Two bad months in a row? Tell your sponsor now, not after the third
+I figured it out eventually. Mostly the hard way.
 
-Nobody explained any of this to me early on. Templates told me what a document was. Never when my project needed it, who should own it, or what to do when the number on it turned amber.
+Swipe through for one of those lessons: what a CPI of 0.90 is actually telling you, and what to do about it on Monday.
 
-So I wrote it all down. A free toolkit for project and resource management:
-→ 30 templates, already filled in so you can see what good looks like
-→ 22 project types, so you only see what yours needs
-→ Resource management too: skills matrix, bench tracker, utilisation, allocation heatmap
-→ 33 metrics, each with what to do when it slips
-→ Plain English, so your client can read it too
+I've also put together the toolkit I wish I'd had that night. 30 templates for project and resource management, already filled in, with the "when, who and what next" written down.
 
 Want it? DM me "TOOLKIT" and I'll send it across.
 
-Know a PM friend who might need this? Share it with them.
+Know a PM friend who'd find this useful? Share it with them.
 
-#ProjectManagement #DeliveryManagement #PMO
+#ProjectManagement #ResourceManagement #DeliveryManagement
