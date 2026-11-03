@@ -1,0 +1,23 @@
+Your CPI is 0.90. Now what?
+
+I've sat in review meetings where that number came up. Everyone nodded. Someone said "slightly over budget". Next slide.
+
+Here's what it was actually saying: every ₹1 we spent was buying 90 paise of work. On a ₹2 crore project, that's about ₹22 lakh over by the end. And after the first few months, it rarely fixes itself.
+
+The fix isn't complicated:
+→ Find the one workstream burning the money
+→ Check what the vendor contract says about sharing the overrun
+→ Trim scope before you trim quality
+→ Two bad months in a row? Tell your sponsor now, not after the third
+
+Nobody explained any of this to me early on. Templates told me what a document was. Never when my project needed it, who should own it, or what to do when the number on it turned amber.
+
+So I wrote it all down. A free PM toolkit:
+→ 25 templates, already filled in so you can see what good looks like
+→ 18 project types, so you only see what yours needs
+→ 27 metrics, each with what to do when it slips
+→ Plain English, so your client can read it too
+
+Want it? DM me "TOOLKIT" and I'll send it across.
+
+#ProjectManagement #DeliveryManagement #PMO

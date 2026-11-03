@@ -58,113 +58,109 @@ h2{font-family:var(--display);font-size:78px;font-weight:600;line-height:1.05;le
 .quote{font-family:var(--display);font-style:italic;font-size:52px;line-height:1.3;color:var(--dim);border-left:6px solid var(--blue);padding-left:40px;}
 .quote strong{font-style:normal;color:var(--text);}
 .n{display:none;font-family:var(--display);font-size:200px;font-weight:600;color:rgba(127,162,255,0.10);position:absolute;right:70px;top:40px;line-height:1;letter-spacing:-6px;}
+.story{display:grid;gap:22px;align-content:center;}
+.slide:last-of-type{page-break-after:auto;break-after:auto;}
+.story p{font-size:37px;line-height:1.36;color:var(--dim);max-width:880px;}
+.story p strong{color:var(--text);font-weight:500;}
+.money{font-family:var(--display);font-size:128px;font-weight:600;letter-spacing:-5px;line-height:1;color:var(--text);}
+.money small{font-size:52px;letter-spacing:-1px;color:var(--faint);font-weight:500;margin-left:10px;}
+.dm{font-family:var(--display);font-size:72px;font-weight:600;letter-spacing:-2px;color:#fff;background:var(--deep);border-radius:24px;padding:30px 48px;display:inline-block;}
+.dm span{font-family:var(--mono);font-size:30px;letter-spacing:2px;font-weight:500;opacity:.8;display:block;margin-bottom:8px;}
 </style>
 </head>
 <body>
 
-<!-- 1. COVER -->
+<!-- 1. HOOK -->
 <section class="slide">
-  <div class="top"><span><b>PM</b> Toolkit</span><span>Free · 25 templates</span></div>
+  <div class="top"><span><b>Monday</b> review</span><span>1 / 7</span></div>
   <div class="body">
-    <div class="eyebrow">For PMs, and everyone who works with one</div>
-    <h1>Every document a project needs.<br><em>And when to use it.</em></h1>
-    <p class="lede">25 free templates, mapped to 18 project types, with a playbook for the numbers on your status report. Written in plain English.</p>
+    <div class="eyebrow">You've been in this meeting</div>
+    <h1>Your CPI is 0.90.<br><em>Now what?</em></h1>
+    <p class="lede">Everyone nods. Someone says "slightly over budget". The next slide comes up. Let me tell you what that number was actually saying.</p>
   </div>
   <div class="foot"><span>Sarath MS</span><span class="swipe">Swipe →</span></div>
 </section>
 
-<!-- 2. PROBLEM -->
+<!-- 2. THE MOMENT -->
 <section class="slide">
-  <div class="n">01</div>
-  <div class="top"><span><b>The</b> problem</span><span>2 / 7</span></div>
+  <div class="top"><span><b>The</b> nod</span><span>2 / 7</span></div>
+  <div class="body story">
+    <h2>I've nodded at that<br>number too.</h2>
+    <p>The client's finance head asks, <strong>"So, are we in trouble?"</strong></p>
+    <p>You say "a little over, we're managing it". Everyone's happy. Chai arrives.</p>
+    <p>Two months later, the same question comes back. <strong>This time with a much bigger number attached.</strong></p>
+  </div>
+  <div class="foot"><span>Sarath MS</span><span class="swipe">→</span></div>
+</section>
+
+<!-- 3. WHAT IT MEANS -->
+<section class="slide">
+  <div class="top"><span><b>What</b> 0.90 means</span><span>3 / 7</span></div>
+  <div class="body story">
+    <p>Every <strong>₹1</strong> you spend is buying <strong>90 paise</strong> of work.</p>
+    <p>On a ₹2 crore project, if nothing changes, you finish around</p>
+    <div class="money">₹22 lakh<small>over</small></div>
+    <p>And after the first few months, it rarely fixes itself.</p>
+    <div class="th"><div class="g"><b>FINE</b>0.95 and above</div><div class="a"><b>WATCH</b>0.85 to 0.94</div><div class="r"><b>ACT NOW</b>below 0.85</div></div>
+  </div>
+  <div class="foot"><span>Sarath MS</span><span class="swipe">→</span></div>
+</section>
+
+<!-- 4. WHAT TO DO -->
+<section class="slide">
+  <div class="top"><span><b>So</b> on Monday</span><span>4 / 7</span></div>
   <div class="body">
-    <h2>Template packs give you the form.<br><em>Not the judgement.</em></h2>
+    <h2>What you actually<br><em>do about it.</em></h2>
     <div class="list">
-      <div class="li"><i>✕</i><span>They don't tell you <strong>which documents your project actually needs</strong>, and which you can skip.</span></div>
-      <div class="li"><i>✕</i><span>They don't say <strong>when to create, when to update, or who owns</strong> each one.</span></div>
-      <div class="li"><i>✕</i><span>Dashboards show CPI and SPI, then go quiet on <strong>what to do when they slip</strong>.</span></div>
-      <div class="li"><i>✕</i><span>Most of it is written for people who <strong>already speak PM</strong>.</span></div>
+      <div class="li"><i>01</i><span>Find the workstream burning the money. <strong>It's usually one, not all.</strong></span></div>
+      <div class="li"><i>02</i><span>Read the vendor contract. Some of that overrun might be <strong>theirs to share.</strong></span></div>
+      <div class="li"><i>03</i><span><strong>Trim scope before you trim quality.</strong> Clients forgive a smaller release. Not a broken one.</span></div>
+      <div class="li"><i>04</i><span>Two bad months in a row? <strong>Tell your sponsor now.</strong> Don't wait for the third.</span></div>
     </div>
   </div>
-  <div class="foot"><span>PM Toolkit</span><span class="swipe">→</span></div>
+  <div class="foot"><span>Sarath MS</span><span class="swipe">→</span></div>
 </section>
 
-<!-- 3. TRACK 1 -->
+<!-- 5. WHY I BUILT IT -->
 <section class="slide">
-  <div class="n">02</div>
-  <div class="top"><span><b>Way in #1</b> · Start from your project</span><span>3 / 7</span></div>
-  <div class="body">
-    <h2>Pick your project.<br><em>Get only what it needs.</em></h2>
-    <div class="chips"><span class="chip">Category</span><span class="chip">Project type</span><span class="chip">Documents</span><span class="chip on">When · How · Who · What</span></div>
-    <div class="card">
-      <div class="card-head">ERP implementation → Cutover Runbook</div>
-      <div class="row"><b>When</b><span>Start 3 months before go-live. Rehearse at least 3 times.</span></div>
-      <div class="row"><b>Who</b><span>Technical Lead owns it. Delivery Manager approves.</span></div>
-      <div class="row"><b>What</b><span>Step timings after every rehearsal; live status on the night.</span></div>
-    </div>
+  <div class="top"><span><b>Why</b> I built this</span><span>5 / 7</span></div>
+  <div class="body story">
+    <h2>Nobody hands you<br><em>this on day one.</em></h2>
+    <p>Templates tell you what a document is.</p>
+    <p>They don't tell you <strong>when your project needs it, who should own it,</strong> or what to do when the number on it turns amber.</p>
+    <p>You learn that the hard way. So I wrote it all down.</p>
   </div>
-  <div class="foot"><span>18 project types · 7 categories</span><span class="swipe">→</span></div>
+  <div class="foot"><span>Sarath MS</span><span class="swipe">→</span></div>
 </section>
 
-<!-- 4. TRACK 2 -->
+<!-- 6. WHAT'S INSIDE -->
 <section class="slide">
-  <div class="n">03</div>
-  <div class="top"><span><b>Way in #2</b> · Start from a number</span><span>4 / 7</span></div>
+  <div class="top"><span><b>The</b> PM Toolkit</span><span>6 / 7</span></div>
   <div class="body">
-    <h2>Your CPI is 0.90.<br><em>Now what?</em></h2>
-    <div class="chips"><span class="chip">Category</span><span class="chip">Metric</span><span class="chip">Impact</span><span class="chip on">Resolution</span></div>
-    <div class="th"><div class="g"><b>GREEN</b>≥ 0.95</div><div class="a"><b>AMBER</b>0.85 – 0.94</div><div class="r"><b>RED</b>&lt; 0.85</div></div>
-    <div class="card">
-      <div class="row"><b>Means</b><span>Every dollar spent buys 90 cents of planned work.</span></div>
-      <div class="row"><b>Impact</b><span>Final cost rises. Contingency gets used up.</span></div>
-      <div class="row"><b>Resolve</b><span>Find the overspending workstream. Share cost with the vendor. Trim scope.</span></div>
-      <div class="row"><b>Escalate</b><span>Below 0.95 for two months running.</span></div>
-    </div>
-  </div>
-  <div class="foot"><span>27 metrics · 9 categories</span><span class="swipe">→</span></div>
-</section>
-
-<!-- 5. WHAT'S INSIDE -->
-<section class="slide">
-  <div class="n">04</div>
-  <div class="top"><span><b>What's</b> inside</span><span>5 / 7</span></div>
-  <div class="body">
-    <h2>Filled in, <em>not empty.</em></h2>
+    <h2>Free. And filled in,<br><em>not blank.</em></h2>
     <div class="stats">
-      <div class="stat"><b>25</b><span>Templates</span><small>10 Word · 14 Excel · 1 PowerPoint</small></div>
-      <div class="stat"><b>18</b><span>Project types</span><small>From agile builds to fixed-bid work</small></div>
-      <div class="stat"><b>27</b><span>Metrics</span><small>Each with impact and resolution</small></div>
-      <div class="stat"><b>1</b><span>Worked example</span><small>Same project, numbers match across files</small></div>
+      <div class="stat"><b>25</b><span>Templates</span><small>Word, Excel, PowerPoint. Formulas and charts already working.</small></div>
+      <div class="stat"><b>18</b><span>Project types</span><small>Pick yours. See only what it needs.</small></div>
+      <div class="stat"><b>27</b><span>Metrics</span><small>What each one means, and what to do when it slips.</small></div>
+      <div class="stat"><b>0</b><span>Jargon</span><small>Written so your client can read it too.</small></div>
     </div>
   </div>
-  <div class="foot"><span>Live formulas · real charts</span><span class="swipe">→</span></div>
+  <div class="foot"><span>Sarath MS</span><span class="swipe">→</span></div>
 </section>
 
-<!-- 6. PLAIN ENGLISH -->
+<!-- 7. DM -->
 <section class="slide">
-  <div class="n">05</div>
-  <div class="top"><span><b>Plain</b> English</span><span>6 / 7</span></div>
+  <div class="top"><span><b>Want</b> it?</span><span>7 / 7</span></div>
   <div class="body">
-    <h2>If a sponsor can't follow it,<br><em>it isn't finished.</em></h2>
-    <div class="plain">
-      <div class="card"><div class="lbl">RAID log · what it is</div><p>One place for what might go wrong, what we're assuming, what is going wrong, what we're waiting on, and what we decided.</p></div>
-      <div class="card"><div class="lbl">Think of it as</div><p>A ship captain's log of hazards ahead and decisions made.</p></div>
-      <div class="card"><div class="lbl">Without it</div><p>Known problems are forgotten until they explode.</p></div>
-    </div>
+    <h2>Just DM me.</h2>
+    <div><span class="dm"><span>Send me</span>"TOOLKIT"</span></div>
+    <p class="lede">I'll send you the link myself. Free. No forms, no email list.</p>
+    <p class="lede">And if your CPI really is 0.90 right now, tell me that too. Happy to think it through with you.</p>
   </div>
-  <div class="foot"><span>51 terms explained</span><span class="swipe">→</span></div>
+  <div class="foot"><span>Sarath MS</span><span>DM on LinkedIn</span></div>
 </section>
 
-<!-- 7. CTA -->
-<section class="slide">
-  <div class="top"><span><b>PM</b> Toolkit</span><span>7 / 7</span></div>
-  <div class="body">
-    <div class="quote">"The template was never the hard part. <strong>The judgement is.</strong> So I left it in."</div>
-    <div class="eyebrow">Free · No sign-up · Word, Excel, PowerPoint</div>
-    <div><span class="url">ms-pmtoolkit.netlify.app</span></div>
-    <p class="lede">Built from 14 years of delivery across Tech Mahindra, EY, BCG and NetBramha Studios.</p>
-  </div>
-  <div class="foot"><span>Sarath MS</span><span>sarathms.com</span></div>
+"foot"><span>51 terms explained</span><span class="swipe">→</span></div>
 </section>
 
 </body>
