@@ -95,12 +95,12 @@
   function home() {
     const nTypes = Object.keys(IDX.types).length, nMetrics = Object.keys(IDX.metrics).length;
     const popular = ["weekly-status-report", "raid-log", "project-charter", "budget-evm-tracker", "project-health-dashboard", "steering-committee-deck"];
-    const starters = ["agile-product-build", "erp-implementation", "fixed-bid", "cloud-migration", "data-migration", "multi-project-program"];
+    const starters = ["agile-product-build", "erp-implementation", "fixed-bid", "new-account-staffing", "bench-redeployment", "multi-project-program"];
     return {
       title: CFG.siteName,
       html: `<div class="wrap">
       <section class="hero">
-        <div class="eyebrow">Free project templates · Plain English</div>
+        <div class="eyebrow">Free project & resource management templates · Plain English</div>
         <h1>Every document a project needs, and when to use it</h1>
         <p class="lede">Pick your type of project and see exactly which documents it needs, when to create and update each one, how, and who owns it.
           Or look up a metric to see what it means, what happens when it goes wrong, and how to fix it. Every template is filled with a worked example.</p>

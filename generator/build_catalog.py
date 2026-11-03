@@ -4,6 +4,10 @@ from catalog_documents import DOCS, DOC_IDS
 from catalog_projects import CATEGORIES
 from catalog_metrics import METRIC_CATEGORIES
 from glossary import GLOSSARY
+from catalog_rm import RM_CATEGORY, RM_METRICS, RM_GLOSSARY
+CATEGORIES = CATEGORIES + [RM_CATEGORY]
+METRIC_CATEGORIES = METRIC_CATEGORIES + [RM_METRICS]
+GLOSSARY = {**GLOSSARY, **RM_GLOSSARY}
 import data as D
 
 ROOT = os.path.join(os.path.dirname(__file__), "..")

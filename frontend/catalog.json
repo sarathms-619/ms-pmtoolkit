@@ -140,7 +140,7 @@
    "plain": "A list of everyone the project affects or who can affect it, how much they care, and how we'll keep them on side.",
    "like": "Like a wedding planner's guest list with notes on who needs special attention.",
    "without": "Someone important gets surprised late and blocks or delays the work.",
-   "size": 10724
+   "size": 10723
   },
   {
    "id": "raci-matrix",
@@ -181,7 +181,7 @@
    "plain": "A grid that shows, for each task, who does it, who signs it off, who gets asked, and who just gets told.",
    "like": "Like a household chore chart that also says who checks the job was done.",
    "without": "Work falls between the cracks, or two people both think they're in charge.",
-   "size": 7744
+   "size": 7743
   },
   {
    "id": "project-management-plan",
@@ -269,7 +269,7 @@
    "plain": "The timeline: every piece of work with start and end dates, drawn as bars so you can see what overlaps and what is late.",
    "like": "Like a wedding-day timeline, but stretched over months.",
    "without": "Nobody can see that a delay in one task will push back everything after it.",
-   "size": 10943
+   "size": 10942
   },
   {
    "id": "budget-evm-tracker",
@@ -314,7 +314,7 @@
    "plain": "Tracks money: what we planned to spend by now, what we actually spent, and how much work that money really got done.",
    "like": "Like checking a renovation: half the budget is gone, but is half the house finished?",
    "without": "Overspending is noticed only when the money runs out.",
-   "size": 14378
+   "size": 14377
   },
   {
    "id": "resource-capacity-plan",
@@ -357,7 +357,7 @@
    "plain": "Shows how many people of each kind we need each month, compared with how many we actually have.",
    "like": "Like a restaurant rota: are there enough chefs on Saturday night?",
    "without": "Some people are overloaded and burn out while work waits for skills nobody booked.",
-   "size": 11900
+   "size": 11899
   },
   {
    "id": "communication-plan",
@@ -397,7 +397,7 @@
    "plain": "Who gets told what, how often and how: weekly emails, monthly meetings, team huddles.",
    "like": "Like a school's calendar of parent newsletters and meetings.",
    "without": "Some people feel ignored, others are flooded with updates, and rumours fill the gap.",
-   "size": 7125
+   "size": 7124
   },
   {
    "id": "benefits-register",
@@ -438,7 +438,7 @@
    "plain": "The list of good things the project promised (faster service, more sales) with how we'll measure them and who checks.",
    "like": "Like noting your electricity bill before installing solar panels, so you can prove the saving afterwards.",
    "without": "The project finishes but nobody can show it delivered what it promised.",
-   "size": 7777
+   "size": 7776
   },
   {
    "id": "raid-log",
@@ -482,7 +482,7 @@
    "plain": "One place to track what might go wrong (Risks), what we're taking for granted (Assumptions), what is going wrong (Issues), what we're waiting on (Dependencies), and what we decided (Decisions).",
    "like": "Like a ship captain's log of hazards ahead, problems on board and decisions made.",
    "without": "Known problems are forgotten until they explode, and old decisions get argued again.",
-   "size": 17223
+   "size": 17222
   },
   {
    "id": "change-log",
@@ -522,7 +522,7 @@
    "plain": "A running list of every request to change the plan and whether it was approved, with the extra cost and time.",
    "like": "Like the list of extras added to a building contract: 'add a window: +$800, +2 days'.",
    "without": "Lots of small extras add up to a big overrun nobody agreed to.",
-   "size": 7653
+   "size": 7652
   },
   {
    "id": "change-request-form",
@@ -654,7 +654,7 @@
    "plain": "Slides for the monthly meeting with senior leaders who make the big decisions about the project.",
    "like": "Like a board meeting pack: short, focused on the decisions needed.",
    "without": "Big decisions get delayed because leaders don't have what they need to decide.",
-   "size": 46901
+   "size": 46903
   },
   {
    "id": "steering-committee-minutes",
@@ -738,7 +738,7 @@
    "plain": "A single page of the most important numbers and colours that show at a glance how healthy the project is.",
    "like": "Like a car dashboard: speed, fuel and warning lights in one view.",
    "without": "People have to dig through many files to know if something is wrong.",
-   "size": 13686
+   "size": 13685
   },
   {
    "id": "agile-sprint-metrics",
@@ -778,7 +778,7 @@
    "plain": "Tracks how much work the team finishes in each two-week cycle (a 'sprint'), so we can predict when the rest will be done.",
    "like": "Like tracking how many kilometres you run each week to predict when you'll be ready for a marathon.",
    "without": "Delivery dates are guesses, and teams take on more than they can finish.",
-   "size": 12849
+   "size": 12848
   },
   {
    "id": "quality-delivery-metrics",
@@ -817,7 +817,7 @@
    "plain": "Measures how good and how reliable the software work is: how often it's released, how often releases break, how many bugs are found.",
    "like": "Like a factory tracking defects per batch and how quickly the line restarts after a stoppage.",
    "without": "Quality problems surface only when customers find them.",
-   "size": 11338
+   "size": 11337
   },
   {
    "id": "program-portfolio-dashboard",
@@ -857,7 +857,7 @@
    "plain": "One view of several related projects together, so leaders can see which need attention.",
    "like": "Like an air-traffic control screen showing every plane at once.",
    "without": "Leaders can't compare projects or spot a struggling one in time.",
-   "size": 11071
+   "size": 11070
   },
   {
    "id": "uat-signoff-certificate",
@@ -981,7 +981,7 @@
    "plain": "The step-by-step script for launch weekend: who does what, at what time, how we check it worked, and how to undo it if needed.",
    "like": "Like a stage manager's cue sheet for opening night.",
    "without": "Launch night becomes improvised, and nobody knows how to roll back if it fails.",
-   "size": 8929
+   "size": 8928
   },
   {
    "id": "lessons-learned-report",
@@ -1066,6 +1066,218 @@
    "like": "Like the final handover pack when you move out of a rented flat.",
    "without": "Loose ends stay open, money stays committed and nobody owns what's left.",
    "size": 40313
+  },
+  {
+   "id": "skills-matrix",
+   "title": "Skills Matrix",
+   "file": "skills-matrix.xlsx",
+   "format": "xlsx",
+   "kind": "Tracker",
+   "phase": "Planning",
+   "summary": "Who can do what, rated 0-4 for every person and skill, with coverage counts that flag single points of failure.",
+   "inside": [
+    "24 people x 10 skills, rated 0 (none) to 4 (can lead and teach)",
+    "Heat-map colouring",
+    "Top skill per person, calculated",
+    "People at 3+ and at 4 per skill",
+    "Coverage risk per skill: OK, Thin or Gap"
+   ],
+   "when": {
+    "create": "When you set up a resource management function, or take over a team.",
+    "update": "Quarterly, after appraisals, and whenever someone joins, leaves or finishes a certification.",
+    "cadence": "Quarterly"
+   },
+   "how": [
+    "Rate with the person and their manager, not alone",
+    "Use the 0-4 scale literally: 3 means works without help",
+    "Look at the bottom rows first: they show where one resignation leaves you stuck",
+    "Feed gaps into hiring and training plans",
+    "Never use it as a performance rating"
+   ],
+   "who": {
+    "owner": "Resource Manager / RMG Lead",
+    "author": "Resource Manager",
+    "contributors": "Line managers, practice leads, the people themselves",
+    "approver": "Delivery Head"
+   },
+   "what": [
+    "Skill ratings",
+    "New joiners and leavers",
+    "Coverage risk per skill"
+   ],
+   "mistake": "Rating people from memory. Self-rating plus manager review takes ten minutes and is far more accurate.",
+   "plain": "A grid of everyone on the team against the skills you sell, showing how good each person is at each one.",
+   "like": "Like a cricket captain's notes on who can bowl, keep wicket or open the batting.",
+   "without": "You find out nobody else knows the payment system on the day its only expert resigns.",
+   "size": 9133
+  },
+  {
+   "id": "bench-tracker",
+   "title": "Bench Tracker",
+   "file": "bench-tracker.xlsx",
+   "format": "xlsx",
+   "kind": "Tracker",
+   "phase": "Monitoring",
+   "summary": "Everyone not on billable work, how long they've waited, what it's costing, and the plan to get them deployed.",
+   "inside": [
+    "Bench since, days on bench and bench cost, calculated",
+    "Next opportunity and how likely it is",
+    "Action while waiting and owner",
+    "Summary: bench %, average days, 30+ day cases, total cost"
+   ],
+   "when": {
+    "create": "As soon as anyone rolls off a project without a next one.",
+    "update": "Weekly, before the resourcing meeting.",
+    "cadence": "Weekly"
+   },
+   "how": [
+    "Every row needs a next opportunity and an action, even if the action is training",
+    "Escalate anyone past 30 days",
+    "Use bench time for shadowing, cross-skilling or pre-sales support",
+    "Review with account leads, not just HR"
+   ],
+   "who": {
+    "owner": "Resource Manager / RMG Lead",
+    "author": "Resource Manager",
+    "contributors": "Account leads, practice leads, talent team",
+    "approver": "Delivery Head"
+   },
+   "what": [
+    "Who joined or left the bench",
+    "Next opportunity and likelihood",
+    "Action and owner"
+   ],
+   "mistake": "Treating bench as a holding area. People on the bench for weeks without a plan start looking for other jobs.",
+   "plain": "A list of people who are between projects, how long they've been waiting, and what's being done to place them.",
+   "like": "Like the substitutes list in football: who's ready, who needs fitness work, and when they're likely to come on.",
+   "without": "Good people sit idle for months, cost keeps running, and they quietly leave.",
+   "size": 8544
+  },
+  {
+   "id": "utilisation-billability-tracker",
+   "title": "Utilisation & Billability Tracker",
+   "file": "utilisation-billability-tracker.xlsx",
+   "format": "xlsx",
+   "kind": "Dashboard",
+   "phase": "Monitoring",
+   "summary": "Weekly hours per person split into billable, non-billable project and internal time, with utilisation and billability against target.",
+   "inside": [
+    "8 weeks of hours for 24 people",
+    "Utilisation and billability per person-week with RAG",
+    "Team trend tab with a line chart",
+    "Targets: 85% utilisation, 75% billability"
+   ],
+   "when": {
+    "create": "When timesheets are in place and you have targets agreed with finance.",
+    "update": "Weekly, from timesheets (Monday).",
+    "cadence": "Weekly"
+   },
+   "how": [
+    "Agree definitions with finance first: what counts as billable",
+    "Subtract leave from available hours",
+    "Watch the gap between utilisation and billability: that's work nobody is paying for",
+    "Look at 4-week averages before acting on one bad week"
+   ],
+   "who": {
+    "owner": "Resource Manager / RMG Lead",
+    "author": "Resource coordinator or PMO",
+    "contributors": "Project managers (timesheet approval), Finance",
+    "approver": "Delivery Head / Finance"
+   },
+   "what": [
+    "Hours per person per week",
+    "Team trend",
+    "Anyone persistently under target"
+   ],
+   "mistake": "Chasing 100% utilisation. A team with no slack can't absorb a single surprise, and quality pays for it.",
+   "plain": "Tracks how much of each person's week is spent on work clients pay for, compared with the target.",
+   "like": "Like a taxi's meter: how many hours the car was out, and how many of those had a paying passenger.",
+   "without": "The team looks busy, the numbers look fine, and margin quietly leaks through unbilled work.",
+   "size": 18916
+  },
+  {
+   "id": "resource-request-log",
+   "title": "Resource Request Log",
+   "file": "resource-request-log.xlsx",
+   "format": "xlsx",
+   "kind": "Tracker",
+   "phase": "Planning",
+   "summary": "Every request for people (the demand pipeline), from first ask to filled or lost, with time to fill and fill rate.",
+   "inside": [
+    "Request ID, account, role, skills, grade, start date, duration",
+    "Status: Open, Proposed, Soft booked, Filled, Lost",
+    "Time to fill and days until start, calculated",
+    "Summary: fill rate, average time to fill, urgent open requests"
+   ],
+   "when": {
+    "create": "The day the first account lead asks for a person.",
+    "update": "Daily or at every resourcing call; weekly review of open requests.",
+    "cadence": "Continuous"
+   },
+   "how": [
+    "Log every request, even the ones you can't fill: lost requests show where to hire",
+    "Capture skills and grade, not just a role title",
+    "Soft-book early, hard-book when the SOW is signed",
+    "Flag anything starting within 3 weeks that is still open"
+   ],
+   "who": {
+    "owner": "Resource Manager / RMG Lead",
+    "author": "Resource coordinator",
+    "contributors": "Account leads, project managers",
+    "approver": "Delivery Head (for hiring decisions)"
+   },
+   "what": [
+    "New requests",
+    "Status changes",
+    "Who was proposed or filled",
+    "Dates filled"
+   ],
+   "mistake": "Taking requests over chat and email. Without one log, two account leads book the same person and nobody notices until Monday.",
+   "plain": "A queue of every 'I need a person for this project' request, tracked until someone is assigned or the request is dropped.",
+   "like": "Like a restaurant's booking book: who wants a table, when, for how many, and whether you could seat them.",
+   "without": "Requests get lost in chats, the same person is promised twice, and new projects start short-staffed.",
+   "size": 9367
+  },
+  {
+   "id": "allocation-heatmap",
+   "title": "Allocation Heatmap",
+   "file": "allocation-heatmap.xlsx",
+   "format": "xlsx",
+   "kind": "Dashboard",
+   "phase": "Planning",
+   "summary": "Each person's planned allocation for the next 12 weeks, coloured to show who is free, healthy or double-booked.",
+   "inside": [
+    "24 people x 12 weeks of planned allocation %",
+    "Colours: under 80% amber, 80-100% blue, over 100% red",
+    "Team average per week",
+    "Counts of people over 100% and under 50%"
+   ],
+   "when": {
+    "create": "Once requests and bookings are being tracked.",
+    "update": "Weekly, after the resourcing meeting.",
+    "cadence": "Weekly"
+   },
+   "how": [
+    "Include soft bookings, so the pipeline is visible",
+    "Resolve every red cell: someone is promised to two places",
+    "Use amber weeks to plan training, leave and bench actions",
+    "Share it with account leads so they see the trade-offs"
+   ],
+   "who": {
+    "owner": "Resource Manager / RMG Lead",
+    "author": "Resource coordinator",
+    "contributors": "Account leads, project managers",
+    "approver": "Delivery Head"
+   },
+   "what": [
+    "Allocation % per person per week",
+    "New bookings and roll-offs"
+   ],
+   "mistake": "Only tracking this week. Problems are visible six weeks out, when you can still do something about them.",
+   "plain": "A colour-coded calendar showing how busy each person is planned to be over the next three months.",
+   "like": "Like a hospital's ward roster: you can see in one glance which shifts are short and who's doing a double.",
+   "without": "People get double-booked, someone burns out, and a project starts without the person it was promised.",
+   "size": 9032
   }
  ],
  "projectCategories": [
@@ -2201,6 +2413,12 @@
        "priority": "Recommended",
        "when": null,
        "note": null
+      },
+      {
+       "doc": "allocation-heatmap",
+       "priority": "Recommended",
+       "when": null,
+       "note": "One view of shared specialists across all projects in the program."
       }
      ]
     },
@@ -2254,6 +2472,18 @@
        "priority": "Recommended",
        "when": null,
        "note": null
+      },
+      {
+       "doc": "allocation-heatmap",
+       "priority": "Recommended",
+       "when": null,
+       "note": "A PMO usually owns the cross-project view of who is working where."
+      },
+      {
+       "doc": "utilisation-billability-tracker",
+       "priority": "Optional",
+       "when": null,
+       "note": "If the PMO also reports on utilisation."
       }
      ]
     }
@@ -2391,6 +2621,207 @@
        "priority": "Optional",
        "when": null,
        "note": "Helps renewals: show outcomes, not hours."
+      },
+      {
+       "doc": "utilisation-billability-tracker",
+       "priority": "Essential",
+       "when": "Weekly, from timesheets.",
+       "note": "On T&M, billed hours are your revenue: track them against the cap."
+      },
+      {
+       "doc": "allocation-heatmap",
+       "priority": "Recommended",
+       "when": null,
+       "note": "Shows the client how much capacity they've booked ahead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "resource-management",
+   "name": "Resource Management",
+   "plain": "Making sure the right people are on the right work at the right time, across all projects, not just one.",
+   "types": [
+    {
+     "id": "new-account-staffing",
+     "name": "Staffing a new client account",
+     "plain": "A new client or SOW has been signed and you need to put a team together quickly, with the right skills and grades.",
+     "examples": "New logo win, new SOW on an existing account, team ramp-up",
+     "method": "Request, propose, soft-book, hard-book",
+     "duration": "2-6 weeks",
+     "team": "RMG + account lead + PMs",
+     "docs": [
+      {
+       "doc": "resource-request-log",
+       "priority": "Essential",
+       "when": "The day the deal is likely, not the day it's signed.",
+       "note": "Soft-book likely people early so the start date isn't a scramble."
+      },
+      {
+       "doc": "skills-matrix",
+       "priority": "Essential",
+       "when": null,
+       "note": "Match on skills and grade, not on who happens to be free."
+      },
+      {
+       "doc": "allocation-heatmap",
+       "priority": "Essential",
+       "when": null,
+       "note": "Check the next 12 weeks, not just the start week."
+      },
+      {
+       "doc": "bench-tracker",
+       "priority": "Recommended",
+       "when": null,
+       "note": "Look at the bench first: placing bench people protects margin."
+      },
+      {
+       "doc": "resource-capacity-plan",
+       "priority": "Recommended",
+       "when": null,
+       "note": "Use it to plan the ramp-up curve by month."
+      },
+      {
+       "doc": "raci-matrix",
+       "priority": "Recommended",
+       "when": null,
+       "note": "Agree who approves staffing: the account lead, delivery head or client."
+      },
+      {
+       "doc": "stakeholder-register",
+       "priority": "Optional",
+       "when": null,
+       "note": null
+      }
+     ]
+    },
+    {
+     "id": "bench-redeployment",
+     "name": "Bench management and redeployment",
+     "plain": "People are between projects. The job is to get them back onto billable work quickly, and use the gap well.",
+     "examples": "Project ended early, campus joiners, demand slowdown",
+     "method": "Weekly bench review",
+     "duration": "Ongoing",
+     "team": "RMG + practice leads",
+     "docs": [
+      {
+       "doc": "bench-tracker",
+       "priority": "Essential",
+       "when": "Weekly, every Monday.",
+       "note": "Escalate anyone past 30 days to the delivery head."
+      },
+      {
+       "doc": "resource-request-log",
+       "priority": "Essential",
+       "when": null,
+       "note": "Match open requests against the bench before approving any hiring."
+      },
+      {
+       "doc": "skills-matrix",
+       "priority": "Essential",
+       "when": null,
+       "note": "Use bench time to close skill gaps the matrix shows."
+      },
+      {
+       "doc": "utilisation-billability-tracker",
+       "priority": "Recommended",
+       "when": null,
+       "note": "Track bench % as part of overall billability."
+      },
+      {
+       "doc": "allocation-heatmap",
+       "priority": "Recommended",
+       "when": null,
+       "note": null
+      }
+     ]
+    },
+    {
+     "id": "ramp-down",
+     "name": "Ramp-down and roll-off",
+     "plain": "A project is ending or shrinking. People need to move to new work without a gap, and without losing what they know.",
+     "examples": "Go-live and hypercare exit, contract end, scope reduction",
+     "method": "Planned roll-off with handover",
+     "duration": "2-8 weeks",
+     "team": "RMG + PM + account lead",
+     "docs": [
+      {
+       "doc": "allocation-heatmap",
+       "priority": "Essential",
+       "when": "6-8 weeks before the roll-off date.",
+       "note": "Plan the next booking before the current one ends."
+      },
+      {
+       "doc": "resource-request-log",
+       "priority": "Essential",
+       "when": null,
+       "note": "Propose rolling-off people for upcoming requests first."
+      },
+      {
+       "doc": "bench-tracker",
+       "priority": "Recommended",
+       "when": null,
+       "note": "Anyone without a next booking goes on the tracker the day they roll off."
+      },
+      {
+       "doc": "lessons-learned-report",
+       "priority": "Recommended",
+       "when": null,
+       "note": "Capture knowledge before people move on."
+      },
+      {
+       "doc": "project-closure-report",
+       "priority": "Optional",
+       "when": null,
+       "note": "Record who received each handover."
+      }
+     ]
+    },
+    {
+     "id": "capacity-hiring-planning",
+     "name": "Annual capacity and hiring planning",
+     "plain": "Working out how many people with which skills you'll need next year, and whether to hire, train or partner.",
+     "examples": "Annual operating plan, budget cycle, new practice launch",
+     "method": "Demand forecast vs supply",
+     "duration": "4-8 weeks per cycle",
+     "team": "RMG + finance + practice leads",
+     "docs": [
+      {
+       "doc": "resource-capacity-plan",
+       "priority": "Essential",
+       "when": null,
+       "note": "Forecast demand by role and month from the sales pipeline."
+      },
+      {
+       "doc": "skills-matrix",
+       "priority": "Essential",
+       "when": null,
+       "note": "Supply side: what skills you have today and where they're thin."
+      },
+      {
+       "doc": "utilisation-billability-tracker",
+       "priority": "Essential",
+       "when": null,
+       "note": "Use the last 6-12 months as the baseline."
+      },
+      {
+       "doc": "resource-request-log",
+       "priority": "Recommended",
+       "when": null,
+       "note": "Lost requests show what you should have hired for."
+      },
+      {
+       "doc": "business-case",
+       "priority": "Recommended",
+       "when": null,
+       "note": "For new hires or a new practice, show cost against expected billing."
+      },
+      {
+       "doc": "benefits-register",
+       "priority": "Optional",
+       "when": null,
+       "note": null
       }
      ]
     }
@@ -3365,6 +3796,218 @@
      }
     }
    ]
+  },
+  {
+   "id": "resource-management",
+   "name": "Resource Management",
+   "plain": "Are our people on the right work, and is it paying?",
+   "metrics": [
+    {
+     "id": "billability",
+     "name": "Billability",
+     "plain": "Of the hours people were available, how many were billed to a client.",
+     "formula": "Billable hours ÷ Available hours (after leave)",
+     "example": "Brightpath, week of 15 Jun: about 76% against a 75% target",
+     "thresholds": {
+      "green": "≥ 75%",
+      "amber": "65 – 74%",
+      "red": "< 65%"
+     },
+     "frequency": "Weekly, 4-week average",
+     "template": "utilisation-billability-tracker",
+     "impact": {
+      "summary": "Low billability means you're paying for time nobody pays you for. It's the fastest way margin disappears in a services business.",
+      "effects": [
+       "Margin falls even when everyone looks busy",
+       "Pricing and hiring decisions get made on false assumptions"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Is it bench, or non-billable work on live projects?",
+       "Are people doing work the SOW doesn't cover?",
+       "Are timesheets accurate?"
+      ],
+      "actions": [
+       "Move bench people onto open requests first",
+       "Raise change requests for unbilled scope",
+       "Cap internal work for billable roles",
+       "Fix timesheet categories so the data is trustworthy"
+      ],
+      "escalate": "Team billability below 65% for 4 weeks, or any account where billed effort is well below effort spent."
+     }
+    },
+    {
+     "id": "bench-percentage",
+     "name": "Bench % and bench ageing",
+     "plain": "How many people are not on billable work, and how long they've been waiting.",
+     "formula": "People on bench ÷ Total people; days since roll-off for each",
+     "example": "Brightpath: 5 of 24 on bench (21%), 2 of them past 30 days",
+     "thresholds": {
+      "green": "< 10%, none past 30 days",
+      "amber": "10 – 15%, or anyone 15-30 days",
+      "red": "> 15%, or anyone past 30 days"
+     },
+     "frequency": "Weekly",
+     "template": "bench-tracker",
+     "impact": {
+      "summary": "Bench costs money every day, and long bench stretches are when good people start interviewing elsewhere.",
+      "effects": [
+       "Direct cost with no revenue",
+       "Attrition risk among your best people",
+       "Skills go stale"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Is bench caused by a demand drop, poor matching, or a skills mismatch?",
+       "Are bench people being proposed for open requests?",
+       "Did hiring run ahead of signed work?"
+      ],
+      "actions": [
+       "Propose bench people before external hires for every request",
+       "Cross-skill towards skills with open demand",
+       "Use bench time for pre-sales, internal tools or shadowing",
+       "Pause hiring for roles with people on the bench"
+      ],
+      "escalate": "Anyone past 30 days on bench with no next opportunity; bench above 15% for a month."
+     }
+    },
+    {
+     "id": "time-to-fill",
+     "name": "Time to fill",
+     "plain": "How many working days it takes from a request being raised to a person being confirmed.",
+     "formula": "Filled date − Raised date (working days), averaged",
+     "example": "Brightpath: 12 working days on average",
+     "thresholds": {
+      "green": "≤ 10 days",
+      "amber": "11 – 20 days",
+      "red": "> 20 days"
+     },
+     "frequency": "Monthly",
+     "template": "resource-request-log",
+     "impact": {
+      "summary": "Slow fills delay project starts, and the client's first impression of a new engagement is a team that isn't there yet.",
+      "effects": [
+       "Projects start short-staffed",
+       "Account leads go around RMG and hire or borrow on their own"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Are requests raised late, or filled slowly?",
+       "Which roles or skills take longest?",
+       "Is approval the bottleneck?"
+      ],
+      "actions": [
+       "Ask account leads for requests at the likely-deal stage, not after signing",
+       "Soft-book likely people early",
+       "Keep a small pool of hard-to-find skills",
+       "Agree approval turnaround times"
+      ],
+      "escalate": "Any request starting within 3 weeks that's still open."
+     }
+    },
+    {
+     "id": "fill-rate",
+     "name": "Fill rate",
+     "plain": "Of the requests that closed, how many you actually staffed.",
+     "formula": "Filled requests ÷ (Filled + Lost)",
+     "example": "Brightpath: 4 filled, 1 lost = 80%",
+     "thresholds": {
+      "green": "≥ 90%",
+      "amber": "75 – 89%",
+      "red": "< 75%"
+     },
+     "frequency": "Monthly",
+     "template": "resource-request-log",
+     "impact": {
+      "summary": "Lost requests are lost revenue, and they tell clients you can't deliver what you sell.",
+      "effects": [
+       "Revenue lost or delayed",
+       "Clients go to other vendors for the work"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Which skills or grades are you losing on?",
+       "Were requests lost to timing or to skills?"
+      ],
+      "actions": [
+       "Hire or train for the skills you keep losing",
+       "Use partners or contractors for short spikes",
+       "Tell sales which roles you can't staff before they sell them"
+      ],
+      "escalate": "Two lost requests for the same skill in a quarter."
+     }
+    },
+    {
+     "id": "allocation-accuracy",
+     "name": "Allocation accuracy (planned vs actual)",
+     "plain": "How closely the hours people actually logged match what they were planned to work.",
+     "formula": "1 − |Actual hours − Planned hours| ÷ Planned hours",
+     "example": "Planned 100% on Lighthouse, logged 82% = 82% accuracy",
+     "thresholds": {
+      "green": "≥ 90%",
+      "amber": "80 – 89%",
+      "red": "< 80%"
+     },
+     "frequency": "Monthly",
+     "template": "allocation-heatmap",
+     "impact": {
+      "summary": "If plans don't match reality, every capacity decision built on them is wrong.",
+      "effects": [
+       "People double-booked without anyone noticing",
+       "Capacity looks free when it isn't"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Are people pulled into unplanned work?",
+       "Are bookings updated when projects change?"
+      ],
+      "actions": [
+       "Review the heatmap weekly with PMs and update it",
+       "Log unplanned work so it becomes visible",
+       "Release bookings that won't be used"
+      ],
+      "escalate": "Persistent gaps on the same account or the same people."
+     }
+    },
+    {
+     "id": "skills-coverage",
+     "name": "Skills coverage",
+     "plain": "For each skill you sell, how many people can do it without help.",
+     "formula": "Count of people rated 3+ per skill",
+     "example": "Brightpath: UX Design has 1 person at 3+ (Gap)",
+     "thresholds": {
+      "green": "3+ people per skill",
+      "amber": "2 people",
+      "red": "0-1 people"
+     },
+     "frequency": "Quarterly",
+     "template": "skills-matrix",
+     "impact": {
+      "summary": "One person holding a skill is one resignation, illness or holiday away from a stalled project.",
+      "effects": [
+       "Single points of failure",
+       "Projects wait for one person's availability"
+      ]
+     },
+     "resolution": {
+      "diagnose": [
+       "Which skills are thin, and which are growing in demand?",
+       "Is anyone being trained as a second?"
+      ],
+      "actions": [
+       "Pair a second person on thin skills",
+       "Prioritise bench time for cross-skilling",
+       "Hire for gaps that demand will grow"
+      ],
+      "escalate": "Any skill with demand in the pipeline and only one person able to do it."
+     }
+    }
+   ]
   }
  ],
  "glossary": [
@@ -3571,6 +4214,50 @@
   {
    "term": "MoSCoW",
    "definition": "A way to prioritise: Must have, Should have, Could have, Won't have this time."
+  },
+  {
+   "term": "Bench",
+   "definition": "People who are not currently on billable client work, usually between projects."
+  },
+  {
+   "term": "Billability",
+   "definition": "The share of someone's available hours that was billed to a client."
+  },
+  {
+   "term": "Utilisation",
+   "definition": "The share of someone's available hours spent on project work, billable or not."
+  },
+  {
+   "term": "RMG",
+   "definition": "Resource Management Group. The team that assigns people to projects across an organisation."
+  },
+  {
+   "term": "Soft booking",
+   "definition": "A provisional reservation of a person for a likely project, before the contract is signed."
+  },
+  {
+   "term": "Hard booking",
+   "definition": "A confirmed assignment of a person to a project."
+  },
+  {
+   "term": "Time to fill",
+   "definition": "How long it takes to staff a role after the request is raised."
+  },
+  {
+   "term": "Ramp-up",
+   "definition": "Adding people to a project as work grows."
+  },
+  {
+   "term": "Ramp-down",
+   "definition": "Moving people off a project as work shrinks or ends. Also called roll-off."
+  },
+  {
+   "term": "Skills matrix",
+   "definition": "A grid of people against skills, showing how strong each person is at each skill."
+  },
+  {
+   "term": "Demand pipeline",
+   "definition": "The list of upcoming requests for people, from likely deals to signed work."
   }
  ]
 }

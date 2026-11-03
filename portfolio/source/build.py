@@ -96,7 +96,7 @@ TOOLKIT_TYPES = [
     ("software-digital/agile-product-build", "Software & Digital", "Agile product build", "12 documents · 3-12 months"),
     ("enterprise-it/erp-implementation", "Enterprise IT", "ERP implementation", "22 documents · 9-24 months"),
     ("client-services/fixed-bid", "Client Services", "Fixed-bid client engagement", "12 documents · 1-6 months"),
-    ("infrastructure-cloud/cloud-migration", "Infrastructure & Cloud", "Cloud migration", "11 documents · 6-18 months"),
+    ("resource-management/bench-redeployment", "Resource Management", "Bench management and redeployment", "5 documents · ongoing"),
     ("data-ai/ai-ml-pilot", "Data & AI", "AI / ML pilot", "7 documents · 6-16 weeks"),
     ("program-portfolio/multi-project-program", "Programs & Portfolio", "Multi-project program", "10 documents · 1-3 years"),
 ]
@@ -130,7 +130,7 @@ TOOLKIT_PAGE = f"""
     <div class="wrap">
       <div class="eyebrow">Toolkit</div>
       <h1 class="tk-title">Every document a project needs. <em>And when to use it.</em></h1>
-      <p class="tk-sub">A free library of 25 project templates, filled with one worked example so every number lines up across documents. Pick the kind of project you're running and see which documents it needs, when to create and update each one, how, and who owns it. Written in plain English, so it works for people who aren't project managers too.</p>
+      <p class="tk-sub">A free library of 30 project and resource management templates, filled with worked examples so every number lines up across documents. Pick the kind of project you're running and see which documents it needs, when to create and update each one, how, and who owns it. Written in plain English, so it works for people who aren't project managers too.</p>
       <div class="tk-cta-row">
         <a class="btn-primary" href="{TOOLKIT_URL}" target="_blank" rel="noopener">Open the toolkit ↗</a>
         <a class="btn-ghost" href="{TOOLKIT_URL}/library" target="_blank" rel="noopener">Browse all templates</a>
@@ -140,10 +140,10 @@ TOOLKIT_PAGE = f"""
 
   <div class="tk-band">
     <div class="wrap tk-figures">
-      <div><b>25</b><span>Templates</span></div>
-      <div><b>18</b><span>Project types mapped</span></div>
-      <div><b>27</b><span>Metrics explained</span></div>
-      <div><b>51</b><span>Terms in plain English</span></div>
+      <div><b>30</b><span>Templates</span></div>
+      <div><b>22</b><span>Project types mapped</span></div>
+      <div><b>33</b><span>Metrics explained</span></div>
+      <div><b>62</b><span>Terms in plain English</span></div>
     </div>
   </div>
 
@@ -164,14 +164,14 @@ TOOLKIT_PAGE = f"""
     </div>
 
     <section class="tk-section">
-      <div class="tk-section-head"><h2>Start with your project.</h2><a href="{TOOLKIT_URL}/projects" target="_blank" rel="noopener">All 18 project types ↗</a></div>
+      <div class="tk-section-head"><h2>Start with your project.</h2><a href="{TOOLKIT_URL}/projects" target="_blank" rel="noopener">All 22 project types ↗</a></div>
       <div class="tk-types">
 {types_html}
       </div>
     </section>
 
     <section class="tk-section">
-      <div class="tk-section-head"><h2>Most-used templates.</h2><a href="{TOOLKIT_URL}/library" target="_blank" rel="noopener">All 25 templates ↗</a></div>
+      <div class="tk-section-head"><h2>Most-used templates.</h2><a href="{TOOLKIT_URL}/library" target="_blank" rel="noopener">All 30 templates ↗</a></div>
       <div class="tk-docs">
 {docs_html}
       </div>
@@ -193,7 +193,7 @@ HOME_TEASER = f"""
     <div class="wrap">
       <a class="tk-teaser-inner" href="#" onclick="showPage('toolkit');return false;">
         <span class="tk-teaser-tag">New · Free</span>
-        <span class="tk-teaser-text"><b>The PM Toolkit.</b> 25 templates, mapped to 18 project types, with a metrics playbook. Explained so anyone can use them.</span>
+        <span class="tk-teaser-text"><b>The PM Toolkit.</b> 30 project and resource management templates, 22 project types and a metrics playbook. Explained so anyone can use them.</span>
         <span class="tk-teaser-go">Explore →</span>
       </a>
     </div>

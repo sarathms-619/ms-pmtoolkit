@@ -386,3 +386,8 @@ PLAIN = {
 
 for _d in DOCS:
     _d["plain"], _d["like"], _d["without"] = PLAIN[_d["id"]]
+
+# Resource management documents (already include their plain-language fields).
+from catalog_rm import RM_DOCS  # noqa: E402
+DOCS.extend(RM_DOCS)
+DOC_IDS = {d["id"] for d in DOCS}

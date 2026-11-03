@@ -12,10 +12,11 @@ The fix isn't complicated:
 
 Nobody explained any of this to me early on. Templates told me what a document was. Never when my project needed it, who should own it, or what to do when the number on it turned amber.
 
-So I wrote it all down. A free PM toolkit:
-→ 25 templates, already filled in so you can see what good looks like
-→ 18 project types, so you only see what yours needs
-→ 27 metrics, each with what to do when it slips
+So I wrote it all down. A free toolkit for project and resource management:
+→ 30 templates, already filled in so you can see what good looks like
+→ 22 project types, so you only see what yours needs
+→ Resource management too: skills matrix, bench tracker, utilisation, allocation heatmap
+→ 33 metrics, each with what to do when it slips
 → Plain English, so your client can read it too
 
 Want it? DM me "TOOLKIT" and I'll send it across.
